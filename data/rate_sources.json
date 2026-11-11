@@ -1,0 +1,21 @@
+{
+  "_comment": "Best-effort rate monitor used by update.py. For each entry it fetches 'url', applies 'regex' (first capture group = a percentage like 3.00), and compares to the matching field in data/rates.json. It only REPORTS mismatches; it never edits data. Selectors break often, so treat failures as 'go verify manually', not as truth. Add entries as you confirm stable source URLs.",
+  "sources": [
+    {
+      "slug": "penfed",
+      "field": "savings_apy",
+      "label": "PenFed savings APY",
+      "url": "https://www.penfed.org/savings/online-savings",
+      "regex": "([0-9]+\\.[0-9]+)%\\s*APY",
+      "tolerance": 0.05
+    },
+    {
+      "slug": "alliant",
+      "field": "savings_apy",
+      "label": "Alliant high-rate savings APY",
+      "url": "https://www.alliantcreditunion.org/bank/high-rate-savings",
+      "regex": "([0-9]+\\.[0-9]+)%\\s*APY",
+      "tolerance": 0.05
+    }
+  ]
+}

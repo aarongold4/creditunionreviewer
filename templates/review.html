@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>{{ cu.name }} Review{% if cu.tier != 'full' %} & Profile{% endif %} (2026)</h1>
+    <p class="byline">By <a href="../../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">{% if cu.tier == 'full' %}{{ cu.editorial[0] }}{% else %}{{ cu.blurb }}{% endif %}</p>
+  </header>
+
+  {% if cu.rating %}
+  <div class="rating-box">
+    <div class="rating-score">
+      <span class="rating-overall">{{ cu.rating.overall }}</span><span class="rating-of">/5</span>
+      {{ cu.rating.stars }}
+      <span class="rating-word">{{ cu.rating.word }}</span>
+    </div>
+    <div class="rating-factors">
+      {% for f in cu.rating.factors %}
+      <div class="rf"><span class="rf-label">{{ f.label }}</span><span class="rf-bar"><span class="rf-fill" style="width:{{ f.pct }}%"></span></span><span class="rf-num">{{ f.score }}</span></div>
+      {% endfor %}
+    </div>
+    <p class="rating-method"><a href="../../methodology/index.html">How we score</a> · weighted across rates, fees, membership access, digital experience, and products.</p>
+  </div>
+  {% endif %}
+
+  <div class="factbox">
+    <h2 class="factbox-title">At a glance</h2>
+    <dl>
+      <div><dt>Headquarters</dt><dd>{{ cu.hq_city }}, {{ cu.hq_state }}</dd></div>
+      <div><dt>Members</dt><dd>{{ cu.members_fmt }}</dd></div>
+      <div><dt>Assets</dt><dd>~${{ cu.assets_b_approx }} billion</dd></div>
+      <div><dt>Charter</dt><dd>{{ 'Federal' if cu.charter=='federal' else 'State' }}</dd></div>
+      {% if cu.founded %}<div><dt>Founded</dt><dd>{{ cu.founded }}</dd></div>{% endif %}
+      <div><dt>Anyone can join?</dt><dd>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</dd></div>
+      <div><dt>Insurance</dt><dd>NCUA, up to $250,000</dd></div>
+      <div><dt>Website</dt><dd>{{ cu.website }}</dd></div>
+    </dl>
+  </div>
+
+  {% if cu.rates %}
+  <h2>{{ cu.name }} rates at a glance</h2>
+  <p class="rate-asof">Representative rates as of {{ rates_as_of }} — verify current rates at {{ cu.website }} before acting.</p>
+  <div class="table-scroll">
+  <table class="data-table rates-mini">
+    <tbody>
+      <tr><td><strong>Savings APY</strong></td><td>{{ "%.2f"|format(cu.rates.savings_apy) }}% {% if cu.spark %}<span class="spark-wrap">{{ cu.spark.savings_apy }} {{ cu.trend.savings_apy }}</span>{% endif %}</td></tr>
+      <tr><td><strong>Money market APY</strong></td><td>{{ "%.2f"|format(cu.rates.mm_apy) }}%</td></tr>
+      <tr><td><strong>Checking APY</strong></td><td>{{ "%.2f"|format(cu.rates.checking_apy) }}%{% if cu.rates.checking_note %} — {{ cu.rates.checking_note }}{% endif %}</td></tr>
+      <tr><td><strong>12-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_12) }}% {% if cu.spark %}<span class="spark-wrap">{{ cu.spark.cd_12 }} {{ cu.trend.cd_12 }}</span>{% endif %}</td></tr>
+      <tr><td><strong>36-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_36) }}%</td></tr>
+      <tr><td><strong>60-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_60) }}%</td></tr>
+      <tr><td><strong>New auto loan APR (from)</strong></td><td>{{ "%.2f"|format(cu.rates.auto_new_apr) }}%</td></tr>
+      <tr><td><strong>Credit card APR (from)</strong></td><td>{{ "%.2f"|format(cu.rates.card_apr_low) }}%</td></tr>
+      <tr><td><strong>30-yr fixed mortgage APR (sample)</strong></td><td>{{ "%.2f"|format(cu.rates.mortgage_30_apr) }}%</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="table-note"><a href="../../rates/index.html">Compare these rates against other credit unions →</a></p>
+  {% endif %}
+
+  <h2>Who can join {{ cu.name }}</h2>
+  <p>{{ cu.fom.summary }}</p>
+  <p><strong>Easiest path in:</strong> {{ cu.fom.easy_path }} {% if cu.fom.join_cost %}(cost: {{ cu.fom.join_cost }}){% endif %}</p>
+  {% if not cu.fom.anyone_can_join %}
+  <p class="note">Not eligible? See our list of <a href="../../anyone-can-join/index.html">credit unions anyone can join</a>.</p>
+  {% endif %}
+
+  {% if cu.tier == 'full' %}
+  <h2>Accounts and products</h2>
+  <dl class="product-list">
+    {% if cu.products.checking %}<div><dt>Checking</dt><dd>{{ cu.products.checking }}</dd></div>{% endif %}
+    {% if cu.products.savings %}<div><dt>Savings</dt><dd>{{ cu.products.savings }}</dd></div>{% endif %}
+    {% if cu.products.cds %}<div><dt>Certificates</dt><dd>{{ cu.products.cds }}</dd></div>{% endif %}
+    {% if cu.products.loans %}<div><dt>Loans</dt><dd>{{ cu.products.loans }}</dd></div>{% endif %}
+  </dl>
+  {% if cu.rates_note %}<p class="note">{{ cu.rates_note }} Rates change frequently — verify current numbers at {{ cu.website }} before opening an account.</p>{% endif %}
+
+  <h2>Our take</h2>
+  {% for para in cu.editorial[1:] %}<p>{{ para }}</p>{% endfor %}
+  {% else %}
+  <h2>Products</h2>
+  <p>{{ cu.products_brief }}</p>
+  <p class="note">Rates change frequently — verify current numbers at {{ cu.website }} before opening an account.</p>
+  {% endif %}
+
+  <div class="pros-cons">
+    <div><h4>Pros</h4><ul>{% for p in cu.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
+    <div><h4>Cons</h4><ul>{% for c in cu.cons %}<li>{{ c }}</li>{% endfor %}</ul></div>
+  </div>
+
+  <h2>Is your money safe at {{ cu.name }}?</h2>
+  <p>Yes. {{ cu.name }} is federally insured by the National Credit Union Administration (NCUA). Your deposits are protected up to $250,000 per share owner, per insured credit union, for each account ownership category — the same dollar protection FDIC insurance gives bank customers. <a href="../../ncua-insurance/index.html">How NCUA insurance works →</a></p>
+
+  {% if cu.slug == 'penfed' %}{{ cta_penfed }}
+  {% elif cu.slug == 'alliant' %}{{ cta_alliant }}
+  {% elif cu.slug == 'consumers' %}{{ cta_consumers }}
+  {% elif not cu.fom.anyone_can_join %}
+  <div class="alt-block">
+    <h2>Can't join?</h2>
+    <p>If {{ cu.name }}'s membership rules don't fit you, check the <a href="../../anyone-can-join/index.html">anyone-can-join list</a>, or consider an online bank with no membership requirements:</p>
+    {{ cta_bank_alt }}
+  </div>
+  {% endif %}
+
+  {% if comparisons %}
+  <h2>{{ cu.name }} compared</h2>
+  <ul class="compare-inline">
+    {% for c in comparisons %}<li><a href="../../compare/{{ c.slug }}/index.html">{{ cu.name }} vs {{ c.other }}</a></li>{% endfor %}
+  </ul>
+  {% endif %}
+
+  <p class="next-links">Compare: <a href="../../best-credit-unions/index.html">best credit unions overall</a> · <a href="../../state/{{ cu.hq_state|lower }}/index.html">best in {{ state_name }}</a></p>
+</article>
+{% endblock %}

@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Credit Union Rates: Savings, CDs, Checking & Auto Loans (2026)</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Rates as of {{ rates_as_of }}</p>
+    <p class="lede">Side-by-side deposit and loan rates for the {{ rated|length }} credit unions we review in full. Tap any column to sort. These are representative figures — always confirm the current rate with the credit union before acting.</p>
+  </header>
+
+  <div class="rate-disclaimer">
+    <strong>About these numbers:</strong> {{ rates_disclaimer }}
+  </div>
+
+  <h2 id="savings">Best savings &amp; money market APYs</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="num">Savings APY</th>
+      <th data-sort="text">3-mo trend</th>
+      <th data-sort="num">Money Market APY</th>
+      <th data-sort="text">Anyone can join?</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in by_savings %}
+      <tr>
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td>{{ "%.2f"|format(cu.rates.savings_apy) }}%</td>
+        <td>{{ cu.spark.savings_apy }} {{ cu.trend.savings_apy }}</td>
+        <td>{{ "%.2f"|format(cu.rates.mm_apy) }}%</td>
+        <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="table-note">Some headline savings APYs apply only to a capped balance (e.g. DCU's high rate covers roughly the first $1,000). Check each review for caps.</p>
+
+  <h2 id="cds">Best certificate (CD) rates</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="num">12-month</th>
+      <th data-sort="text">12-mo trend</th>
+      <th data-sort="num">36-month</th>
+      <th data-sort="num">60-month</th>
+      <th data-sort="text">Anyone can join?</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in by_cd %}
+      <tr>
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td>{{ "%.2f"|format(cu.rates.cd_12) }}%</td>
+        <td>{{ cu.spark.cd_12 }} {{ cu.trend.cd_12 }}</td>
+        <td>{{ "%.2f"|format(cu.rates.cd_36) }}%</td>
+        <td>{{ "%.2f"|format(cu.rates.cd_60) }}%</td>
+        <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+
+  <h2 id="checking">Highest checking APYs (rewards checking)</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="num">Checking APY</th>
+      <th data-sort="text">Conditions / cap</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in by_checking %}
+      <tr>
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td>{{ "%.2f"|format(cu.rates.checking_apy) }}%</td>
+        <td>{{ cu.rates.checking_note }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="table-note">Rewards-checking APYs require meeting monthly conditions and apply only up to a balance cap. Above the cap, the rate drops sharply.</p>
+
+  <h2 id="auto">Lowest new-auto loan APRs</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="num">New auto APR (from)</th>
+      <th data-sort="num">Card APR (from)</th>
+      <th data-sort="text">Anyone can join?</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in by_auto %}
+      <tr>
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td>{{ "%.2f"|format(cu.rates.auto_new_apr) }}%</td>
+        <td>{{ "%.2f"|format(cu.rates.card_apr_low) }}%</td>
+        <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="table-note">Lowest advertised APRs assume strong credit and may require autopay or other conditions. Your rate depends on your credit profile.</p>
+
+  <div class="alt-block">
+    <h2>How credit union rates stack up to online banks</h2>
+    <p>The best credit union savings and CD rates are competitive with — and sometimes beat — top online banks, while credit union loan rates are usually lower. It still pays to compare:</p>
+    {{ cta_bank_alt }}
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">More: <a href="../best-credit-union-cd-rates/index.html">best CD rates</a> · <a href="../best-credit-union-savings-accounts/index.html">best savings</a> · <a href="../best-credit-unions/index.html">overall rankings</a></p>
+</article>
+{% endblock %}

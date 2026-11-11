@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>NCUA Insurance: Is Your Money as Safe as in a Bank?</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Yes. Federally insured credit unions carry the same $250,000 of federal deposit insurance that FDIC-insured banks do — backed by the full faith and credit of the United States government. The logo is different; the protection is not.</p>
+  </header>
+
+  <h2>NCUA vs FDIC in one table</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr><th></th><th>NCUA (credit unions)</th><th>FDIC (banks)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Coverage limit</strong></td><td>$250,000 per share owner, per insured credit union, per ownership category</td><td>$250,000 per depositor, per insured bank, per ownership category</td></tr>
+      <tr><td><strong>Backed by</strong></td><td>Full faith and credit of the US government</td><td>Full faith and credit of the US government</td></tr>
+      <tr><td><strong>Insurance fund</strong></td><td>National Credit Union Share Insurance Fund (NCUSIF)</td><td>Deposit Insurance Fund (DIF)</td></tr>
+      <tr><td><strong>What's covered</strong></td><td>Share savings, share drafts (checking), money market accounts, share certificates (CDs)</td><td>Savings, checking, money market deposit accounts, CDs</td></tr>
+      <tr><td><strong>What's NOT covered</strong></td><td>Mutual funds, stocks, bonds, annuities, crypto — even if bought through the credit union</td><td>Same exclusions</td></tr>
+      <tr><td><strong>Ever lost insured money?</strong></td><td>No member has ever lost a penny of insured shares</td><td>No depositor has ever lost a penny of insured deposits</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>How the $250,000 limit really works</h2>
+  <p>The limit applies <em>per ownership category</em>, which means careful structuring can insure far more than $250,000 at one institution. An individual account, a joint account, and certain retirement accounts are separate categories. A married couple with an individual account each plus a joint account can have $1,000,000 fully insured at a single credit union ($250k + $250k individual, plus $250k each of the joint account).</p>
+
+  <h2>How to verify a credit union is insured</h2>
+  <p><strong>Look for the official NCUA sign</strong> on the website and in branches. <strong>Use the NCUA's Credit Union Locator</strong> at ncua.gov to confirm any institution's charter and insurance status. <strong>Watch for the rare exception:</strong> a small number of state-chartered credit unions carry private insurance (typically from ASI) instead of federal NCUA coverage — private insurance is not backed by the government. Every credit union reviewed on this site is federally insured by the NCUA.</p>
+
+  <h2>What happens if a credit union fails</h2>
+  <p>Failures are rare and usually invisible to members: the NCUA typically arranges a merger with a healthy credit union, and accounts transfer seamlessly. In a liquidation, the NCUA pays insured shares promptly, generally within days. The process mirrors what the FDIC does for banks.</p>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">Next: <a href="../credit-union-vs-bank/index.html">credit union vs bank</a> · <a href="../best-credit-unions/index.html">the best credit unions of 2026</a></p>
+</article>
+{% endblock %}

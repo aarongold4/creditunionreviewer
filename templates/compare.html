@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>{{ a.name }} vs {{ b.name }}: Which Is Better in 2026?</h1>
+    <p class="byline">By <a href="../../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">{{ m.intro }}</p>
+  </header>
+
+  <div class="disclosure-strip">Some links on this page are affiliate links. <a href="../../how-we-make-money/index.html">How we make money</a> — it never changes our verdict.</div>
+
+  <h2>Side by side</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr><th>&nbsp;</th><th>{{ a.name }}</th><th>{{ b.name }}</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Headquarters</strong></td><td>{{ a.hq_city }}, {{ a.hq_state }}</td><td>{{ b.hq_city }}, {{ b.hq_state }}</td></tr>
+      <tr><td><strong>Members</strong></td><td>{{ a.members_fmt }}</td><td>{{ b.members_fmt }}</td></tr>
+      <tr><td><strong>Assets</strong></td><td>~${{ a.assets_b_approx }}B</td><td>~${{ b.assets_b_approx }}B</td></tr>
+      <tr><td><strong>Can anyone join?</strong></td>
+        <td>{% if a.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+        <td>{% if b.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td></tr>
+      <tr><td><strong>How to join</strong></td><td>{{ a.fom.easy_path }}</td><td>{{ b.fom.easy_path }}</td></tr>
+      <tr><td><strong>Best for</strong></td><td>{{ a.best_for }}</td><td>{{ b.best_for }}</td></tr>
+      <tr><td><strong>Insurance</strong></td><td>NCUA, $250k</td><td>NCUA, $250k</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="verdict-grid">
+    <div class="verdict-card"><h3>Pick {{ a.name }} if…</h3><p>{{ m.pick_a }}</p>
+      {% if a.slug == 'penfed' %}{{ cta_penfed }}
+      {% elif a.slug == 'alliant' %}{{ cta_alliant }}
+      {% elif a.slug == 'consumers' %}{{ cta_consumers }}{% endif %}
+      <p><a class="text-link" href="../../reviews/{{ a.slug }}/index.html">Full {{ a.name }} review →</a></p>
+    </div>
+    <div class="verdict-card"><h3>Pick {{ b.name }} if…</h3><p>{{ m.pick_b }}</p>
+      {% if b.slug == 'penfed' %}{{ cta_penfed }}
+      {% elif b.slug == 'alliant' %}{{ cta_alliant }}
+      {% elif b.slug == 'consumers' %}{{ cta_consumers }}{% endif %}
+      <p><a class="text-link" href="../../reviews/{{ b.slug }}/index.html">Full {{ b.name }} review →</a></p>
+    </div>
+  </div>
+
+  <h2>The bottom line</h2>
+  <p>{{ m.bottom_line }}</p>
+
+  <div class="pros-cons">
+    <div><h4>{{ a.name }} — pros</h4><ul>{% for p in a.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
+    <div><h4>{{ b.name }} — pros</h4><ul>{% for p in b.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
+  </div>
+
+  {% if not a.fom.anyone_can_join and not b.fom.anyone_can_join %}
+  <div class="alt-block">
+    <h2>Can't join either?</h2>
+    <p>Both have membership requirements. See <a href="../../anyone-can-join/index.html">credit unions anyone can join</a>, or consider an online bank:</p>
+    {{ cta_bank_alt }}
+  </div>
+  {% endif %}
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in m.faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">More: <a href="../index.html">all comparisons</a> · <a href="../../best-credit-unions/index.html">best credit unions overall</a></p>
+</article>
+{% endblock %}

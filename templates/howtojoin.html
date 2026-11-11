@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>How to Join a Credit Union: Field of Membership, Explained</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Every credit union is legally required to limit who can join — that limit is called the "field of membership." It sounds exclusive. In practice, almost everyone in America qualifies for multiple credit unions. Here's how the system works and how to find your way in.</p>
+  </header>
+
+  <h2>What "field of membership" actually means</h2>
+  <p>Credit unions get their tax-exempt, member-owned status in exchange for serving a defined group of people rather than the general public. That group — the field of membership — is written into each credit union's charter and approved by its regulator (the NCUA for federal charters, state regulators for state charters). There are three basic flavors:</p>
+  <p><strong>1. Employer or occupational.</strong> The original model: you work for a specific company, industry, or agency. Navy Federal (military and DoD), SchoolsFirst (California school employees), and American Airlines Credit Union (air transportation industry) all work this way.</p>
+  <p><strong>2. Community.</strong> You live, work, worship, or attend school in a defined geographic area. These are the easiest to qualify for if you're in the footprint — many cover entire states.</p>
+  <p><strong>3. Associational.</strong> You belong to a qualifying group — a church, a union, an alumni association, or (this is the important one) a nonprofit the credit union partners with.</p>
+
+  <h2>The associational loophole that opens everything up</h2>
+  <p>That third category is why "I can't join a credit union" is almost never true. Many credit unions partner with a charity or association that <em>anyone</em> can join, usually for a one-time donation of $5–$25. Donate, and you're in the field of membership — from any state. PenFed, Alliant, and {{ acj_count - 2 }} other credit unions we review work this way. The donation typically happens right inside the account-opening flow; you'll never fill out a separate form.</p>
+  <p class="note">We maintain a verified list: <a href="../anyone-can-join/index.html">credit unions anyone can join →</a></p>
+
+  <h2>Family counts, too</h2>
+  <p>Most credit unions extend eligibility to family or household members of existing members — and at many, membership lasts for life ("once a member, always a member"), even if you change jobs or move. If a parent, sibling, spouse, or grandparent belongs to a credit union, you probably qualify right now. Navy Federal is the famous example: millions of its members joined through a family connection.</p>
+
+  <h2>Joining, step by step</h2>
+  <p><strong>Step 1 — Confirm eligibility.</strong> Every credit union website has a "who can join" page. Check geography, employer, family, and association paths in that order.</p>
+  <p><strong>Step 2 — Open your share account.</strong> Membership is formalized by depositing a small amount — usually $5, sometimes $25 — into a "share savings" account. That deposit is your ownership share in the cooperative. It usually must stay in the account while you're a member.</p>
+  <p><strong>Step 3 — Bring standard documents.</strong> Government ID, Social Security number, and proof of address — the same identity verification any bank requires. Online applications take 10–15 minutes at most modern credit unions.</p>
+  <p><strong>Step 4 — Add the products you actually came for.</strong> Checking, a CD, an auto loan — once you're a member, everything is available.</p>
+
+  <h2>Common questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">Next: <a href="../anyone-can-join/index.html">credit unions anyone can join</a> · <a href="../best-credit-unions/index.html">our top-rated credit unions</a></p>
+</article>
+{% endblock %}

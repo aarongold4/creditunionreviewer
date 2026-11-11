@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>The Best Credit Unions of 2026</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">We ranked the {{ ranked|length }} best credit unions in America on rates, fees, membership accessibility, and digital experience. Several on this list will take anyone in the US — no employer, no zip code requirement.</p>
+  </header>
+
+  <div class="disclosure-strip">Some links on this page are affiliate links. <a href="../how-we-make-money/index.html">How we make money</a> — it never changes our rankings.</div>
+
+  <h2>Quick comparison</h2>
+  <div class="table-scroll">
+  <table class="data-table" id="compare-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="num">Our rating</th>
+      <th data-sort="num">HYSA APY</th>
+      <th data-sort="num">30-yr mortgage</th>
+      <th data-sort="num">Auto loan APR</th>
+      <th data-sort="text">Anyone can join?</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in ranked %}
+      <tr>
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td class="cell-rating">{% if cu.rating %}{{ cu.rating.stars }} <span class="rating-num">{{ cu.rating.overall }}</span>{% else %}—{% endif %}</td>
+        <td>{% if cu.rates %}{{ "%.2f"|format(cu.rates.savings_apy) }}%{% else %}—{% endif %}</td>
+        <td>{% if cu.rates %}{{ "%.2f"|format(cu.rates.mortgage_30_apr) }}%{% else %}—{% endif %}</td>
+        <td>{% if cu.rates %}{{ "%.2f"|format(cu.rates.auto_new_apr) }}%{% else %}—{% endif %}</td>
+        <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="table-note">Tap a column header to sort. Rating is our weighted five-factor score (out of 5). HYSA = high-yield savings APY; auto APR is the lowest advertised new-car rate. Rates representative, as of {{ rates_as_of }} — <a href="../rates/index.html">full rate tables</a>. "Restricted" eligibility details are in each review.</p>
+
+  <h2>The rankings</h2>
+  {% for cu in ranked %}
+  <section class="rank-entry" id="{{ cu.slug }}">
+    <h3>{{ loop.index }}. {{ cu.name }} <span class="rank-best">— best for {{ cu.best_for|lower }}</span></h3>
+    {% if cu.rating %}<p class="rank-rating">{{ cu.rating.stars }} <span class="rating-num">{{ cu.rating.overall }}</span>/5 · <span class="rating-word">{{ cu.rating.word }}</span></p>{% endif %}
+    <p class="rank-meta">{{ cu.hq_city }}, {{ cu.hq_state }} · {{ cu.members_fmt }} members · {{ 'Federal' if cu.charter=='federal' else 'State' }} charter · NCUA insured</p>
+    <p>{{ cu.editorial[0] }}</p>
+    <div class="pros-cons">
+      <div><h4>Pros</h4><ul>{% for p in cu.pros %}<li>{{ p }}</li>{% endfor %}</ul></div>
+      <div><h4>Cons</h4><ul>{% for c in cu.cons %}<li>{{ c }}</li>{% endfor %}</ul></div>
+    </div>
+    <p class="join-line"><strong>Who can join:</strong> {{ cu.fom.summary }}</p>
+    {% if cu.slug == 'penfed' %}{{ cta_penfed }}
+    {% elif cu.slug == 'alliant' %}{{ cta_alliant }}
+    {% elif cu.slug == 'consumers' %}{{ cta_consumers }}{% endif %}
+    <p><a class="text-link" href="../reviews/{{ cu.slug }}/index.html">Full {{ cu.name }} review →</a></p>
+  </section>
+  {% endfor %}
+
+  <div class="alt-block">
+    <h2>Can't join any of these?</h2>
+    <p>First, check our <a href="../anyone-can-join/index.html">anyone-can-join list</a> — {{ acj_count }} credit unions will take you regardless of where you live or work. If a credit union still doesn't fit, a high-yield online bank is a legitimate alternative:</p>
+    {{ cta_bank_alt }}
+  </div>
+
+  <h2>How we ranked these</h2>
+  <p>Every credit union was scored on the same five factors: deposit rates relative to national averages, loan rates, fee schedule, membership accessibility, and digital banking quality. Editorial judgment breaks ties — and no credit union can pay for a placement. Full details in our <a href="../methodology/index.html">methodology</a>.</p>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+</article>
+{% endblock %}

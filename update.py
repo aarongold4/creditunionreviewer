@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+"""Weekly freshness job for creditunionreviewer.com.
+
+What it does (READ-ONLY against data):
+  1. Reports how stale data/meta.json `verified_date` is.
+  2. Flags affiliate bonuses that are expired or expiring soon.
+  3. Best-effort rate monitor from data/rate_sources.json: fetches each source
+     page, extracts a number via regex, and reports mismatches vs data/rates.json.
+  4. Writes a dated report to reports/.
+  5. Calls build.py (unless --no-build).
+
+What it must NEVER do:
+  - Edit any data/*.json.
+  - Advance verified_date.
+Only a human, in the monthly workflow, changes data and bumps verified_date.
+
+Usage:
+  python update.py            # audit + monitor + report + build
+  python update.py --no-build # audit + monitor + report only (monthly workflow)
+"""
+import json
+import re
+import subprocess
+import sys
+import urllib.request
+from datetime import date, datetime
+from pathlib import Path
+
+ROOT = Path(__file__).parent
+DATA = ROOT / "data"
+REPORTS = ROOT / "reports"
+SOON_DAYS = 14
+STALE_WARN_DAYS = 35  # monthly cadence: warn once we're past ~5 weeks
+
+TODAY = date.today()
+
+
+def _load(name):
+    p = DATA / name
+    return json.loads(p.read_text()) if p.exists() else None
+
+
+def audit_verified(meta, lines):
+    vd = meta.get("verified_date")
+    lines.append("## Verified-date staleness\n")
+    try:
+        d = datetime.strptime(vd, "%Y-%m-%d").date()
+        age = (TODAY - d).days
+        flag = "  ⚠️ STALE — verify and re-stamp" if age > STALE_WARN_DAYS else "  ✓ within cadence"
+        lines.append(f"- verified_date: {vd} ({age} days ago){flag}")
+    except (TypeError, ValueError):
+        lines.append(f"- verified_date: {vd!r} — could not parse")
+    lines.append(f"- affiliate_mode: {meta.get('affiliate_mode')}")
+    lines.append("")
+    return
+
+
+def audit_bonuses(affiliates, lines):
+    lines.append("## Affiliate bonuses\n")
+    offers = (affiliates or {}).get("offers", {})
+    any_bonus = False
+    for key, o in offers.items():
+        b, exp = o.get("bonus"), o.get("bonus_expires")
+        if not b:
+            continue
+        any_bonus = True
+        if not exp:
+            lines.append(f"- {key}: bonus present, no expiry set")
+            continue
+        try:
+            ed = datetime.strptime(exp, "%Y-%m-%d").date()
+            days = (ed - TODAY).days
+            if days < 0:
+                lines.append(f"- {key}: EXPIRED {abs(days)}d ago ({exp}) — auto-hidden at build; clear it in affiliates.json")
+            elif days <= SOON_DAYS:
+                lines.append(f"- {key}: expiring in {days}d ({exp}) — confirm or refresh")
+            else:
+                lines.append(f"- {key}: active, expires {exp} ({days}d)")
+        except ValueError:
+            lines.append(f"- {key}: bonus_expires {exp!r} — could not parse")
+    if not any_bonus:
+        lines.append("- No active bonuses configured.")
+    lines.append("")
+
+
+def monitor_rates(sources, rates, lines):
+    lines.append("## Rate monitor (best-effort, read-only)\n")
+    srcs = (sources or {}).get("sources", [])
+    if not srcs:
+        lines.append("- No sources configured in data/rate_sources.json.")
+        lines.append("")
+        return
+    rate_map = (rates or {}).get("rates", {})
+    for s in srcs:
+        slug, field, label = s.get("slug"), s.get("field"), s.get("label", "")
+        expected = rate_map.get(slug, {}).get(field)
+        url, rx, tol = s.get("url"), s.get("regex"), float(s.get("tolerance", 0.05))
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (rate-monitor)"})
+            with urllib.request.urlopen(req, timeout=20) as r:
+                html = r.read(1_500_000).decode("utf-8", "ignore")
+            m = re.search(rx, html)
+            if not m:
+                lines.append(f"- {label} [{slug}.{field}]: regex no match — VERIFY MANUALLY (page/layout may have changed)")
+                continue
+            found = float(m.group(1))
+            if expected is None:
+                lines.append(f"- {label} [{slug}.{field}]: site shows {found}% (no value in rates.json)")
+            elif abs(found - float(expected)) > tol:
+                lines.append(f"- {label} [{slug}.{field}]: MISMATCH — site {found}% vs data {expected}% (Δ{abs(found-float(expected)):.2f})")
+            else:
+                lines.append(f"- {label} [{slug}.{field}]: OK — site {found}% ≈ data {expected}%")
+        except Exception as e:  # noqa: BLE001 - best effort, never fail the job
+            lines.append(f"- {label} [{slug}.{field}]: fetch error ({type(e).__name__}) — VERIFY MANUALLY")
+    lines.append("")
+
+
+def main():
+    no_build = "--no-build" in sys.argv
+    REPORTS.mkdir(exist_ok=True)
+    meta = _load("meta.json") or {}
+    affiliates = _load("affiliates.json")
+    sources = _load("rate_sources.json")
+    rates = _load("rates.json")
+
+    lines = [f"# Freshness report — {TODAY.isoformat()}\n",
+             "_Generated by update.py. This job never edits data or moves the public "
+             "verified_date; act on it in the monthly human workflow._\n"]
+    audit_verified(meta, lines)
+    audit_bonuses(affiliates, lines)
+    monitor_rates(sources, rates, lines)
+    lines.append("## Next step\n")
+    lines.append("Review items above, verify against the institutions, then (only if "
+                 "warranted) edit the JSON, bump `verified_date` in data/meta.json, and rebuild.")
+
+    report = REPORTS / f"report-{TODAY.isoformat()}.md"
+    report.write_text("\n".join(lines) + "\n")
+    print(f"Wrote {report}")
+    print("\n".join(lines))
+
+    if no_build:
+        print("\n--no-build: skipping build.")
+        return
+    print("\nRunning build...")
+    subprocess.run([sys.executable, str(ROOT / "build.py")], check=True)
+
+
+if __name__ == "__main__":
+    main()

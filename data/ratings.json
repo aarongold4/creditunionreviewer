@@ -1,0 +1,204 @@
+{
+ "meta": {
+  "scale": "1-5",
+  "methodology": "Each credit union is scored on five factors; the overall is a weighted average. Editorial assessments, anchored to rates, fees, membership accessibility, and digital/product research.",
+  "weights": {
+   "rates": 0.3,
+   "fees": 0.2,
+   "access": 0.2,
+   "digital": 0.15,
+   "products": 0.15
+  },
+  "factor_labels": {
+   "rates": "Rates",
+   "fees": "Fees",
+   "access": "Membership access",
+   "digital": "Digital experience",
+   "products": "Products"
+  }
+ },
+ "ratings": {
+  "navy-federal": {
+   "rates": 4.6,
+   "fees": 4.3,
+   "access": 2.5,
+   "digital": 4.7,
+   "products": 4.9
+  },
+  "secu-north-carolina": {
+   "rates": 4.0,
+   "fees": 4.9,
+   "access": 2.3,
+   "digital": 3.6,
+   "products": 4.2
+  },
+  "penfed": {
+   "rates": 4.7,
+   "fees": 4.2,
+   "access": 5.0,
+   "digital": 4.5,
+   "products": 4.6
+  },
+  "schoolsfirst": {
+   "rates": 4.2,
+   "fees": 4.4,
+   "access": 2.4,
+   "digital": 4.0,
+   "products": 4.3
+  },
+  "becu": {
+   "rates": 4.3,
+   "fees": 4.6,
+   "access": 3.6,
+   "digital": 4.2,
+   "products": 4.4
+  },
+  "golden-1": {
+   "rates": 3.9,
+   "fees": 4.1,
+   "access": 3.2,
+   "digital": 3.9,
+   "products": 4.1
+  },
+  "america-first": {
+   "rates": 4.2,
+   "fees": 4.2,
+   "access": 3.0,
+   "digital": 4.0,
+   "products": 4.3
+  },
+  "alliant": {
+   "rates": 4.8,
+   "fees": 4.5,
+   "access": 5.0,
+   "digital": 4.7,
+   "products": 4.2
+  },
+  "mountain-america": {
+   "rates": 4.0,
+   "fees": 4.0,
+   "access": 3.0,
+   "digital": 4.1,
+   "products": 4.5
+  },
+  "rbfcu": {
+   "rates": 4.1,
+   "fees": 4.0,
+   "access": 3.1,
+   "digital": 3.9,
+   "products": 4.2
+  },
+  "suncoast": {
+   "rates": 4.2,
+   "fees": 4.5,
+   "access": 3.3,
+   "digital": 3.8,
+   "products": 4.2
+  },
+  "first-tech": {
+   "rates": 4.4,
+   "fees": 4.2,
+   "access": 4.8,
+   "digital": 4.6,
+   "products": 4.5
+  },
+  "vystar": {
+   "rates": 4.0,
+   "fees": 4.1,
+   "access": 3.2,
+   "digital": 3.8,
+   "products": 4.3
+  },
+  "security-service": {
+   "rates": 4.3,
+   "fees": 4.0,
+   "access": 3.4,
+   "digital": 3.7,
+   "products": 4.2
+  },
+  "dcu": {
+   "rates": 4.5,
+   "fees": 4.3,
+   "access": 4.8,
+   "digital": 4.4,
+   "products": 4.3
+  },
+  "sdccu": {
+   "rates": 4.1,
+   "fees": 4.7,
+   "access": 3.3,
+   "digital": 4.0,
+   "products": 4.0
+  },
+  "bethpage": {
+   "rates": 4.6,
+   "fees": 4.2,
+   "access": 4.7,
+   "digital": 4.1,
+   "products": 4.2
+  },
+  "greenstate": {
+   "rates": 4.2,
+   "fees": 4.1,
+   "access": 3.3,
+   "digital": 4.0,
+   "products": 4.2
+  },
+  "lake-michigan": {
+   "rates": 4.5,
+   "fees": 4.0,
+   "access": 4.7,
+   "digital": 4.2,
+   "products": 4.3
+  },
+  "idaho-central": {
+   "rates": 4.1,
+   "fees": 4.2,
+   "access": 3.0,
+   "digital": 4.3,
+   "products": 4.3
+  },
+  "delta-community": {
+   "rates": 4.1,
+   "fees": 4.2,
+   "access": 3.3,
+   "digital": 3.9,
+   "products": 4.2
+  },
+  "wright-patt": {
+   "rates": 4.0,
+   "fees": 4.3,
+   "access": 3.2,
+   "digital": 3.9,
+   "products": 4.2
+  },
+  "patelco": {
+   "rates": 4.2,
+   "fees": 4.1,
+   "access": 3.4,
+   "digital": 4.1,
+   "products": 4.2
+  },
+  "redstone": {
+   "rates": 4.2,
+   "fees": 4.2,
+   "access": 3.3,
+   "digital": 3.8,
+   "products": 4.1
+  },
+  "connexus": {
+   "rates": 4.6,
+   "fees": 4.2,
+   "access": 4.7,
+   "digital": 4.2,
+   "products": 4.1
+  },
+  "consumers": {
+   "rates": 4.7,
+   "fees": 4.1,
+   "access": 4.7,
+   "digital": 4.1,
+   "products": 4.0
+  }
+ }
+}

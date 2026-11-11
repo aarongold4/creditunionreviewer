@@ -1,0 +1,49 @@
+<div class="calc" id="mtg-calc" data-default-apr="{{ mtg_default_apr }}">
+  <div class="calc-grid calc-grid-4">
+    <label>Home price
+      <div class="calc-input"><span class="calc-pre">$</span><input type="number" id="mtg-price" value="400000" min="10000" step="5000"></div>
+    </label>
+    <label>Down payment
+      <div class="calc-input"><span class="calc-pre">$</span><input type="number" id="mtg-down" value="80000" min="0" step="5000"></div>
+    </label>
+    <label>Term (years)
+      <select id="mtg-term">
+        <option value="30" selected>30</option>
+        <option value="20">20</option>
+        <option value="15">15</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <label>APR (%)
+      <div class="calc-input"><input type="number" id="mtg-apr" value="{{ mtg_default_apr }}" min="0" max="15" step="0.01"><span class="calc-post">%</span></div>
+    </label>
+  </div>
+  <div class="calc-out">
+    <div class="calc-result"><span class="calc-label">Monthly principal &amp; interest</span><span class="calc-big" id="mtg-monthly">$0</span></div>
+    <div class="calc-result"><span class="calc-label">Total interest</span><span class="calc-val" id="mtg-interest">$0</span></div>
+    <div class="calc-result"><span class="calc-label">Loan amount</span><span class="calc-val" id="mtg-loan">$0</span></div>
+  </div>
+  <p class="calc-note">Principal and interest only — excludes property taxes, homeowners insurance, PMI, and HOA dues, which can add meaningfully to your monthly payment. APR pre-filled with the lowest representative 30-year rate among the credit unions we review (as of {{ rates_as_of }}).</p>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('mtg-calc');
+  if (!box) return;
+  var price = document.getElementById('mtg-price');
+  var down = document.getElementById('mtg-down');
+  var term = document.getElementById('mtg-term');
+  var apr = document.getElementById('mtg-apr');
+  var fmt = function (n) { return '$' + (Math.round(n)).toLocaleString('en-US'); };
+  function calc() {
+    var P = Math.max(0, (parseFloat(price.value) || 0) - (parseFloat(down.value) || 0));
+    var n = (parseInt(term.value, 10) || 1) * 12;
+    var r = (parseFloat(apr.value) || 0) / 100 / 12;
+    var m = r === 0 ? P / n : P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+    document.getElementById('mtg-loan').textContent = fmt(P);
+    document.getElementById('mtg-monthly').textContent = fmt(m);
+    document.getElementById('mtg-interest').textContent = fmt(m * n - P);
+  }
+  [price, down, term, apr].forEach(function (el) { el.addEventListener('input', calc); el.addEventListener('change', calc); });
+  calc();
+})();
+</script>

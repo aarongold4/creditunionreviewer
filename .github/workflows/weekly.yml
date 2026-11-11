@@ -1,0 +1,56 @@
+name: Weekly rebuild and deploy
+# Builds the site and publishes the finished pages to the `deploy` branch.
+# Hostinger's Git deployment watches `deploy` and puts it live automatically.
+# No FTP and no passwords. Mirrors onlinebankreview.com.
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Rate monitor and rebuild
+        run: python3 update.py
+      - name: Safety check (never publish an empty or broken build)
+        run: |
+          pages=$(find dist -name '*.html' | wc -l)
+          echo "Built $pages pages"
+          if [ "$pages" -lt 150 ] || [ ! -f dist/index.html ]; then
+            echo "::error::Build looks incomplete ($pages pages). Not publishing."
+            exit 1
+          fi
+          if grep -rqE '\{\{ *[A-Z0-9_]+ *\}\}' dist; then
+            echo "::error::Unfilled {{PLACEHOLDER}} found in the built site. Not publishing."
+            grep -rlE '\{\{ *[A-Z0-9_]+ *\}\}' dist | head
+            exit 1
+          fi
+      - name: Publish finished site to the deploy branch
+        run: |
+          cd dist
+          git init -q
+          git checkout -q -b deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Site build from ${GITHUB_SHA::7} ($(date -u +%Y-%m-%d))"
+          git push -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" deploy
+      - name: Save the weekly rate review report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rate-review
+          path: reports/
+          if-no-files-found: ignore

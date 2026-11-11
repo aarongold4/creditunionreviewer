@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Mortgage Payment Calculator</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Estimate your monthly principal-and-interest payment and total interest. Adjust the price, down payment, term, and rate — then see how a credit union's mortgage rate changes the picture.</p>
+  </header>
+
+  {% include "_mortgagecalc.html" %}
+
+  <h2>What this includes (and what it doesn't)</h2>
+  <p>The result is principal and interest only — the part of your payment that pays down the loan. Your real monthly housing cost also includes property taxes, homeowners insurance, private mortgage insurance (PMI) if your down payment is under 20%, and any HOA dues. Those can add hundreds of dollars a month, so treat this figure as the loan portion, not your full payment.</p>
+
+  <h2>Why the rate is worth shopping</h2>
+  <p>Over a 30-year loan, a small rate difference compounds into tens of thousands of dollars. Credit unions often carry lower fees and competitive rates, and because they're member-owned, the savings flow back to you. Pull a credit union's 30-year rate from our tables and compare it against at least one other lender's Loan Estimate before committing.</p>
+
+  <div class="alt-block">
+    <h2>Find a credit union mortgage rate</h2>
+    <p>See which credit unions are strongest for home loans, then drop their rate into the calculator above:</p>
+    <p><a class="btn btn-primary" href="../best-credit-unions-for-mortgages/index.html">Best credit unions for mortgages →</a></p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">Next: <a href="../best-credit-unions-for-mortgages/index.html">best mortgage credit unions</a> · <a href="../auto-loan-calculator/index.html">auto loan calculator</a> · <a href="../rates/index.html">all rate tables</a></p>
+</article>
+{% endblock %}

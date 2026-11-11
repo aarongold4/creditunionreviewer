@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Credit Union Glossary: Terms Explained</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Credit unions use their own vocabulary — "shares" instead of deposits, "dividends" instead of interest. Here's every term you'll run into, in plain English.</p>
+  </header>
+  <dl class="glossary">
+    {% for t in terms %}
+    <div id="{{ t.id }}"><dt>{{ t.term }}</dt><dd>{{ t.def }}</dd></div>
+    {% endfor %}
+  </dl>
+  <p class="next-links">Next: <a href="../how-to-join/index.html">how to join a credit union</a> · <a href="../ncua-insurance/index.html">NCUA insurance explained</a></p>
+</article>
+{% endblock %}

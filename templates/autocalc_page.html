@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Auto Loan Payment Calculator</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Estimate your monthly car payment and total interest. Adjust the amount, term, and APR — then see how a lower credit union rate changes the math.</p>
+  </header>
+
+  {% include "_autocalc.html" %}
+
+  <h2>How the calculation works</h2>
+  <p>The payment is a standard amortizing loan formula: your principal, the monthly interest rate (APR ÷ 12), and the number of months determine a fixed monthly payment. Early payments go mostly to interest; later ones mostly to principal. Total interest is what the loan costs you beyond the amount borrowed.</p>
+
+  <h2>Why the APR matters more than the term</h2>
+  <p>Stretching to a longer term lowers the monthly payment but raises total interest — sometimes dramatically. The bigger lever is the rate itself. Because credit unions often price auto loans well below banks (and federal credit unions cap most loan rates at 18%), shaving even a point or two off your APR can save more than adding two years to the term ever would, without the extra interest. Try it: drop the APR by 1.5% and watch total interest fall while the payment barely moves.</p>
+
+  <div class="alt-block">
+    <h2>Get a credit union auto rate to plug in</h2>
+    <p>See which credit unions price new-auto loans lowest, then drop their APR into the calculator above:</p>
+    <p><a class="btn btn-primary" href="../best-credit-union-auto-loans/index.html">Best credit union auto loans →</a></p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">Next: <a href="../best-credit-union-auto-loans/index.html">best auto loan credit unions</a> · <a href="../rates/index.html">all rate tables</a></p>
+</article>
+{% endblock %}

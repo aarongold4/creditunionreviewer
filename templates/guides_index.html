@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Credit Union Roundups & Guides</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">The best credit unions for a specific need — CDs, auto loans, checking, mortgages, and more — plus our core guides to joining and deposit insurance.</p>
+  </header>
+  <h2>Best credit unions for…</h2>
+  <div class="guide-grid">
+    {% for c in cats %}
+    <a class="guide-card" href="../{{ c.slug }}/index.html"><h3>{{ c.card_title }}</h3><p>{{ c.card_blurb }}</p></a>
+    {% endfor %}
+  </div>
+  <h2>Core guides</h2>
+  <div class="guide-grid">
+    <a class="guide-card" href="../anyone-can-join/index.html"><h3>Credit Unions Anyone Can Join</h3><p>The verified open-membership list.</p></a>
+    <a class="guide-card" href="../credit-union-vs-bank/index.html"><h3>Credit Union vs Bank</h3><p>An honest side-by-side comparison.</p></a>
+    <a class="guide-card" href="../how-to-join/index.html"><h3>How to Join a Credit Union</h3><p>Field of membership, explained.</p></a>
+    <a class="guide-card" href="../ncua-insurance/index.html"><h3>NCUA Insurance Explained</h3><p>Is your money as safe as in a bank?</p></a>
+    <a class="guide-card" href="../can-i-join/index.html"><h3>Can I Join? Finder</h3><p>Tell us your state and ties — see what you qualify for.</p></a>
+    <a class="guide-card" href="../rates/index.html"><h3>Rate Tables</h3><p>Sortable savings, CD, checking, and auto loan rates.</p></a>
+    <a class="guide-card" href="../compare/index.html"><h3>Head-to-Head Comparisons</h3><p>Navy Federal vs PenFed, PenFed vs Alliant, and more.</p></a>
+    <a class="guide-card" href="../credit-unions/index.html"><h3>Full Directory (A–Z)</h3><p>Search and filter all 100 credit unions.</p></a>
+    <a class="guide-card" href="../auto-loan-calculator/index.html"><h3>Auto Loan Calculator</h3><p>Estimate payments and total interest.</p></a>
+    <a class="guide-card" href="../mortgage-calculator/index.html"><h3>Mortgage Calculator</h3><p>Estimate monthly principal &amp; interest.</p></a>
+    <a class="guide-card" href="../glossary/index.html"><h3>Credit Union Glossary</h3><p>Shares, dividends, field of membership — explained.</p></a>
+    <a class="guide-card" href="../state/index.html"><h3>Best by State</h3><p>All 50 states.</p></a>
+  </div>
+</article>
+{% endblock %}

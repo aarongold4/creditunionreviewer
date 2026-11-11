@@ -1,0 +1,12 @@
+{
+  "verified_date": "2026-06-07",
+  "affiliate_mode": false,
+  "update_frequency": "Rates and membership details are reviewed monthly and after major rate-environment changes; the date above reflects the last full human verification.",
+  "ga4_id": "",
+  "gsc_token": "",
+  "bing_token": "",
+  "form_action": "",
+  "_comment": "verified_date drives the sitewide 'Last verified' stamp, schema dateModified, and sitemap lastmod. Bump it ONLY when the data in creditunions.json / rates.json / ratings.json has actually been re-checked against the credit unions' live disclosures. A code or design rebuild should NOT change this date. Format: YYYY-MM-DD.",
+  "_affiliate_mode": "false during seasoning: CTAs link to each credit union's real public site (url field) with rel=nofollow noopener (NOT sponsored). When affiliate applications are approved, put real links in affiliate_url fields of affiliates.json, set this to true, and rebuild.",
+  "_settings": "ga4_id (G-XXXXXXX), gsc_token (Search Console HTML-tag content value), bing_token, form_action (contact-form endpoint). Leave blank to omit entirely from the built site."
+}

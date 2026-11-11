@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>All Credit Unions We Review (A–Z Directory)</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Every one of the {{ all_cus|length }} credit unions we cover, in one place. Search by name or filter by state, membership, and review depth. Each links to its full review or profile.</p>
+  </header>
+
+  <div class="dir-controls">
+    <input type="search" id="dir-search" placeholder="Search by name…" aria-label="Search credit unions by name">
+    <select id="dir-state" aria-label="Filter by state"><option value="">All states</option></select>
+    <select id="dir-tier" aria-label="Filter by review depth">
+      <option value="">All</option>
+      <option value="full">Full reviews</option>
+      <option value="regional">Profiles</option>
+    </select>
+    <label class="dir-check"><input type="checkbox" id="dir-acj"> Anyone can join</label>
+  </div>
+  <p class="dir-count" id="dir-count"></p>
+
+  <div class="table-scroll">
+  <table class="data-table" id="dir-table">
+    <thead><tr>
+      <th data-sort="text">Credit Union</th>
+      <th data-sort="text">HQ</th>
+      <th data-sort="num">Members</th>
+      <th data-sort="num">Rating</th>
+      <th data-sort="text">Anyone can join?</th>
+    </tr></thead>
+    <tbody>
+      {% for cu in all_cus %}
+      <tr data-name="{{ cu.name|lower }}" data-state="{{ cu.hq_state }}" data-tier="{{ cu.tier }}" data-acj="{{ '1' if cu.fom.anyone_can_join else '0' }}">
+        <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
+        <td>{{ cu.hq_city }}, {{ cu.hq_state }}</td>
+        <td data-num="{{ cu.members_num }}">{{ cu.members_fmt }}</td>
+        <td class="cell-rating" data-num="{{ cu.rating.overall if cu.rating else 0 }}">{% if cu.rating %}{{ cu.rating.stars }} <span class="rating-num">{{ cu.rating.overall }}</span>{% else %}<span class="dir-profile">Profile</span>{% endif %}</td>
+        <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
+  <p class="dir-empty" id="dir-empty" hidden>No credit unions match those filters. <button type="button" class="link-btn" id="dir-reset">Clear filters</button></p>
+
+  <h2>About this directory</h2>
+  <p>"Full reviews" get our complete five-factor rating, rates, and editorial analysis; "profiles" are shorter overviews of strong regional credit unions. Not finding your credit union? We focus on the 100 most significant and most joinable of the country's 4,000+ credit unions. If you can't join a local one, the <a href="../anyone-can-join/index.html">anyone-can-join list</a> works from any state.</p>
+  <p class="next-links">Try also: <a href="../can-i-join/index.html">the "Can I Join?" finder</a> · <a href="../state/index.html">browse by state</a> · <a href="../best-credit-unions/index.html">the ranked best list</a></p>
+</article>
+
+<script>
+window.DIR_STATES = {{ state_names_json|safe }};
+</script>
+<script>
+(function () {
+  var states = window.DIR_STATES || {};
+  var sel = document.getElementById('dir-state');
+  Object.keys(states).sort(function (a, b) { return states[a].localeCompare(states[b]); })
+    .forEach(function (ab) {
+      var o = document.createElement('option'); o.value = ab; o.textContent = states[ab]; sel.appendChild(o);
+    });
+
+  var search = document.getElementById('dir-search');
+  var tier = document.getElementById('dir-tier');
+  var acj = document.getElementById('dir-acj');
+  var rows = Array.prototype.slice.call(document.querySelectorAll('#dir-table tbody tr'));
+  var count = document.getElementById('dir-count');
+  var empty = document.getElementById('dir-empty');
+
+  function apply() {
+    var q = search.value.trim().toLowerCase();
+    var st = sel.value, tr = tier.value, onlyAcj = acj.checked;
+    var shown = 0;
+    rows.forEach(function (r) {
+      var ok = (!q || r.dataset.name.indexOf(q) !== -1)
+        && (!st || r.dataset.state === st)
+        && (!tr || r.dataset.tier === tr)
+        && (!onlyAcj || r.dataset.acj === '1');
+      r.style.display = ok ? '' : 'none';
+      if (ok) shown++;
+    });
+    count.textContent = 'Showing ' + shown + ' of ' + rows.length + ' credit unions';
+    empty.hidden = shown !== 0;
+  }
+  [search, sel, tier].forEach(function (el) { el.addEventListener('input', apply); el.addEventListener('change', apply); });
+  acj.addEventListener('change', apply);
+  document.getElementById('dir-reset').addEventListener('click', function () {
+    search.value = ''; sel.value = ''; tier.value = ''; acj.checked = false; apply();
+  });
+  apply();
+})();
+</script>
+{% endblock %}

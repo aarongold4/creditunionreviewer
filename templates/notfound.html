@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="wrap section" style="text-align:center;padding:3.5rem 0;">
+  <p class="hero-kicker" style="color:var(--clay);">Error 404</p>
+  <h1>That page took an early withdrawal.</h1>
+  <p class="lede" style="margin:0 auto;">We couldn't find what you were looking for — but your deposits would've been NCUA insured. Try one of these:</p>
+  <div class="hero-ctas" style="justify-content:center;margin-top:1.6rem;">
+    <a class="btn btn-primary" href="{{ rel }}best-credit-unions/index.html">Best Credit Unions</a>
+    <a class="btn btn-secondary" href="{{ rel }}anyone-can-join/index.html">Anyone Can Join</a>
+    <a class="btn btn-secondary" href="{{ rel }}can-i-join/index.html">Can I Join? Finder</a>
+  </div>
+  <p style="margin-top:1.4rem;"><a class="text-link" href="{{ rel }}index.html">← Back to the homepage</a></p>
+</section>
+{% endblock %}

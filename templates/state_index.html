@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Best Credit Unions by State</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Pick your state for the strongest local credit unions plus the open-membership credit unions available to everyone there. Or <a href="../credit-unions/index.html">browse the full A–Z directory</a>.</p>
+  </header>
+  <div class="state-grid">
+    {% for s in states %}
+    <a class="state-card" href="{{ s.abbr|lower }}/index.html">{{ s.name }}<span class="state-count">{{ s.count }} reviewed</span></a>
+    {% endfor %}
+  </div>
+</article>
+{% endblock %}

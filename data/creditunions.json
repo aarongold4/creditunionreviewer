@@ -1,0 +1,3499 @@
+{
+ "meta": {
+  "last_verified": "2026-06-07",
+  "schema_version": "1.1",
+  "count": 100,
+  "sources": "Editorial research; membership and rate details checked against credit union websites. Extend with NCUA call-report data via the ncua_charter field.",
+  "author": "Nathan Blake"
+ },
+ "credit_unions": [
+  {
+   "slug": "navy-federal",
+   "name": "Navy Federal Credit Union",
+   "tier": "full",
+   "hq_city": "Vienna",
+   "hq_state": "VA",
+   "founded": 1933,
+   "members_approx": 14000000,
+   "assets_b_approx": 182,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Active duty, retired, and veteran members of all branches of the armed forces, Department of Defense civilian employees and contractors, and immediate family and household members of any of the above. Family eligibility extends broadly \u2014 parents, grandparents, siblings, children, and grandchildren of someone eligible can all join.",
+    "easy_path": "If anyone in your family ever served in the military, you almost certainly qualify through them \u2014 even if they never joined Navy Federal themselves.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit to a savings account"
+   },
+   "products": {
+    "checking": "Free Active Duty and Free EveryDay checking with no monthly fees; early direct deposit for military pay",
+    "savings": "Basic savings plus money market accounts; certificate specials are the standout",
+    "cds": "Certificates from 3 months to 7 years, including frequent limited-time special rates and a low-minimum EasyStart certificate",
+    "loans": "Consistently low auto loan rates, VA home loans with no PMI, and credit cards with below-average APR ranges"
+   },
+   "rates_note": "Certificate specials and auto loan rates regularly beat national bank averages; verify current APYs on navyfederal.org before deciding.",
+   "pros": [
+    "Largest credit union in the country with 350+ branches, many on or near bases worldwide",
+    "Certificate specials and auto rates regularly among the best available anywhere",
+    "Very generous family eligibility \u2014 one veteran in the family tree can unlock membership for many relatives",
+    "24/7 phone support staffed for military time zones"
+   ],
+   "cons": [
+    "No path to membership without a military or DoD connection",
+    "Savings account base rate is unremarkable \u2014 the good yields are in certificates",
+    "So large that service can feel like a big bank at times"
+   ],
+   "editorial": [
+    "Navy Federal is the credit union most Americans have actually heard of, and for good reason: it is roughly three times the size of its nearest competitor and behaves like a full-service national bank that happens to return its profits to members. For military families it is close to a default choice \u2014 early pay deposit, base-adjacent branches, and lending products built around deployment realities like the Servicemembers Civil Relief Act.",
+    "The catch is the front door. Navy Federal has no donation workaround, no association membership trick, and no open charter. You either have a military or DoD connection \u2014 including through immediate family \u2014 or you don't get in. Before assuming you're excluded, though, walk your family tree: a parent or grandparent who served is enough, and household members of eligible people also qualify.",
+    "Where Navy Federal earns its reputation is pricing on the products that matter. Its certificate specials routinely top national leaderboards, its auto loans undercut most banks, and its credit cards carry APR ranges capped below the industry norm of 29%-plus. If you qualify, it belongs on your shortlist even if you keep another credit union for daily banking."
+   ],
+   "website": "https://www.navyfederal.org",
+   "best_for": "Military members, veterans, and their extended families",
+   "categories": [
+    "cd-rates",
+    "auto-loans",
+    "mortgages",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "secu-north-carolina",
+   "name": "State Employees' Credit Union (SECU)",
+   "tier": "full",
+   "hq_city": "Raleigh",
+   "hq_state": "NC",
+   "founded": 1937,
+   "members_approx": 2800000,
+   "assets_b_approx": 56,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of the state of North Carolina and public school systems, federal employees working in NC state agencies, NC National Guard, county employees in certain roles, and immediate family of current members.",
+    "easy_path": null,
+    "anyone_can_join": false,
+    "join_cost": "$25 minimum deposit to a share account"
+   },
+   "products": {
+    "checking": "Single no-frills checking account with a flat $1 monthly fee and unusually low overdraft costs",
+    "savings": "Share and money market accounts with consistently fair, if not chart-topping, yields",
+    "cds": "Share term certificates with straightforward terms and no gimmick tiers",
+    "loans": "Low-cost mortgages serviced in-house, auto loans, and a salary advance loan designed to replace payday lending"
+   },
+   "rates_note": "SECU competes on low fees and honest loan pricing more than on headline APYs; verify current rates at ncsecu.org.",
+   "pros": [
+    "Second-largest credit union in the US with a branch in every North Carolina county",
+    "A salary advance loan that is a genuine payday-loan alternative, not a fee trap",
+    "In-house mortgage servicing \u2014 your loan is never sold",
+    "Famously low and simple fee schedule"
+   ],
+   "cons": [
+    "Membership is strictly tied to NC public employment and family \u2014 no workaround",
+    "Technology and app experience lag the big national players",
+    "Deposit rates are fair rather than market-leading"
+   ],
+   "editorial": [
+    "SECU is what people imagine when they picture a credit union doing right by its members: a branch in all 100 North Carolina counties, a $1 checking account, and a salary advance product that exists specifically to keep state employees away from payday lenders. It is a deeply mission-driven institution that has resisted the temptation to chase growth outside its charter.",
+    "That discipline cuts both ways. There is no donation trick or association membership that gets an outsider in \u2014 if you are not connected to North Carolina public employment or to a current member's family, SECU is simply not available to you. And members occasionally grumble that the technology feels a generation behind Navy Federal or Alliant.",
+    "For those who do qualify, the value is in the totality: low fees, fair loan pricing, mortgages that are never sold to a servicer you didn't choose, and physical access everywhere in the state. It is less a rate-shopper's credit union than a keep-everything-here credit union."
+   ],
+   "website": "https://www.ncsecu.org",
+   "best_for": "North Carolina public employees and their families",
+   "categories": [
+    "checking",
+    "mortgages",
+    "beginners"
+   ]
+  },
+  {
+   "slug": "penfed",
+   "name": "PenFed Credit Union",
+   "tier": "full",
+   "hq_city": "McLean",
+   "hq_state": "VA",
+   "founded": 1935,
+   "members_approx": 2900000,
+   "assets_b_approx": 33,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Open to everyone. PenFed dropped its military-affiliation requirement in 2019 \u2014 any US citizen or permanent resident can join by opening a savings account with $5.",
+    "easy_path": "Just open a $5 savings account during the application. No donation, no association fee, no military connection needed.",
+    "anyone_can_join": true,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking plus an interest-bearing Access America checking tier",
+    "savings": "Premium Online Savings with rates competitive with online banks",
+    "cds": "Money market certificates from 6 months to 7 years, frequently near the top of national rate tables",
+    "loans": "Strong auto loan pricing, mortgages including VA loans, personal loans, and well-regarded rewards credit cards"
+   },
+   "rates_note": "PenFed's online savings and certificates are priced to compete with online banks, not local branches; verify current APYs at penfed.org.",
+   "pros": [
+    "Anyone in the US can join \u2014 one of the largest truly open credit unions",
+    "Certificate and online savings rates that compete with internet banks",
+    "Full product shelf: mortgages, autos, cards, personal loans",
+    "Heritage of serving military members without requiring military ties"
+   ],
+   "cons": [
+    "Branch network is thin outside the DC area and a few markets",
+    "Customer service reviews are mixed, especially for lending",
+    "Checking rates require direct deposit to hit the advertised tier"
+   ],
+   "editorial": [
+    "PenFed is the easiest answer to the most common credit union question: 'can I even join one?' Since 2019 the answer here is yes, full stop \u2014 a $5 savings deposit makes anyone a member. That open door, combined with online-bank-grade deposit rates, makes PenFed the default national pick for people who don't have a local credit union connection.",
+    "Functionally, PenFed behaves like a hybrid of an online bank and a traditional credit union. Its money market certificates and Premium Online Savings are priced against Marcus and Ally rather than against the bank branch on the corner, and its credit cards \u2014 particularly the Pathfinder and Power Cash Rewards lines \u2014 are competitive with major issuers.",
+    "The trade-off is service depth. Branches are sparse unless you live near Washington, DC, and member reviews of loan servicing are noticeably more mixed than at smaller credit unions. Treat PenFed as a rate-driven national institution rather than a relationship-driven local one and you'll calibrate your expectations correctly."
+   ],
+   "website": "https://www.penfed.org",
+   "best_for": "Anyone, anywhere in the US, who wants top-tier rates",
+   "categories": [
+    "cd-rates",
+    "savings",
+    "beginners",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "schoolsfirst",
+   "name": "SchoolsFirst Federal Credit Union",
+   "tier": "full",
+   "hq_city": "Santa Ana",
+   "hq_state": "CA",
+   "founded": 1934,
+   "members_approx": 1500000,
+   "assets_b_approx": 31,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Current and retired employees of California public and private schools, colleges, and education-related organizations, plus immediate family members of existing members.",
+    "easy_path": null,
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with no monthly fee and no minimum balance",
+    "savings": "Share savings, summer saver accounts built around school-year pay schedules, and money markets",
+    "cds": "Share certificates with low $500 minimums and ladder-friendly terms",
+    "loans": "Auto loans, mortgages, and a paycheck-planning suite designed for 10-month educator pay cycles"
+   },
+   "rates_note": "Rates are solid for California but the real value is fee avoidance and educator-specific products; verify at schoolsfirstfcu.org.",
+   "pros": [
+    "Largest education-focused credit union in the country",
+    "Products genuinely built around educator pay cycles (summer saver, paycheck planning)",
+    "Very low fee schedule and free checking",
+    "Consistently strong member-service ratings"
+   ],
+   "cons": [
+    "Limited to the California education community and their families",
+    "Branches concentrated in Southern California",
+    "Deposit rates are good, not national-leaderboard material"
+   ],
+   "editorial": [
+    "SchoolsFirst is the country's largest education-sector credit union and one of the clearest examples of a niche charter done well. Its product design assumes you get paid ten months a year: summer saver accounts smooth income across the gap, and its planning tools are built for school-district pay calendars rather than retrofitted from generic bank products.",
+    "Membership is genuinely restricted \u2014 you need a connection to California education, either directly or through family. There is no donation path. But the definition is broader than 'teacher': classified staff, college employees, school vendors' staff in some cases, and retirees all count, and one family member unlocks eligibility for the rest.",
+    "Member satisfaction surveys routinely place SchoolsFirst near the top of all US financial institutions, which matters more here than headline APY. If you're a California educator choosing between this and a megabank, the fee schedule alone usually settles the argument."
+   ],
+   "website": "https://www.schoolsfirstfcu.org",
+   "best_for": "California school employees and their families",
+   "categories": [
+    "mortgages"
+   ]
+  },
+  {
+   "slug": "becu",
+   "name": "BECU (Boeing Employees' Credit Union)",
+   "tier": "full",
+   "hq_city": "Tukwila",
+   "hq_state": "WA",
+   "founded": 1935,
+   "members_approx": 1500000,
+   "assets_b_approx": 30,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Washington state or select Idaho and Oregon counties; Boeing employees anywhere; and members of partner associations.",
+    "easy_path": "Washington residency is the wide-open door \u2014 no employer connection needed despite the name.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with no monthly fees and a first-year rate boost on initial balances",
+    "savings": "Member Advantage accounts pay an elevated rate on the first $500 \u2014 a clever incentive for small savers",
+    "cds": "Standard and bump-rate certificates",
+    "loans": "Competitive auto and mortgage rates, plus one of the lower credit card APR ranges among large issuers"
+   },
+   "rates_note": "The boosted rate on the first $500 of savings is unusually generous for small balances; verify current tiers at becu.org.",
+   "pros": [
+    "Open to all Washington residents, not just Boeing employees",
+    "Boosted first-dollar savings rate is great for people starting to save",
+    "Low, transparent fee schedule",
+    "Largest credit union in the Pacific Northwest"
+   ],
+   "cons": [
+    "Name still confuses people into thinking it's Boeing-only",
+    "Limited physical branches relative to its size \u2014 built around a self-service model",
+    "Best rates cap out at low balance tiers"
+   ],
+   "editorial": [
+    "BECU's name is its biggest marketing problem: most Washingtonians don't realize that 'Boeing Employees' Credit Union' has been open to every resident of the state for years. It is now the largest credit union in the Northwest and one of the largest in the country, with a charter that requires nothing more than living, working, or studying in Washington.",
+    "Its signature move is paying a meaningfully elevated APY on the first $500 in savings and checking through Member Advantage. Rate chasers with six figures will find better homes for bulk cash, but for someone building a first emergency fund, earning a top-tier rate on early dollars is a genuinely member-first design choice.",
+    "BECU runs lean on branches and pushes members toward shared branching, ATMs, and digital channels \u2014 closer to an online bank with local roots than a branch-on-every-corner institution. Pair that with consistently low loan pricing and it's the obvious first stop for anyone banking in Washington."
+   ],
+   "website": "https://www.becu.org",
+   "best_for": "Washington residents and Pacific Northwest savers",
+   "categories": [
+    "checking",
+    "savings",
+    "mortgages",
+    "beginners",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "golden-1",
+   "name": "Golden 1 Credit Union",
+   "tier": "full",
+   "hq_city": "Sacramento",
+   "hq_state": "CA",
+   "founded": 1933,
+   "members_approx": 1100000,
+   "assets_b_approx": 20,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "All Californians \u2014 anyone who lives or works in California can join, plus family members of existing members regardless of location.",
+    "easy_path": "California residency alone qualifies you; one of the simplest large-CU charters in the country.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with early direct deposit",
+    "savings": "Standard share savings plus a high-yield online savings tier",
+    "cds": "Term certificates with occasional promotional specials",
+    "loans": "Auto loans are the franchise product, with first-time buyer programs; also mortgages and HELOCs"
+   },
+   "rates_note": "Auto loan pricing is the standout; deposit rates are mid-pack for California; verify at golden1.com.",
+   "pros": [
+    "Open to every California resident with 70+ branches statewide",
+    "Strong auto lending program including first-time buyer options",
+    "Free checking with early payday deposit",
+    "Naming-rights visibility (Golden 1 Center) reflects a stable, large institution"
+   ],
+   "cons": [
+    "Deposit APYs trail online-first competitors",
+    "Digital experience is functional but not class-leading",
+    "Branch coverage thins outside major metro areas"
+   ],
+   "editorial": [
+    "Golden 1 is California's everyman credit union: no employer requirement, no association dues, just proof you live or work in the state. With more than a million members and branches from Redding to San Diego, it functions as a statewide community bank that happens to be member-owned.",
+    "Its center of gravity is auto lending. Golden 1 consistently prices new and used auto loans below California bank averages and runs first-time buyer programs that are friendlier than dealer financing for thin-credit borrowers. If you walk into a California dealership, the rate you bring from Golden 1 is a strong negotiating baseline.",
+    "On the deposit side it is solid rather than spectacular \u2014 the online savings tier helps, but rate maximizers will pair Golden 1 with an internet bank. Think of it as the relationship hub for Californians: checking, auto loan, branch access, with overflow savings parked wherever yields are highest."
+   ],
+   "website": "https://www.golden1.com",
+   "best_for": "California residents, especially auto loan shoppers",
+   "categories": [
+    "auto-loans",
+    "beginners"
+   ]
+  },
+  {
+   "slug": "america-first",
+   "name": "America First Credit Union",
+   "tier": "full",
+   "hq_city": "Riverdale",
+   "hq_state": "UT",
+   "founded": 1939,
+   "members_approx": 1400000,
+   "assets_b_approx": 21,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, attends school, or volunteers in qualifying areas of Utah, Nevada, Arizona, Idaho, Oregon, and New Mexico, plus relatives of current members.",
+    "easy_path": "The geographic footprint is huge across the Mountain West \u2014 most residents of Utah and Nevada qualify outright.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit \u2014 one of the cheapest joins anywhere"
+   },
+   "products": {
+    "checking": "Multiple free checking options with no monthly fees",
+    "savings": "Share savings, money markets, and dedicated savings certificates",
+    "cds": "Flexible certificates including bump-rate and add-on 'ladder' options",
+    "loans": "Aggressive auto loan pricing, low-fee credit cards, mortgages, and small-business lending"
+   },
+   "rates_note": "Certificate flexibility (bump and add-on options) is a differentiator; verify current APYs at americafirst.com.",
+   "pros": [
+    "$1 membership deposit and broad six-state eligibility",
+    "Add-on and bump-rate certificates are unusually flexible",
+    "Strong auto loan rates across the Mountain West",
+    "Large branch and ATM network in Utah and Nevada"
+   ],
+   "cons": [
+    "No path to join from outside the six-state footprint",
+    "Base savings rate is low \u2014 yields live in certificates",
+    "Branch density drops quickly outside Utah/Nevada"
+   ],
+   "editorial": [
+    "America First is the Mountain West's dominant credit union, with a footprint spanning six states and a $1 membership share that makes it one of the cheapest financial institutions in America to join. In Utah it is functionally a default banking choice, with branch density rivaling any bank.",
+    "Its most underrated products are its flexible certificates. Add-on certificates let you keep contributing after opening \u2014 rare in the industry and ideal for savers building toward a goal at a locked rate \u2014 while bump options hedge against rising rates. For disciplined savers this flexibility can beat a slightly higher headline APY elsewhere.",
+    "Auto lending is the other pillar, with pricing that consistently undercuts regional banks. The main limitation is simply geography: live outside the six-state zone with no qualifying family member, and America First is off the table."
+   ],
+   "website": "https://www.americafirst.com",
+   "best_for": "Mountain West residents and certificate ladder builders",
+   "categories": [
+    "cd-rates"
+   ]
+  },
+  {
+   "slug": "alliant",
+   "name": "Alliant Credit Union",
+   "tier": "full",
+   "hq_city": "Chicago",
+   "hq_state": "IL",
+   "founded": 1935,
+   "members_approx": 900000,
+   "assets_b_approx": 20,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of partner organizations, residents near Chicago's O'Hare area \u2014 or, for everyone else in the US, free membership in Foster Care to Success, with Alliant paying the membership cost on your behalf.",
+    "easy_path": "Anyone can join: select 'Foster Care to Success' during the online application and Alliant covers the fee. It takes about five minutes.",
+    "anyone_can_join": true,
+    "join_cost": "$5 minimum deposit (association fee paid by Alliant)"
+   },
+   "products": {
+    "checking": "High-rate checking with no monthly fees, no overdraft fees, and $20/month in ATM rebates",
+    "savings": "High-yield savings consistently within striking distance of the best online banks",
+    "cds": "Certificates from 3 months to 5 years with low $1,000 minimums",
+    "loans": "Auto loans, personal loans, and a flat-rate cash-back credit card"
+   },
+   "rates_note": "Alliant prices deposits against online banks, not branch banks; verify current APYs at alliantcreditunion.org.",
+   "pros": [
+    "Effectively open to anyone in the US \u2014 Alliant even pays the qualifying association fee",
+    "High-yield savings and checking rates that compete with the best online banks",
+    "No overdraft fees and generous ATM rebates",
+    "Polished, genuinely good mobile app"
+   ],
+   "cons": [
+    "Fully digital \u2014 no branch network at all",
+    "Deposit-focused; lending menu is thinner than full-service rivals",
+    "Phone support hours, while decent, aren't 24/7 for everything"
+   ],
+   "editorial": [
+    "Alliant is the credit union for people who would otherwise pick an online bank. It has no branches, a first-rate app, savings yields that track the national online-bank leaders, and a checking account that rebates ATM fees and refuses to charge overdrafts. The cooperative structure is almost invisible in daily use \u2014 in the best way.",
+    "Joining is deliberately frictionless: if you lack a geographic or employer connection, you check a box for Foster Care to Success during signup and Alliant pays the membership contribution itself. That makes it, alongside PenFed and Connexus, one of the truly national 'anyone can join' credit unions \u2014 and the most digitally polished of the group.",
+    "What Alliant is not is a lending powerhouse. Mortgages were discontinued, and the product shelf is intentionally narrow. The play here is simple: use Alliant as your high-yield hub for savings and fee-free checking, and shop loans wherever pricing is best."
+   ],
+   "website": "https://www.alliantcreditunion.org",
+   "best_for": "Digital-first savers anywhere in the US",
+   "categories": [
+    "cd-rates",
+    "savings",
+    "beginners",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "mountain-america",
+   "name": "Mountain America Credit Union",
+   "tier": "full",
+   "hq_city": "Sandy",
+   "hq_state": "UT",
+   "founded": 1934,
+   "members_approx": 1300000,
+   "assets_b_approx": 19,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "People who live, work, worship, or attend school in qualifying areas of Utah, Idaho, Montana, Arizona, Nevada, and New Mexico; employees of select groups; and family of members. Membership in a partner association can also qualify residents of its footprint states.",
+    "easy_path": "Within its six-state footprint, association membership (small one-time fee) covers nearly everyone who doesn't otherwise qualify.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit; small association fee if joining that way"
+   },
+   "products": {
+    "checking": "Free and rewards checking tiers",
+    "savings": "Share savings, money markets, and frequent certificate specials",
+    "cds": "Term deposits with regular promotional rates",
+    "loans": "Full-spectrum lender: autos, RVs, mortgages, business loans, and credit cards"
+   },
+   "rates_note": "Certificate specials are frequently competitive regionally; verify current offers at macu.com.",
+   "pros": [
+    "Fast-growing, full-service lender with strong business banking for a credit union",
+    "Frequent certificate specials worth watching",
+    "Broad Mountain West eligibility with an association fallback",
+    "Well-rated mobile app"
+   ],
+   "cons": [
+    "Aggressive growth means a more sales-forward culture than typical credit unions",
+    "Outside the Mountain West there's no way in",
+    "Fee schedule is longer than minimalist rivals like Alliant"
+   ],
+   "editorial": [
+    "Mountain America is the fastest-growing of the big Mountain West credit unions and the most commercially ambitious \u2014 it advertises heavily, opens branches aggressively, and runs a business-banking operation that rivals community banks. Members get a full-service institution that doesn't make you go elsewhere for any major product.",
+    "That ambition shows up in the member experience both ways. The technology and branch coverage are excellent, and its certificate specials are genuinely worth tracking. But the culture is more sales-oriented than the sleepy local CU stereotype \u2014 expect to be offered products. Eligibility is broad within Utah, Idaho, Montana, Arizona, Nevada, and New Mexico, including an association route, but it remains a regional institution by design."
+   ],
+   "website": "https://www.macu.com",
+   "best_for": "Mountain West households wanting one full-service institution",
+   "categories": [
+    "auto-loans",
+    "mortgages",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "rbfcu",
+   "name": "Randolph-Brooks Federal Credit Union (RBFCU)",
+   "tier": "full",
+   "hq_city": "Live Oak",
+   "hq_state": "TX",
+   "founded": 1952,
+   "members_approx": 1200000,
+   "assets_b_approx": 18,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "People who live, work, worship, attend school, or volunteer in qualifying Texas counties (covering San Antonio, Austin, Dallas-Fort Worth and beyond), employees of select groups, military connections, and family of members.",
+    "easy_path": "The county list covers most of urban Texas \u2014 check the map before assuming you're out.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking that actually pays interest on every dollar",
+    "savings": "Share savings and money markets",
+    "cds": "Standard certificate menu with member-friendly minimums",
+    "loans": "Texas-leading auto rates, mortgages, and a 2%-cash-back credit card with no annual fee"
+   },
+   "rates_note": "Interest-on-checking and the flat 2% cash-back card are the headline products; verify rates at rbfcu.org.",
+   "pros": [
+    "Free checking pays interest with no minimum balance games",
+    "CashBack Rewards card pays a flat 2% with no annual fee \u2014 rare at any institution",
+    "Consistently low Texas auto loan pricing",
+    "$1 membership share"
+   ],
+   "cons": [
+    "Eligibility is Texas-centric; no national path",
+    "Branch network concentrated along the I-35 corridor",
+    "Savings base rates are middling"
+   ],
+   "editorial": [
+    "RBFCU is the strongest argument in Texas for ditching a megabank. Its free checking pays interest from the first dollar with no hoops, and its no-annual-fee credit card pays a flat 2% back \u2014 a combination that simply doesn't exist at Chase or Bank of America. Add auto loan pricing that consistently leads the Texas market and the everyday-banking case writes itself.",
+    "Eligibility looks restrictive on paper but covers most of urban Texas in practice \u2014 the qualifying county list spans San Antonio, Austin, and the DFW metroplex. Outside Texas, though, there's no association workaround, which keeps RBFCU a regional story. For Texans, it's arguably the best all-around value in the state."
+   ],
+   "website": "https://www.rbfcu.org",
+   "best_for": "Texans who want interest-paying checking and a 2% card",
+   "categories": [
+    "checking"
+   ]
+  },
+  {
+   "slug": "suncoast",
+   "name": "Suncoast Credit Union",
+   "tier": "full",
+   "hq_city": "Tampa",
+   "hq_state": "FL",
+   "founded": 1934,
+   "members_approx": 1200000,
+   "assets_b_approx": 19,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, attends school, or worships in most of the Florida peninsula's counties (40+ counties on the Gulf side and central Florida), plus family of members and alumni of Florida College campuses in the area.",
+    "easy_path": "County-based eligibility covers a huge share of peninsular Florida.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with early payday and no monthly fees",
+    "savings": "Share savings plus money markets; rates are fair",
+    "cds": "Certificates with seasonal specials",
+    "loans": "Low auto rates, mortgages, and notably cheap credit card APRs"
+   },
+   "rates_note": "Suncoast's credit card APR range starts unusually low; verify at suncoastcreditunion.com.",
+   "pros": [
+    "Largest credit union in Florida with broad county-based eligibility",
+    "Donates a slice of debit card activity to local education foundations",
+    "Credit cards with genuinely low APR floors",
+    "Big branch network across the Florida peninsula"
+   ],
+   "cons": [
+    "No membership path outside its Florida counties",
+    "Deposit yields trail national online players",
+    "Service volume strains during Florida hurricane events"
+   ],
+   "editorial": [
+    "Suncoast is Florida's hometown giant \u2014 the state's largest credit union, grown out of Tampa's teacher community into a 40-plus-county institution covering most of the peninsula. Its community identity is unusually concrete: every debit card swipe sends money to local education foundations, a program that has funneled tens of millions of dollars to Florida schools.",
+    "For members, the standout economics are on the borrowing side. Suncoast's credit cards carry APR floors several points below the national norm, and its auto pricing is consistently sharp. Deposit rates are unremarkable, so the optimal play for Floridians is Suncoast for checking, cards, and loans, with bulk savings wherever yields lead."
+   ],
+   "website": "https://www.suncoastcreditunion.com",
+   "best_for": "Florida peninsula residents, especially borrowers",
+   "categories": [
+    "auto-loans"
+   ]
+  },
+  {
+   "slug": "first-tech",
+   "name": "First Tech Federal Credit Union",
+   "tier": "full",
+   "hq_city": "Hillsboro",
+   "hq_state": "OR",
+   "founded": 1952,
+   "members_approx": 600000,
+   "assets_b_approx": 16,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees and family of hundreds of technology companies (Microsoft, Amazon, HP, Intel and many more), residents of Lane County, Oregon \u2014 or anyone in the US via membership in the Computer History Museum or the Financial Fitness Association.",
+    "easy_path": "Anyone can join: add Computer History Museum membership (about $15, one-time, handled in the application) if you lack a tech-employer connection.",
+    "anyone_can_join": true,
+    "join_cost": "$5 association/museum route makes it effectively open (small one-time fee)"
+   },
+   "products": {
+    "checking": "Free Dividend Rewards checking paying a high rate on the first $1,000",
+    "savings": "Standard and promotional savings tiers",
+    "cds": "Certificates including bump options",
+    "loans": "Tech-worker-aware lending: RSU-friendly mortgages, relocation loans, and competitive autos"
+   },
+   "rates_note": "Underwriting that understands equity compensation is the quiet differentiator; verify rates at firsttechfed.com.",
+   "pros": [
+    "Open to anyone via a small one-time museum/association membership",
+    "Mortgage underwriting that actually understands RSUs and tech compensation",
+    "High-rate rewards checking on the first $1,000",
+    "Branches inside major tech campuses in the Northwest"
+   ],
+   "cons": [
+    "Best checking rate caps at a low balance",
+    "Branch network is thin outside the Pacific Northwest tech corridor",
+    "Some products push you toward e-statements and direct deposit to avoid fees"
+   ],
+   "editorial": [
+    "First Tech built its franchise inside the badge gates of Microsoft, Intel, and HP, and it remains the credit union that best understands technology compensation. If your income arrives as salary plus RSUs, First Tech's mortgage and personal-loan underwriting will read your pay stub correctly \u2014 something megabanks still fumble.",
+    "What most people miss is that you don't need a tech employer to join: a one-time Computer History Museum or Financial Fitness Association membership, handled during the application, opens the door to anyone in the country. That puts First Tech on the short national list of effectively open credit unions, alongside PenFed, Alliant, and Connexus.",
+    "Day to day it behaves like a competent digital-first institution with a Northwest branch spine. The Dividend Rewards checking pays a strong rate on the first $1,000, a nice perk rather than a wealth strategy. The reason to choose First Tech is lending sophistication, not deposit yield."
+   ],
+   "website": "https://www.firsttechfed.com",
+   "best_for": "Tech workers and anyone wanting an open-membership lender",
+   "categories": [
+    "savings",
+    "beginners",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "vystar",
+   "name": "VyStar Credit Union",
+   "tier": "full",
+   "hq_city": "Jacksonville",
+   "hq_state": "FL",
+   "founded": 1952,
+   "members_approx": 1000000,
+   "assets_b_approx": 14,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in 49 Florida counties or 27 Georgia counties, plus family and household members of current members; past or present military served as its original base.",
+    "easy_path": "Broad two-state county coverage across north/central Florida and south Georgia.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "No monthly-fee checking with early direct deposit",
+    "savings": "Share savings and money markets",
+    "cds": "Certificates with promotional specials",
+    "loans": "Mortgages, autos, and one of the larger CU business-lending operations in the Southeast"
+   },
+   "rates_note": "Watch certificate specials; everyday deposit rates are mid-pack; verify at vystarcu.org.",
+   "pros": [
+    "Covers a huge swath of north Florida and south Georgia",
+    "Free checking with no minimums",
+    "Significant business and commercial lending capability",
+    "Military-rooted culture with veteran-friendly service"
+   ],
+   "cons": [
+    "A 2022 online-banking conversion outage damaged trust and is worth knowing about",
+    "No eligibility path outside its FL/GA counties",
+    "Rates are fair rather than market-leading"
+   ],
+   "editorial": [
+    "VyStar grew from Jacksonville's military base credit union into a million-member institution spanning 76 counties across two states. It pairs free everyday banking with one of the more serious business-lending operations among US credit unions \u2014 a genuine option for Southeast small businesses that feel unloved by regional banks.",
+    "Honesty requires mentioning the 2022 digital banking conversion, which locked members out of online access for days and drew regulatory attention. The systems have long since stabilized, but it remains a cautionary data point about fast-growing credit unions outrunning their infrastructure. Members today get a solid, fair-priced regional institution with deep community roots in north Florida."
+   ],
+   "website": "https://www.vystarcu.org",
+   "best_for": "North Florida and south Georgia households and small businesses",
+   "categories": [
+    "mortgages",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "security-service",
+   "name": "Security Service Federal Credit Union",
+   "tier": "full",
+   "hq_city": "San Antonio",
+   "hq_state": "TX",
+   "founded": 1956,
+   "members_approx": 800000,
+   "assets_b_approx": 13,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "People who live, work, worship, attend school, or volunteer in qualifying areas of Texas, Colorado, and Utah; military connections; and family/household members of current members.",
+    "easy_path": "Footprint covers San Antonio, El Paso, Denver, Colorado Springs, and Salt Lake metro areas.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free and rewards checking options",
+    "savings": "Share savings and money markets",
+    "cds": "Certificates with jumbo tiers and decent specials",
+    "loans": "Auto lending is the franchise \u2014 SSFCU is one of the largest CU auto lenders in the country"
+   },
+   "rates_note": "Auto pricing, especially through dealer partnerships, is the standout; verify at ssfcu.org.",
+   "pros": [
+    "One of the biggest credit union auto lenders in America",
+    "Three-state footprint across growing metros",
+    "Power Protected Checking includes ID-theft tools",
+    "Military-friendly heritage from its Air Force roots"
+   ],
+   "cons": [
+    "Heavily auto-centric; deposit products are ordinary",
+    "Eligibility limited to TX/CO/UT areas",
+    "Branch experience varies across its wide footprint"
+   ],
+   "editorial": [
+    "Security Service is, above all, an auto lender wearing a credit union charter. Born at Kelly Air Force Base, it now finances cars at scale across Texas, Colorado, and Utah, often directly through dealerships \u2014 there's a fair chance a Texan reading this has been offered SSFCU financing at a dealer without realizing it. Its dealer-channel pricing is consistently among the region's sharpest.",
+    "As a primary banking relationship it's competent but unspectacular: free checking, ordinary savings rates, decent certificates. The smart use case is targeted \u2014 join for the auto loan when you're in one of its metros, keep it if the everyday banking suits you."
+   ],
+   "website": "https://www.ssfcu.org",
+   "best_for": "Auto buyers in Texas, Colorado, and Utah",
+   "categories": [
+    "auto-loans"
+   ]
+  },
+  {
+   "slug": "dcu",
+   "name": "Digital Federal Credit Union (DCU)",
+   "tier": "full",
+   "hq_city": "Marlborough",
+   "hq_state": "MA",
+   "founded": 1979,
+   "members_approx": 1000000,
+   "assets_b_approx": 12,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees and family of hundreds of partner companies, residents of select Massachusetts/New Hampshire communities \u2014 or anyone in the US via a one-time donation (around $10) to a partner nonprofit like Reach Out for Schools.",
+    "easy_path": "Anyone can join: a ~$10 one-time donation to a participating nonprofit during the application qualifies you for life.",
+    "anyone_can_join": true,
+    "join_cost": "$5 deposit + ~$10 one-time nonprofit donation if joining that way"
+   },
+   "products": {
+    "checking": "Free checking with early payday",
+    "savings": "Primary Savings pays a very high APY on the first $1,000 \u2014 a famous perk",
+    "cds": "Regular and jumbo certificates with fair rates",
+    "loans": "Low auto rates nationwide, plus mortgages and personal loans"
+   },
+   "rates_note": "The elevated rate on the first $1,000 of Primary Savings is the signature deal; verify current APY at dcu.org.",
+   "pros": [
+    "Open to anyone in the US via a small one-time donation",
+    "Pays a standout rate on the first $1,000 of savings",
+    "Auto loans available nationwide at sharp rates",
+    "Long track record as a digital-first institution"
+   ],
+   "cons": [
+    "The famous high APY applies only to the first $1,000",
+    "Branches exist only in Massachusetts and New Hampshire",
+    "App and web experience is dated compared with Alliant"
+   ],
+   "editorial": [
+    "DCU was 'digital-first' before the term existed \u2014 chartered in 1979 to serve Digital Equipment Corporation and now a nationwide, million-member institution that anyone can join with a small one-time charity donation. Its calling card is the Primary Savings rate: an APY on the first $1,000 that typically multiples the national average, making it a favorite first account for kids, students, and emergency-fund starters.",
+    "Beyond the headline perk, DCU is a workmanlike national lender \u2014 auto loans priced aggressively in all 50 states, fair mortgages, free checking. The technology is reliable but visibly older than Alliant's. The honest positioning: join for the first-$1,000 rate and the auto pricing, and judge the rest on your own needs."
+   ],
+   "website": "https://www.dcu.org",
+   "best_for": "Anyone in the US starting a savings habit or financing a car",
+   "categories": [
+    "auto-loans",
+    "savings",
+    "beginners",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "sdccu",
+   "name": "San Diego County Credit Union (SDCCU)",
+   "tier": "full",
+   "hq_city": "San Diego",
+   "hq_state": "CA",
+   "founded": 1938,
+   "members_approx": 430000,
+   "assets_b_approx": 12,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in San Diego, Riverside, or Orange County, California, plus family of members.",
+    "easy_path": "Three-county Southern California coverage; no employer requirement.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with no minimums and no direct-deposit requirement \u2014 a genuinely free account",
+    "savings": "Share savings and money markets",
+    "cds": "Standard certificate menu",
+    "loans": "Autos, mortgages including jumbo options for SoCal prices, and HELOCs"
+   },
+   "rates_note": "The unconditionally free checking is the hallmark; verify rates at sdccu.com.",
+   "pros": [
+    "Free checking with truly no strings \u2014 no direct deposit or balance requirements",
+    "30,000 fee-free ATMs through co-op networks",
+    "Jumbo-friendly mortgage menu suited to Southern California prices",
+    "$1 membership share"
+   ],
+   "cons": [
+    "Only three counties of eligibility",
+    "Deposit yields are below national online leaders",
+    "Rewards programs are thin"
+   ],
+   "editorial": [
+    "SDCCU's pitch is refreshingly simple: checking that is free, period \u2014 no direct deposit requirement, no minimum balance, no monthly fee with conditions in fine print. In an era when even credit unions attach strings to 'free,' that unconditional structure is worth naming. Pair it with access to roughly 30,000 fee-free ATMs and the everyday banking case is strong.",
+    "Its lending menu is tuned to Southern California reality, with jumbo mortgages and HELOCs sized for seven-figure housing stock. Eligibility stops at the San Diego\u2013Riverside\u2013Orange county line, which keeps SDCCU a regional choice \u2014 but within those counties it's one of the cleanest no-fee banking setups available."
+   ],
+   "website": "https://www.sdccu.com",
+   "best_for": "Southern Californians who want unconditionally free checking",
+   "categories": [
+    "checking"
+   ]
+  },
+  {
+   "slug": "bethpage",
+   "name": "Bethpage Federal Credit Union",
+   "tier": "full",
+   "hq_city": "Bethpage",
+   "hq_state": "NY",
+   "founded": 1941,
+   "members_approx": 470000,
+   "assets_b_approx": 13,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Open to everyone in the US \u2014 anyone can join by opening a $5 savings account. No donation, association, or geographic requirement.",
+    "easy_path": "Just open the $5 share account online from any state.",
+    "anyone_can_join": true,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking plus a high-rate checking tier",
+    "savings": "Money market accounts with nationally competitive rates",
+    "cds": "Certificates that frequently appear on national best-of lists",
+    "loans": "Mortgages and home equity are the strength, centered on the New York market"
+   },
+   "rates_note": "Bethpage certificates and money markets regularly chart nationally; verify at bethpagefcu.com (rebranding to FourLeaf in some channels).",
+   "pros": [
+    "Truly open nationwide membership with a simple $5 deposit",
+    "Certificates and money market rates that compete nationally",
+    "Strong home equity and mortgage operation",
+    "Long Island branch network for locals"
+   ],
+   "cons": [
+    "Branches exist only on Long Island \u2014 everyone else is online-only",
+    "Brand transition (FourLeaf Federal Credit Union) may confuse searchers",
+    "Checking rate tiers require activity hoops"
+   ],
+   "editorial": [
+    "Bethpage \u2014 in the middle of rebranding as FourLeaf Federal Credit Union \u2014 is Long Island's biggest credit union and one of the few large ones with a completely open national charter: $5 opens a share account from any state, no donation or association required. That simplicity has made it a fixture on national CD and money-market rate leaderboards.",
+    "For non\u2013New Yorkers, treat it like an online bank with cooperative ownership: strong certificates, competitive money markets, decent digital tools, no physical presence. For Long Islanders it's a full-service institution with a serious home-equity desk. Either way, it belongs on the 'anyone can join' shortlist whenever its rates are leading."
+   ],
+   "website": "https://www.bethpagefcu.com",
+   "best_for": "Rate shoppers nationwide; Long Island households",
+   "categories": [
+    "cd-rates",
+    "savings",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "greenstate",
+   "name": "GreenState Credit Union",
+   "tier": "full",
+   "hq_city": "North Liberty",
+   "hq_state": "IA",
+   "founded": 1938,
+   "members_approx": 470000,
+   "assets_b_approx": 11,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Iowa, plus residents of dozens of qualifying counties in Illinois, Wisconsin, Nebraska, and South Dakota, and family of current members.",
+    "easy_path": "Iowa residency is the wide door; border-state county lists extend reach across the upper Midwest.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with interest-bearing tiers",
+    "savings": "Savings and money markets with consistently above-average rates",
+    "cds": "Certificates that frequently lead Midwest rate tables",
+    "loans": "Iowa's largest mortgage lender among CUs; strong autos and HELOCs"
+   },
+   "rates_note": "GreenState habitually prices deposits above regional banks; verify at greenstate.org.",
+   "pros": [
+    "Frequently the rate leader in the upper Midwest on CDs and money markets",
+    "Major mortgage operation \u2014 one of Iowa's largest home lenders",
+    "Multi-state county eligibility beyond Iowa",
+    "Fast, modern digital experience"
+   ],
+   "cons": [
+    "Rapid growth has stretched service capacity at times",
+    "No path to join from outside its Midwest footprint",
+    "Branch network thins outside eastern Iowa"
+   ],
+   "editorial": [
+    "GreenState has spent the past decade transforming from the University of Iowa's credit union into the Midwest's most rate-aggressive depository \u2014 its CDs and money markets routinely top regional tables and occasionally national ones. It is also one of Iowa's largest mortgage originators, a rare scale achievement for a credit union.",
+    "The growth-at-speed story carries the usual caveats: service capacity has sometimes lagged the member influx, and eligibility, while broad across Iowa and bordering counties, has no national workaround. For upper-Midwest savers and homebuyers, though, GreenState is consistently the first rate quote worth getting."
+   ],
+   "website": "https://www.greenstate.org",
+   "best_for": "Upper Midwest savers and Iowa homebuyers",
+   "categories": [
+    "mortgages"
+   ]
+  },
+  {
+   "slug": "lake-michigan",
+   "name": "Lake Michigan Credit Union (LMCU)",
+   "tier": "full",
+   "hq_city": "Grand Rapids",
+   "hq_state": "MI",
+   "founded": 1933,
+   "members_approx": 480000,
+   "assets_b_approx": 13,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or worships in Michigan's Lower Peninsula or select Florida counties \u2014 or anyone in the US via a one-time $5 donation to the ALS Foundation during the application.",
+    "easy_path": "Anyone can join: a $5 ALS Foundation donation at signup qualifies you from any state.",
+    "anyone_can_join": true,
+    "join_cost": "$5 deposit + $5 one-time ALS donation if joining that way"
+   },
+   "products": {
+    "checking": "Max Checking pays a high APY on balances up to $15,000 \u2014 one of the largest rewards-checking caps anywhere",
+    "savings": "Standard savings plus money markets",
+    "cds": "Certificates with regular specials",
+    "loans": "Top-3 credit union mortgage lender nationally; strong autos and HELOCs"
+   },
+   "rates_note": "Max Checking's high rate on up to $15,000 (with activity requirements) is among the best rewards checking deals in the US; verify at lmcu.org.",
+   "pros": [
+    "Anyone in the US can join with a $5 charity donation",
+    "Max Checking pays a leading rate on up to $15,000 \u2014 far above typical rewards-checking caps",
+    "One of the largest credit union mortgage operations in the country",
+    "Dual Michigan/Florida branch footprint"
+   ],
+   "cons": [
+    "Max Checking requires direct deposit, logins, and 10 debit transactions monthly",
+    "Outside MI/FL you're online-only",
+    "Base savings rate is forgettable"
+   ],
+   "editorial": [
+    "LMCU is home to what may be the single best rewards checking account in America: Max Checking, paying a top-tier APY on balances up to $15,000 \u2014 a cap five to ten times higher than the typical rewards-checking gimmick. Hit the monthly activity requirements (direct deposit, logins, ten debit swipes) and you're earning online-bank yields on real money in a checking account.",
+    "It's also quietly a mortgage giant, perennially among the top few credit union home lenders nationally, with a branch footprint spanning Michigan and, unusually, coastal Florida \u2014 a legacy of following its snowbird members south. And because a $5 ALS Foundation donation qualifies anyone nationwide, none of this is geographically locked. For optimizers, LMCU is one of the highest-value joins in the country."
+   ],
+   "website": "https://www.lmcu.org",
+   "best_for": "Rewards-checking maximizers anywhere in the US",
+   "categories": [
+    "checking",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "idaho-central",
+   "name": "Idaho Central Credit Union",
+   "tier": "full",
+   "hq_city": "Chubbuck",
+   "hq_state": "ID",
+   "founded": 1940,
+   "members_approx": 640000,
+   "assets_b_approx": 12,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Idaho, plus qualifying counties in Washington and Oregon, and family of current members.",
+    "easy_path": "Idaho residency alone qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$25 minimum deposit"
+   },
+   "products": {
+    "checking": "Free and rewards checking options",
+    "savings": "Share savings and money markets",
+    "cds": "Promotional certificates worth watching",
+    "loans": "Dominant Idaho mortgage and auto lender with consistently sharp pricing"
+   },
+   "rates_note": "ICCU leads most Idaho rate comparisons on loans; verify at iccu.com.",
+   "pros": [
+    "Idaho's largest credit union and dominant local lender",
+    "Consistently strong mortgage and auto pricing in its markets",
+    "Branch coverage across Idaho plus growing WA/OR presence",
+    "Regularly ranked among best-performing CUs nationally"
+   ],
+   "cons": [
+    "Eligibility limited to ID and nearby counties",
+    "$25 share requirement is higher than most peers",
+    "Deposit rates are regional-good, not national-good"
+   ],
+   "editorial": [
+    "Idaho Central is the rare credit union that utterly dominates its home state: the largest financial cooperative in Idaho, the leading local mortgage and auto lender, and a perennial entry on industry 'healthiest credit unions' lists. In Boise, Pocatello, or Idaho Falls, ICCU is the default rate to beat on any loan.",
+    "Its expansion into eastern Washington and Oregon is steady rather than splashy, and its product economics follow the classic CU script \u2014 win on loan pricing and fees, stay merely respectable on deposit yield. For anyone living in its footprint, the practical advice is simple: get an ICCU quote before signing any Idaho mortgage or car loan."
+   ],
+   "website": "https://www.iccu.com",
+   "best_for": "Idaho borrowers of every kind",
+   "categories": [
+    "auto-loans"
+   ]
+  },
+  {
+   "slug": "delta-community",
+   "name": "Delta Community Credit Union",
+   "tier": "full",
+   "hq_city": "Atlanta",
+   "hq_state": "GA",
+   "founded": 1940,
+   "members_approx": 500000,
+   "assets_b_approx": 9,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of Delta Air Lines and 150+ partner companies, anyone who lives or works in metro Atlanta's qualifying counties, and family/household members of current members.",
+    "easy_path": "Metro Atlanta residency qualifies most Georgians who want in.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking with no monthly fee",
+    "savings": "Share savings with a respectable base rate on all balances",
+    "cds": "Standard certificate menu",
+    "loans": "Autos, mortgages, and low-APR credit cards"
+   },
+   "rates_note": "Delta Community pays an above-average rate on regular savings without tiers or caps; verify at deltacommunitycu.com.",
+   "pros": [
+    "Georgia's largest credit union with broad metro Atlanta eligibility",
+    "Pays an honest above-average rate on basic savings, no caps or hoops",
+    "Low-APR credit cards",
+    "Free checking with no conditions"
+   ],
+   "cons": [
+    "Eligibility limited to Atlanta metro + partner employers",
+    "Branches concentrated in Georgia with a few outliers",
+    "Certificate rates are mid-pack"
+   ],
+   "editorial": [
+    "Delta Community outgrew its airline roots to become Georgia's largest credit union, and it carries one distinctly old-school virtue: it pays a genuinely above-average rate on its plain savings account \u2014 every dollar, no promotional tiers, no $1,000 caps, no activity hoops. In a market full of asterisks, that flat honesty stands out.",
+    "Combined with unconditional free checking and credit cards whose APRs start well below national norms, it makes a strong primary-bank case for anyone in metro Atlanta. Delta Air Lines employees worldwide remain the cultural core, and the airline connection still shows in 24/7 service coverage. Outside Atlanta and the partner-company list, though, there's no way in."
+   ],
+   "website": "https://www.deltacommunitycu.com",
+   "best_for": "Metro Atlanta households and Delta employees",
+   "categories": []
+  },
+  {
+   "slug": "wright-patt",
+   "name": "Wright-Patt Credit Union",
+   "tier": "full",
+   "hq_city": "Beavercreek",
+   "hq_state": "OH",
+   "founded": 1932,
+   "members_approx": 480000,
+   "assets_b_approx": 9,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in central or southwest Ohio (Dayton, Columbus, Cincinnati regions), Wright-Patterson AFB personnel, and family of members.",
+    "easy_path": "Regional residency covers most of the Dayton\u2013Columbus\u2013Cincinnati triangle.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Truly free checking with early payday",
+    "savings": "Share savings plus money markets; consistent saver programs",
+    "cds": "Certificates with fair, steady pricing",
+    "loans": "Autos, mortgages, and small-dollar loan alternatives to payday lending"
+   },
+   "rates_note": "Wright-Patt competes on total cost of membership rather than headline APY; verify at wpcu.coop.",
+   "pros": [
+    "Ohio's largest member-owned credit union",
+    "Strong savings-builder and payday-alternative programs",
+    "Free checking and famously low fees",
+    "Deep roots in the Dayton/Wright-Patterson community"
+   ],
+   "cons": [
+    "Regional Ohio eligibility only",
+    "Headline rates rarely chart nationally",
+    "Branch network centered on southwest/central Ohio"
+   ],
+   "editorial": [
+    "Wright-Patt is Ohio's largest credit union and one of the most quietly mission-faithful big CUs in the country, with savings-builder accounts and small-dollar loan programs explicitly designed to pull members away from payday lenders. Its annual member giveback \u2014 a profit-sharing style patronage dividend paid most years \u2014 is the cooperative model made visible.",
+    "Born alongside Wright-Patterson Air Force Base, it now covers the Dayton\u2013Columbus\u2013Cincinnati triangle for anyone who lives or works there. Rates are steady rather than spectacular; the institution's value shows up in fees you don't pay and the dividend check that arrives when the co-op has a good year."
+   ],
+   "website": "https://www.wpcu.coop",
+   "best_for": "Central and southwest Ohio households",
+   "categories": [
+    "checking"
+   ]
+  },
+  {
+   "slug": "patelco",
+   "name": "Patelco Credit Union",
+   "tier": "full",
+   "hq_city": "Dublin",
+   "hq_state": "CA",
+   "founded": 1936,
+   "members_approx": 500000,
+   "assets_b_approx": 9,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or attends school in most Northern California counties (Bay Area and Sacramento regions), employees of partner companies, and family of members.",
+    "easy_path": "Bay Area and Sacramento residency covers the bulk of Northern California.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit"
+   },
+   "products": {
+    "checking": "Free interest checking",
+    "savings": "A 'rising rate' tiered savings that pays more on your first dollars \u2014 inverted tiers that favor small savers",
+    "cds": "Certificates with frequent specials",
+    "loans": "Autos, mortgages, HELOCs sized for Bay Area values"
+   },
+   "rates_note": "Patelco's inverted savings tiers (highest APY on the first $2,000) are a distinctive small-saver perk; verify at patelco.org.",
+   "pros": [
+    "Inverted savings tiers pay the best rate on your first dollars",
+    "Broad Northern California eligibility with a $1 share",
+    "HELOC and mortgage menu built for Bay Area home values",
+    "A 2024 ransomware incident was handled with full member remediation \u2014 and prompted major security investment"
+   ],
+   "cons": [
+    "Suffered a significant ransomware outage in 2024 (since remediated) \u2014 worth knowing the history",
+    "Best savings APY caps at a low balance",
+    "Eligibility is Northern California only"
+   ],
+   "editorial": [
+    "Patelco, born inside the Pacific Telephone company, is one of Northern California's anchor credit unions and the originator of a clever idea more institutions should copy: savings tiers that pay the highest rate on the first dollars rather than the last. A new saver's first $2,000 earns the top APY \u2014 exactly backwards from how banks reward balances, and exactly right for building a savings habit.",
+    "Full transparency requires noting the 2024 ransomware attack that took systems offline for roughly two weeks \u2014 among the most disruptive cyber incidents ever at a US credit union. Patelco provided credit monitoring, restored accounts, and rebuilt its security stack; members today bank at an institution that learned that lesson expensively. The fundamentals \u2014 cheap membership, fair loans, small-saver-friendly design \u2014 remain genuinely strong."
+   ],
+   "website": "https://www.patelco.org",
+   "best_for": "Northern California savers starting out",
+   "categories": [
+    "savings",
+    "beginners"
+   ]
+  },
+  {
+   "slug": "redstone",
+   "name": "Redstone Federal Credit Union",
+   "tier": "full",
+   "hq_city": "Huntsville",
+   "hq_state": "AL",
+   "founded": 1951,
+   "members_approx": 800000,
+   "assets_b_approx": 8,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "People who live, work, worship, or attend school in qualifying Alabama and Tennessee counties, Redstone Arsenal and NASA personnel, employees of hundreds of partner groups, and family of members. Association membership can qualify others in the region.",
+    "easy_path": "Most of north Alabama and southern middle Tennessee qualifies geographically; an association route covers many others nearby.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products": {
+    "checking": "Free checking plus rewards tiers",
+    "savings": "Share savings and money markets",
+    "cds": "Certificates including promotional 'brighter day' specials",
+    "loans": "Autos, mortgages, cards, and significant member business lending"
+   },
+   "rates_note": "Redstone runs frequent certificate promotions; verify at redfcu.org.",
+   "pros": [
+    "Alabama's largest credit union, anchored to Huntsville's aerospace economy",
+    "Large branch network across north Alabama and into Tennessee",
+    "Frequent certificate specials",
+    "Broad association-based eligibility in its region"
+   ],
+   "cons": [
+    "Outside the AL/TN region there's no way in",
+    "Everyday rates are middling between promos",
+    "Fee schedule is longer than minimalist peers"
+   ],
+   "editorial": [
+    "Redstone grew up with Huntsville's rocket program \u2014 chartered in 1951 to serve Redstone Arsenal \u2014 and remains Alabama's largest credit union, deeply wired into the aerospace-and-defense economy of the Tennessee Valley. For the region's engineers, contractors, and military families it is the incumbent financial relationship, with branch density no bank matches locally.",
+    "Its pricing rhythm favors the attentive: everyday rates are ordinary, but certificate promotions arrive regularly and are often regionally leading. Eligibility looks employer-based at first glance but in practice covers most of north Alabama geographically, with an association fallback. A solid, community-anchored institution rather than a national rate play."
+   ],
+   "website": "https://www.redfcu.org",
+   "best_for": "North Alabama and Tennessee Valley households",
+   "categories": [
+    "auto-loans",
+    "checking"
+   ]
+  },
+  {
+   "slug": "connexus",
+   "name": "Connexus Credit Union",
+   "tier": "full",
+   "hq_city": "Wausau",
+   "hq_state": "WI",
+   "founded": 1935,
+   "members_approx": 480000,
+   "assets_b_approx": 5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Residents of select Wisconsin, Minnesota, and Ohio communities, employees of partner groups \u2014 or anyone in the US via a one-time $5 contribution to the Connexus Association, handled during the online application.",
+    "easy_path": "Anyone can join: the $5 Connexus Association contribution at signup opens membership nationwide.",
+    "anyone_can_join": true,
+    "join_cost": "$5 association contribution + $5 share deposit"
+   },
+   "products": {
+    "checking": "Xtraordinary and Innovator checking with high APYs on balances up to $25,000 with activity requirements",
+    "savings": "Standard savings plus strong money markets",
+    "cds": "Certificates that habitually rank on national best-CD lists",
+    "loans": "Autos, RVs and powersports specialty lending, mortgages"
+   },
+   "rates_note": "Connexus rewards checking (up to $25,000 cap) and its CDs are perennial national leaderboard entries; verify at connexuscu.org.",
+   "pros": [
+    "Anyone in the US can join for a one-time $5 association fee",
+    "Rewards checking pays a leading APY on up to $25,000 \u2014 the highest cap in the category",
+    "Certificates routinely rank among the best nationally",
+    "Strong specialty lending (RVs, boats, powersports)"
+   ],
+   "cons": [
+    "Checking APY requires monthly activity requirements",
+    "Thin branch presence outside Wisconsin",
+    "Customer service is competent but stretched by national growth"
+   ],
+   "editorial": [
+    "Connexus is the rate-hunter's credit union. Its rewards checking pays a nationally leading APY on balances up to $25,000 \u2014 the most generous cap in the entire category \u2014 and its certificates show up on best-CD leaderboards so reliably that national personal-finance sites treat it as a fixture. A one-time $5 association contribution opens membership to anyone in the country.",
+    "The institution behind the rates is a Wausau, Wisconsin cooperative with a long specialty in RV and powersports lending and a deliberately digital national strategy. Service is adequate rather than luxurious, and the checking APY demands monthly activity. But for maximizing yield on serious cash inside NCUA insurance, Connexus and Lake Michigan CU are the two names to check first."
+   ],
+   "website": "https://www.connexuscu.org",
+   "best_for": "Nationwide rate maximizers with larger balances",
+   "categories": [
+    "cd-rates",
+    "savings",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "consumers",
+   "name": "Consumers Credit Union (Illinois)",
+   "tier": "full",
+   "hq_city": "Lake Forest",
+   "hq_state": "IL",
+   "founded": 1930,
+   "members_approx": 250000,
+   "assets_b_approx": 4,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Open to everyone in the US \u2014 pay a one-time $5 membership fee to the Consumers Cooperative Association (handled in the application) and you're in from any state.",
+    "easy_path": "Anyone can join: the $5 one-time association fee is built into the online signup.",
+    "anyone_can_join": true,
+    "join_cost": "$5 one-time association fee + $5 share deposit"
+   },
+   "products": {
+    "checking": "Rewards Checking with one of the highest APYs in the country on balances up to $10,000, tiered by activity",
+    "savings": "Standard savings and money markets",
+    "cds": "Certificates with competitive mid-length terms",
+    "loans": "Autos and mortgages, mostly Chicagoland-focused"
+   },
+   "rates_note": "Consumers' Rewards Checking APY (activity-tiered, up to $10,000) is frequently the single highest checking rate in America; verify at myconsumers.org.",
+   "pros": [
+    "Anyone in the US can join for a one-time $5 fee",
+    "Rewards Checking APY is often the highest checking rate in the country",
+    "Unlimited ATM fee reimbursement on qualifying tiers",
+    "No monthly maintenance fees"
+   ],
+   "cons": [
+    "Top APY tier demands direct deposit, card spend, and other monthly hoops",
+    "Rate applies only up to $10,000",
+    "Branches are Chicagoland-only; everyone else is digital"
+   ],
+   "editorial": [
+    "Consumers Credit Union of Illinois (not to be confused with the unrelated Michigan CU of the same name) runs what is frequently the highest-yield checking account in the United States. The Rewards Checking APY on up to $10,000 \u2014 unlocked by direct deposit and card-spend requirements \u2014 has topped national checking leaderboards for years, and unlimited ATM rebates sweeten the qualifying tiers.",
+    "Membership is as open as it gets: a one-time $5 association fee during the online application, available in all 50 states. The realistic picture is an optimizer's account \u2014 meet the monthly hoops and it's unbeatable on the first $10,000; miss them and the rate collapses to ordinary. For people who automate their finances, the hoops are set-and-forget."
+   ],
+   "website": "https://www.myconsumers.org",
+   "best_for": "Checking-rate optimizers nationwide",
+   "categories": [
+    "checking",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "apco",
+   "name": "APCO Employees Credit Union",
+   "tier": "regional",
+   "hq_city": "Birmingham",
+   "hq_state": "AL",
+   "members_approx": 75000,
+   "assets_b_approx": 3.4,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of Alabama Power and affiliated Southern Company entities, select partner groups, and family of members.",
+    "easy_path": null,
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Famous for consistently high savings dividends and rock-bottom loan rates; minimal fee schedule.",
+   "blurb": "APCO is a small-membership, big-asset cooperative serving Alabama Power's workforce, and it routinely posts some of the highest regular-savings dividends of any US credit union. Eligibility is genuinely tight, but qualifying employees get one of the best pure-savings deals in the Southeast.",
+   "pros": [
+    "Regular savings dividends regularly among the nation's highest",
+    "Extremely low operating costs passed to members"
+   ],
+   "cons": [
+    "Strict utility-employee eligibility",
+    "Limited branch and digital footprint"
+   ],
+   "website": "https://www.apcocu.org",
+   "best_for": "Alabama Power families",
+   "categories": []
+  },
+  {
+   "slug": "global-fcu",
+   "name": "Global Federal Credit Union (formerly Alaska USA)",
+   "tier": "regional",
+   "hq_city": "Anchorage",
+   "hq_state": "AK",
+   "members_approx": 750000,
+   "assets_b_approx": 12,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Alaska, Washington state, San Bernardino County (CA), and parts of Arizona and Idaho; military members; and family of members.",
+    "easy_path": "All Alaskans qualify by residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Full-service banking with the largest branch network in Alaska, plus autos, mortgages, and business services.",
+   "blurb": "The institution formerly known as Alaska USA rebranded to Global FCU as it expanded into the Lower 48. It remains Alaska's dominant financial cooperative, with branch and ATM reach across a state where physical access genuinely matters.",
+   "pros": [
+    "Unmatched branch coverage in Alaska",
+    "Multi-state eligibility including all of Washington"
+   ],
+   "cons": [
+    "Rates are average \u2014 convenience is the product",
+    "Rebrand has confused longtime members"
+   ],
+   "website": "https://www.globalcu.org",
+   "best_for": "Alaskans and Pacific Northwest movers",
+   "categories": []
+  },
+  {
+   "slug": "desert-financial",
+   "name": "Desert Financial Credit Union",
+   "tier": "regional",
+   "hq_city": "Phoenix",
+   "hq_state": "AZ",
+   "members_approx": 450000,
+   "assets_b_approx": 8.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in most Arizona counties, plus family of members.",
+    "easy_path": "Maricopa County residency alone covers most of metro Phoenix.",
+    "anyone_can_join": false,
+    "join_cost": "$25 initial deposit"
+   },
+   "products_brief": "Arizona's largest credit union: free checking, member giveback dividends, full lending menu.",
+   "blurb": "Desert Financial is Arizona's hometown giant, known for an annual member giveback that has returned tens of millions in bonus dividends. Broad statewide eligibility and dense Phoenix branch coverage make it the default credit union choice in the Valley.",
+   "pros": [
+    "Annual member giveback program",
+    "Largest AZ branch network among CUs"
+   ],
+   "cons": [
+    "Yields are middle-of-pack",
+    "Arizona-only eligibility"
+   ],
+   "website": "https://www.desertfinancial.com",
+   "best_for": "Arizona households",
+   "categories": []
+  },
+  {
+   "slug": "arkansas-fcu",
+   "name": "Arkansas Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Little Rock",
+   "hq_state": "AR",
+   "members_approx": 140000,
+   "assets_b_approx": 2.2,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Arkansas, plus family of members.",
+    "easy_path": "Statewide Arkansas eligibility \u2014 anyone in the state can join.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Statewide eligibility, free checking, competitive auto loans, and growing digital tools.",
+   "blurb": "Arkansas Federal is the state's largest credit union and one of the simplest to join \u2014 any Arkansas resident qualifies. It competes hard on auto lending and keeps checking free, making it the natural first comparison against Arkansas banks.",
+   "pros": [
+    "Open to all Arkansans",
+    "Sharp auto loan pricing in-state"
+   ],
+   "cons": [
+    "Modest branch network outside central Arkansas",
+    "Savings rates are ordinary"
+   ],
+   "website": "https://www.afcu.org",
+   "best_for": "Arkansas residents",
+   "categories": []
+  },
+  {
+   "slug": "wescom",
+   "name": "Wescom Credit Union",
+   "tier": "regional",
+   "hq_city": "Pasadena",
+   "hq_state": "CA",
+   "members_approx": 220000,
+   "assets_b_approx": 6,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or attends school in Southern California's qualifying counties; UCLA affiliation is a signature channel.",
+    "easy_path": "Most of greater Los Angeles qualifies by residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "SoCal community CU and official UCLA partner; free checking and solid HELOC menu.",
+   "blurb": "Wescom is greater LA's community credit union and UCLA's official banking partner, with branches across the Southland. It's a fee-light alternative to the big California banks with a particular strength in home equity lending.",
+   "pros": [
+    "Broad LA-area eligibility",
+    "UCLA partnership perks for Bruins"
+   ],
+   "cons": [
+    "Rates trail online leaders",
+    "SoCal-only footprint"
+   ],
+   "website": "https://www.wescom.org",
+   "best_for": "Greater Los Angeles residents",
+   "categories": []
+  },
+  {
+   "slug": "redwood",
+   "name": "Redwood Credit Union",
+   "tier": "regional",
+   "hq_city": "Santa Rosa",
+   "hq_state": "CA",
+   "members_approx": 480000,
+   "assets_b_approx": 8.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or owns a business in the North Bay and greater San Francisco region's qualifying counties, plus family of members.",
+    "easy_path": "North Bay and SF-area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "North Bay community anchor with top-rated service, full lending, and disaster-response cred.",
+   "blurb": "Redwood CU earned statewide admiration for its wildfire relief lending after the 2017 North Bay fires, and it consistently ranks among the best-run credit unions in the country. For Sonoma, Marin, and nearby counties it's the community institution to beat.",
+   "pros": [
+    "Consistently top-tier health and service ratings",
+    "Strong community/disaster support record"
+   ],
+   "cons": [
+    "North Bay\u2013centric branches",
+    "Deposit yields are fair, not leading"
+   ],
+   "website": "https://www.redwoodcu.org",
+   "best_for": "North Bay Californians",
+   "categories": []
+  },
+  {
+   "slug": "ent",
+   "name": "Ent Credit Union",
+   "tier": "regional",
+   "hq_city": "Colorado Springs",
+   "hq_state": "CO",
+   "members_approx": 600000,
+   "assets_b_approx": 10,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in most of Colorado's Front Range and beyond, plus family of members.",
+    "easy_path": "Most Coloradans qualify by county residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Colorado's largest credit union: free checking, broad branch network, strong mortgage desk.",
+   "blurb": "Ent has grown from its Air Force roots in Colorado Springs into the state's largest credit union, with eligibility covering most of populated Colorado. Free checking and a serious mortgage operation make it the default Front Range comparison.",
+   "pros": [
+    "Statewide-scale eligibility and branches",
+    "Competitive Colorado mortgage pricing"
+   ],
+   "cons": [
+    "Growth has strained service at peak times",
+    "Savings rates are mid-pack"
+   ],
+   "website": "https://www.ent.com",
+   "best_for": "Front Range Coloradans",
+   "categories": []
+  },
+  {
+   "slug": "bellco",
+   "name": "Bellco Credit Union",
+   "tier": "regional",
+   "hq_city": "Greenwood Village",
+   "hq_state": "CO",
+   "members_approx": 380000,
+   "assets_b_approx": 8,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or attends school in the Denver metro and most Colorado counties; small association-fee path for others in-state.",
+    "easy_path": "Denver metro residency qualifies you outright.",
+    "anyone_can_join": false,
+    "join_cost": "$25 initial deposit"
+   },
+   "products_brief": "Denver-metro stalwart with strong HELOCs, free checking, and frequent CD specials.",
+   "blurb": "Bellco is metro Denver's longtime credit union, dating to the Bell System era, and competes hardest on home equity lending and certificate promotions. A practical big-CU alternative to Colorado's banks.",
+   "pros": [
+    "Strong HELOC and CD promos",
+    "Dense Denver branch coverage"
+   ],
+   "cons": [
+    "Front Range focus only",
+    "Checking perks require activity"
+   ],
+   "website": "https://www.bellco.org",
+   "best_for": "Denver metro homeowners",
+   "categories": []
+  },
+  {
+   "slug": "american-eagle",
+   "name": "American Eagle Financial Credit Union",
+   "tier": "regional",
+   "hq_city": "East Hartford",
+   "hq_state": "CT",
+   "members_approx": 180000,
+   "assets_b_approx": 2.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Hartford, Middlesex, Tolland, New Haven counties and nearby Connecticut communities, plus family of members.",
+    "easy_path": "Central Connecticut residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Greater Hartford's leading CU: free checking, cash-back debit, full lending.",
+   "blurb": "Born inside Pratt & Whitney, American Eagle is now greater Hartford's community credit union, with unusually generous debit cash-back and a straightforward free checking lineup for central Connecticut.",
+   "pros": [
+    "Cash-back on debit purchases",
+    "Simple fee-light accounts"
+   ],
+   "cons": [
+    "Central CT footprint only",
+    "Modest deposit yields"
+   ],
+   "website": "https://www.americaneagle.org",
+   "best_for": "Greater Hartford residents",
+   "categories": []
+  },
+  {
+   "slug": "del-one",
+   "name": "Del-One Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Dover",
+   "hq_state": "DE",
+   "members_approx": 90000,
+   "assets_b_approx": 0.7,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Delaware, plus family of members.",
+    "easy_path": "All of Delaware qualifies \u2014 a true statewide charter.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Delaware's statewide credit union with free checking and community-bank feel.",
+   "blurb": "Del-One covers the entire First State \u2014 any Delawarean can join \u2014 and offers the classic small-CU package: free checking, fair loans, and branch staff who know your name. The leading credit union option in a bank-dominated state.",
+   "pros": [
+    "Open to every Delaware resident",
+    "Genuine community-scale service"
+   ],
+   "cons": [
+    "Small digital/product menu",
+    "Rates rarely chart regionally"
+   ],
+   "website": "https://www.del-one.org",
+   "best_for": "Delaware residents",
+   "categories": []
+  },
+  {
+   "slug": "fairwinds",
+   "name": "Fairwinds Credit Union",
+   "tier": "regional",
+   "hq_city": "Orlando",
+   "hq_state": "FL",
+   "members_approx": 220000,
+   "assets_b_approx": 5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Central Florida's qualifying counties (Orange, Seminole, Osceola, Lake and more), plus family of members.",
+    "easy_path": "Orlando-area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Orlando's hometown CU with a financial-wellness focus, free checking, and solid money markets.",
+   "blurb": "Fairwinds anchors Orlando's credit union market with a heavy emphasis on debt-freedom coaching and savings programs. Money market rates are frequently competitive for Florida, and checking stays free.",
+   "pros": [
+    "Strong financial-wellness programs",
+    "Competitive Florida money market rates"
+   ],
+   "cons": [
+    "Central Florida only",
+    "Branch service can queue in peak season"
+   ],
+   "website": "https://www.fairwinds.org",
+   "best_for": "Central Floridians",
+   "categories": []
+  },
+  {
+   "slug": "midflorida",
+   "name": "MIDFLORIDA Credit Union",
+   "tier": "regional",
+   "hq_city": "Lakeland",
+   "hq_state": "FL",
+   "members_approx": 480000,
+   "assets_b_approx": 8,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in much of central and south Florida's qualifying counties, plus family of members.",
+    "easy_path": "A wide central-Florida county list covers the I-4 corridor and beyond.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Fast-growing central Florida CU: free checking with rate tiers, big branch buildout, full lending.",
+   "blurb": "MIDFLORIDA has expanded aggressively along the I-4 corridor and down the Gulf coast, pairing free interest checking with one of Florida's larger CU branch networks. A pragmatic full-service pick between Tampa and Orlando.",
+   "pros": [
+    "Free checking that pays interest",
+    "Expanding branch footprint"
+   ],
+   "cons": [
+    "Service consistency varies with rapid growth",
+    "Yields are regional-average"
+   ],
+   "website": "https://www.midflorida.com",
+   "best_for": "I-4 corridor Floridians",
+   "categories": []
+  },
+  {
+   "slug": "robins-financial",
+   "name": "Robins Financial Credit Union",
+   "tier": "regional",
+   "hq_city": "Warner Robins",
+   "hq_state": "GA",
+   "members_approx": 260000,
+   "assets_b_approx": 4.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in most middle-Georgia counties, Robins AFB personnel, and family of members.",
+    "easy_path": "Middle Georgia residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Middle Georgia's leading CU with annual member rebates and very low fees.",
+   "blurb": "Robins Financial pairs Air Force heritage with one of Georgia's most member-friendly economics: it has paid an annual loan-interest rebate and deposit bonus for decades. For middle Georgia it's the clear cooperative choice.",
+   "pros": [
+    "Long-running annual member rebate",
+    "Very low fee schedule"
+   ],
+   "cons": [
+    "Middle-Georgia footprint",
+    "Basic digital experience"
+   ],
+   "website": "https://www.robinsfcu.org",
+   "best_for": "Middle Georgia households",
+   "categories": []
+  },
+  {
+   "slug": "georgias-own",
+   "name": "Georgia's Own Credit Union",
+   "tier": "regional",
+   "hq_city": "Atlanta",
+   "hq_state": "GA",
+   "members_approx": 250000,
+   "assets_b_approx": 4.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in metro Atlanta and other qualifying Georgia counties, employees of partner groups, or members of the Getting Ahead Association (small fee) elsewhere in Georgia.",
+    "easy_path": "Most Georgians can qualify via residency or a small association fee.",
+    "anyone_can_join": false,
+    "join_cost": "$5 deposit; small association fee if needed"
+   },
+   "products_brief": "Statewide-reach Georgia CU with rewards checking and a broad lending menu.",
+   "blurb": "Georgia's Own stretches credit union access across the state \u2014 metro Atlantans qualify by geography and other Georgians through a low-cost association. Rewards checking and competitive HELOCs lead the lineup.",
+   "pros": [
+    "Near-statewide eligibility path",
+    "Solid rewards checking"
+   ],
+   "cons": [
+    "Top rates require activity hoops",
+    "Branches cluster in Atlanta"
+   ],
+   "website": "https://www.georgiasown.org",
+   "best_for": "Georgians statewide",
+   "categories": []
+  },
+  {
+   "slug": "hawaiiusa",
+   "name": "HawaiiUSA Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Honolulu",
+   "hq_state": "HI",
+   "members_approx": 130000,
+   "assets_b_approx": 2.3,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Hawaii, plus family of members.",
+    "easy_path": "Hawaii residency on any island qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Hawaii's largest credit union: free checking, island-wide branches, education roots.",
+   "blurb": "HawaiiUSA grew from Oahu's teachers into the state's largest credit union, open to all Hawaii residents. In a market dominated by two big banks, it's the islands' main cooperative alternative with branch presence beyond Oahu.",
+   "pros": [
+    "Open to all Hawaii residents",
+    "Branches across multiple islands"
+   ],
+   "cons": [
+    "Island cost structure limits rate competitiveness",
+    "Smaller product shelf than mainland giants"
+   ],
+   "website": "https://www.hawaiiusafcu.com",
+   "best_for": "Hawaii residents",
+   "categories": []
+  },
+  {
+   "slug": "teachers-indiana",
+   "name": "Teachers Credit Union (Indiana)",
+   "tier": "regional",
+   "hq_city": "South Bend",
+   "hq_state": "IN",
+   "members_approx": 300000,
+   "assets_b_approx": 5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Indiana or southwest Michigan, plus family of members \u2014 despite the name, no teaching connection required.",
+    "easy_path": "Indiana residency alone qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Indiana's largest CU, open statewide, with full lending and a wide branch network.",
+   "blurb": "Indiana's largest credit union long ago opened beyond educators \u2014 any Hoosier can join. Its statewide branch network and full lending menu make it Indiana's broadest cooperative answer to regional banks.",
+   "pros": [
+    "Open to all Indiana residents",
+    "Largest CU branch network in the state"
+   ],
+   "cons": [
+    "Name misleads people into not applying",
+    "Rates are middle-of-the-road"
+   ],
+   "website": "https://www.tcunet.com",
+   "best_for": "Indiana residents",
+   "categories": []
+  },
+  {
+   "slug": "elements",
+   "name": "Elements Financial Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Indianapolis",
+   "hq_state": "IN",
+   "members_approx": 110000,
+   "assets_b_approx": 2.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of Eli Lilly and 100+ partner employers \u2014 or anyone in the US via free membership in TruDirection, a financial-wellness association Elements sponsors.",
+    "easy_path": "Anyone can join: select the TruDirection association during the online application at no cost.",
+    "anyone_can_join": true,
+    "join_cost": "$5 share deposit; association membership free"
+   },
+   "products_brief": "Lilly-born CU with nationwide open membership, high-yield checking, and HSA expertise.",
+   "blurb": "Elements began as Eli Lilly's credit union and quietly became one of the easiest CUs in America to join \u2014 its sponsored TruDirection association is free and open nationwide. Health savings accounts and high-rate checking are its specialties.",
+   "pros": [
+    "Free association path open to anyone in the US",
+    "Strong HSA and benefits-adjacent products"
+   ],
+   "cons": [
+    "Thin branch presence (Indianapolis only)",
+    "Top checking rate has activity requirements"
+   ],
+   "website": "https://www.elements.org",
+   "best_for": "HSA users and open-membership seekers",
+   "categories": []
+  },
+  {
+   "slug": "cefcu",
+   "name": "CEFCU (Citizens Equity First Credit Union)",
+   "tier": "regional",
+   "hq_city": "Peoria",
+   "hq_state": "IL",
+   "members_approx": 380000,
+   "assets_b_approx": 8,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in central Illinois' qualifying counties or the San Jose, California area (a Caterpillar legacy), plus family of members.",
+    "easy_path": "Central Illinois residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Caterpillar-born CU with excellent loan pricing and an odd-couple Illinois/Silicon Valley footprint.",
+   "blurb": "CEFCU grew up with Caterpillar in Peoria and remains downstate Illinois' dominant cooperative, with a quirky second home in San Jose from Cat's old plant. Loan pricing \u2014 autos and mortgages \u2014 is consistently among Illinois' best.",
+   "pros": [
+    "Consistently sharp loan rates",
+    "Strong capital position and stability"
+   ],
+   "cons": [
+    "Eligibility limited to two distant regions",
+    "Plain-vanilla deposit products"
+   ],
+   "website": "https://www.cefcu.com",
+   "best_for": "Central Illinois borrowers",
+   "categories": []
+  },
+  {
+   "slug": "meritrust",
+   "name": "Meritrust Credit Union",
+   "tier": "regional",
+   "hq_city": "Wichita",
+   "hq_state": "KS",
+   "members_approx": 130000,
+   "assets_b_approx": 2,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Kansas, plus family of members.",
+    "easy_path": "Statewide Kansas eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Kansas' largest CU: statewide eligibility, free checking, aircraft-industry roots.",
+   "blurb": "Born among Wichita's aircraft workers, Meritrust is now open to every Kansan and is the state's largest credit union. Free checking and competitive auto loans anchor a straightforward lineup.",
+   "pros": [
+    "Open to all Kansas residents",
+    "Good auto loan pricing"
+   ],
+   "cons": [
+    "Branches cluster around Wichita",
+    "Modest savings yields"
+   ],
+   "website": "https://www.meritrust.org",
+   "best_for": "Kansas residents",
+   "categories": []
+  },
+  {
+   "slug": "communityamerica",
+   "name": "CommunityAmerica Credit Union",
+   "tier": "regional",
+   "hq_city": "Lenexa",
+   "hq_state": "KS",
+   "members_approx": 350000,
+   "assets_b_approx": 5.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in the Kansas City metro on both the Kansas and Missouri sides, plus family of members.",
+    "easy_path": "KC metro residency (either state) qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$1 minimum deposit"
+   },
+   "products_brief": "Kansas City's hometown CU with profit-sharing payouts and Chiefs-partnership visibility.",
+   "blurb": "CommunityAmerica is Kansas City's cooperative flagship, famous locally for annual profit-sharing checks to members and its Patrick Mahomes ad campaigns. Both sides of the state line qualify.",
+   "pros": [
+    "Annual profit-sharing payout to members",
+    "Strong KC-metro branch coverage"
+   ],
+   "cons": [
+    "KC metro only",
+    "Headline rates are average between payouts"
+   ],
+   "website": "https://www.communityamerica.com",
+   "best_for": "Kansas City metro households",
+   "categories": []
+  },
+  {
+   "slug": "abound",
+   "name": "Abound Credit Union",
+   "tier": "regional",
+   "hq_city": "Radcliff",
+   "hq_state": "KY",
+   "members_approx": 120000,
+   "assets_b_approx": 2.3,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or attends school in dozens of central Kentucky counties, Fort Knox personnel, and family of members.",
+    "easy_path": "Central Kentucky residency qualifies most in the region.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Kentucky's largest CU, Fort Knox-born, with strong CDs and military-friendly service.",
+   "blurb": "Formerly Fort Knox Federal, Abound is Kentucky's largest credit union and frequently posts the state's best certificate rates. Its military heritage shows in fee-light accounts and deployment-aware service.",
+   "pros": [
+    "Frequently best-in-Kentucky CD rates",
+    "Low fees"
+   ],
+   "cons": [
+    "Central Kentucky footprint",
+    "Basic digital tools"
+   ],
+   "website": "https://www.aboundcu.com",
+   "best_for": "Kentucky savers",
+   "categories": []
+  },
+  {
+   "slug": "pelican-state",
+   "name": "Pelican State Credit Union",
+   "tier": "regional",
+   "hq_city": "Baton Rouge",
+   "hq_state": "LA",
+   "members_approx": 70000,
+   "assets_b_approx": 0.7,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in most Louisiana parishes, plus family of members.",
+    "easy_path": "Most of Louisiana qualifies by parish residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Louisiana's broadest CU with credit-building products and in-house financial counselors.",
+   "blurb": "Pelican State covers most Louisiana parishes and distinguishes itself with certified financial counselors on staff and genuine credit-rebuilder products \u2014 a consumer-advocate institution in a state that needs them.",
+   "pros": [
+    "On-staff financial counselors free to members",
+    "Strong credit-builder lineup"
+   ],
+   "cons": [
+    "Small asset base limits rate competitiveness",
+    "Branches concentrated in south Louisiana"
+   ],
+   "website": "https://www.pelicanstatecu.com",
+   "best_for": "Louisianans building or repairing credit",
+   "categories": []
+  },
+  {
+   "slug": "atlantic-fcu",
+   "name": "Atlantic Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Brunswick",
+   "hq_state": "ME",
+   "members_approx": 30000,
+   "assets_b_approx": 0.45,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Maine's qualifying counties, plus family of members.",
+    "easy_path": "Southern and midcoast Maine residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Midcoast Maine cooperative with classic community-CU service and fair loans.",
+   "blurb": "Atlantic FCU, born at Brunswick Naval Air Station, serves southern and midcoast Maine with the small-cooperative basics done well: free checking, fair auto loans, and human-scale service.",
+   "pros": [
+    "Human-scale Maine service",
+    "Fee-light accounts"
+   ],
+   "cons": [
+    "Small product and branch footprint",
+    "Rates rarely lead the region"
+   ],
+   "website": "https://www.atlanticfcu.com",
+   "best_for": "Midcoast Mainers",
+   "categories": []
+  },
+  {
+   "slug": "secu-maryland",
+   "name": "SECU of Maryland",
+   "tier": "regional",
+   "hq_city": "Linthicum",
+   "hq_state": "MD",
+   "members_approx": 250000,
+   "assets_b_approx": 5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Maryland state employees and contractors, employees of partner organizations, alumni and students of many Maryland universities, and family of members.",
+    "easy_path": "University of Maryland system ties (student, alum, staff) are the wide door.",
+    "anyone_can_join": false,
+    "join_cost": "$10 minimum deposit"
+   },
+   "products_brief": "Maryland's largest state-chartered CU serving public employees and university communities.",
+   "blurb": "SECU of Maryland anchors the state's public workforce and university communities \u2014 Terps alumni qualify, which captures a huge population. Free checking and fair mortgage pricing lead the menu.",
+   "pros": [
+    "University alumni/student eligibility is broad",
+    "Statewide branch presence"
+   ],
+   "cons": [
+    "No general-public path",
+    "Average yields"
+   ],
+   "website": "https://www.secumd.org",
+   "best_for": "Maryland public employees and UMD alumni",
+   "categories": []
+  },
+  {
+   "slug": "andrews",
+   "name": "Andrews Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Suitland",
+   "hq_state": "MD",
+   "members_approx": 140000,
+   "assets_b_approx": 2.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Military and civilian personnel at supported installations, DC residents, employees of partner groups \u2014 or anyone in the US via free membership in the American Consumer Council during the application.",
+    "easy_path": "Anyone can join: select American Consumer Council membership (free) when applying online.",
+    "anyone_can_join": true,
+    "join_cost": "$5 share deposit; ACC membership free"
+   },
+   "products_brief": "Military-rooted CU open to everyone via ACC, with nationally competitive certificate specials.",
+   "blurb": "Andrews Federal serves joint-base communities from DC to Germany, but its certificates regularly hit national best-of lists \u2014 and anyone in the US can join through a free American Consumer Council membership baked into the application.",
+   "pros": [
+    "Free ACC path opens membership nationwide",
+    "Certificate specials frequently chart nationally"
+   ],
+   "cons": [
+    "Branches limited to DC region and bases",
+    "Digital experience is serviceable, not slick"
+   ],
+   "website": "https://www.andrewsfcu.org",
+   "best_for": "Nationwide CD shoppers",
+   "categories": []
+  },
+  {
+   "slug": "metro-boston",
+   "name": "Metro Credit Union",
+   "tier": "regional",
+   "hq_city": "Chelsea",
+   "hq_state": "MA",
+   "members_approx": 230000,
+   "assets_b_approx": 3.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Massachusetts' eastern counties (Suffolk, Middlesex, Essex, Norfolk, Plymouth and more), plus family of members.",
+    "easy_path": "Greater Boston residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Greater Boston's largest state-chartered CU with competitive CDs and free checking.",
+   "blurb": "Metro is greater Boston's biggest state-chartered credit union, pairing genuinely competitive certificate rates with free checking in one of America's most expensive banking markets.",
+   "pros": [
+    "Competitive Massachusetts CD rates",
+    "Free checking in a high-fee market"
+   ],
+   "cons": [
+    "Eastern Massachusetts only",
+    "Branch network is modest for its size"
+   ],
+   "website": "https://www.metrocu.org",
+   "best_for": "Greater Boston savers",
+   "categories": []
+  },
+  {
+   "slug": "msufcu",
+   "name": "Michigan State University Federal Credit Union (MSUFCU)",
+   "tier": "regional",
+   "hq_city": "East Lansing",
+   "hq_state": "MI",
+   "members_approx": 360000,
+   "assets_b_approx": 8,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "MSU and Oakland University students, employees, and alumni; members of affiliated alumni and community organizations; and family of members.",
+    "easy_path": "MSU alumni association ties qualify Spartans anywhere.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "The largest university-based credit union in the world; award-winning app and student-friendly products.",
+   "blurb": "MSUFCU is the world's largest university credit union, with a top-rated mobile app and a product set built for students through alumni. Spartan ties anywhere in the country qualify you.",
+   "pros": [
+    "Best-in-class mobile banking for a CU",
+    "Strong student and first-account products"
+   ],
+   "cons": [
+    "University-affiliation requirement",
+    "Branches concentrated in mid-Michigan"
+   ],
+   "website": "https://www.msufcu.org",
+   "best_for": "Spartans and mid-Michigan residents",
+   "categories": []
+  },
+  {
+   "slug": "dfcu-financial",
+   "name": "DFCU Financial",
+   "tier": "regional",
+   "hq_city": "Dearborn",
+   "hq_state": "MI",
+   "members_approx": 240000,
+   "assets_b_approx": 6,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or worships in Michigan's Lower Peninsula or select Florida counties, plus family of members.",
+    "easy_path": "Lower Peninsula residency qualifies any Michigander.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Ford-born CU famous for one of the largest annual cash-back dividends in the industry.",
+   "blurb": "DFCU Financial, born at Ford, pays members a special patronage dividend \u2014 a cash payout that has totaled over half a billion dollars since 2006, among the industry's most generous. Any Lower Peninsula Michigander can join.",
+   "pros": [
+    "Long-running annual cash dividend to members",
+    "Open to all Lower Peninsula residents"
+   ],
+   "cons": [
+    "Everyday rates are ordinary \u2014 the dividend is the deal",
+    "Detroit-area branch concentration"
+   ],
+   "website": "https://www.dfcufinancial.com",
+   "best_for": "Michigan dividend hunters",
+   "categories": []
+  },
+  {
+   "slug": "wings-financial",
+   "name": "Wings Credit Union",
+   "tier": "regional",
+   "hq_city": "Apple Valley",
+   "hq_state": "MN",
+   "members_approx": 350000,
+   "assets_b_approx": 9,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Air-transportation industry employees nationwide, residents of the Twin Cities, Seattle, Detroit, Atlanta and Orlando metros \u2014 or anyone via a small one-time donation to the Wings Financial Foundation.",
+    "easy_path": "Anyone can join: a $5 one-time foundation donation during the application qualifies you nationwide.",
+    "anyone_can_join": true,
+    "join_cost": "$5 deposit + $5 one-time foundation donation if needed"
+   },
+   "products_brief": "Aviation-industry CU with nationwide open path, strong CDs, and fee-light accounts.",
+   "blurb": "Wings began with Northwest Airlines workers and still serves aviation nationwide, but a $5 foundation donation opens membership to anyone. Its certificates and money markets frequently lead the Minnesota market, and fees are scarce.",
+   "pros": [
+    "$5 donation path open nationwide",
+    "Strong CD and money market pricing"
+   ],
+   "cons": [
+    "Branches limited to a few metros",
+    "Aviation branding obscures its open membership"
+   ],
+   "website": "https://www.wingsfinancial.com",
+   "best_for": "Twin Cities savers and aviation workers",
+   "categories": []
+  },
+  {
+   "slug": "affinity-plus",
+   "name": "Affinity Plus Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "St. Paul",
+   "hq_state": "MN",
+   "members_approx": 260000,
+   "assets_b_approx": 4.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Minnesota state employees, U of M community, residents of many Minnesota communities \u2014 or anyone via a one-time $25 donation to the Affinity Plus Foundation.",
+    "easy_path": "Anyone can join: the $25 foundation donation option in the application covers all comers.",
+    "anyone_can_join": true,
+    "join_cost": "$10 share + $25 one-time donation if joining via foundation"
+   },
+   "products_brief": "Member-obsessed Minnesota CU with superb service ratings and full digital banking.",
+   "blurb": "Affinity Plus consistently posts some of the highest member-satisfaction scores of any US financial institution, and a $25 foundation donation lets anyone in the country join. Products are fair across the board; service is the star.",
+   "pros": [
+    "Elite member-service reputation",
+    "Foundation donation path open nationwide"
+   ],
+   "cons": [
+    "$25 join cost is higher than peer workarounds",
+    "Rates are fair rather than leading"
+   ],
+   "website": "https://www.affinityplus.org",
+   "best_for": "Service-first members in Minnesota and beyond",
+   "categories": []
+  },
+  {
+   "slug": "keesler",
+   "name": "Keesler Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Biloxi",
+   "hq_state": "MS",
+   "members_approx": 300000,
+   "assets_b_approx": 5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in qualifying Mississippi Gulf Coast counties and Louisiana/Alabama border areas, Keesler AFB personnel, and family of members.",
+    "easy_path": "Gulf Coast residency covers most of south Mississippi.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Mississippi's largest CU with Gulf Coast dominance and frequent CD specials.",
+   "blurb": "Keesler Federal, rooted at the Biloxi air base, is Mississippi's largest credit union and the Gulf Coast's financial cooperative anchor, known for aggressive certificate specials and military-grade service culture.",
+   "pros": [
+    "Frequent regionally leading CD specials",
+    "Dense Gulf Coast branch coverage"
+   ],
+   "cons": [
+    "South Mississippi/border focus only",
+    "Everyday savings rates are modest"
+   ],
+   "website": "https://www.kfcu.org",
+   "best_for": "Mississippi Gulf Coast households",
+   "categories": []
+  },
+  {
+   "slug": "hope",
+   "name": "Hope Credit Union",
+   "tier": "regional",
+   "hq_city": "Jackson",
+   "hq_state": "MS",
+   "members_approx": 35000,
+   "assets_b_approx": 0.6,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Residents of the Deep South communities Hope serves (MS, LA, AL, AR, TN) \u2014 or anyone in the US by joining the Hope Enterprise Corporation association with a small one-time contribution during signup.",
+    "easy_path": "Anyone can join: a ~$10 one-time association contribution opens membership nationwide.",
+    "anyone_can_join": true,
+    "join_cost": "$10 association contribution + share deposit"
+   },
+   "products_brief": "Mission-driven CDFI credit union financing underserved Deep South communities; deposits open nationwide.",
+   "blurb": "Hope is a community-development credit union channeling deposits into Black-majority and underbanked Deep South towns that banks abandoned. Anyone nationwide can join and hold insured savings that funds that mission \u2014 impact banking with NCUA protection.",
+   "pros": [
+    "Deposits directly fund underserved communities",
+    "Open nationwide via small association fee"
+   ],
+   "cons": [
+    "Rates are mission-fair, not market-leading",
+    "Thin branch and digital infrastructure"
+   ],
+   "website": "https://www.hopecu.org",
+   "best_for": "Impact-minded savers anywhere",
+   "categories": []
+  },
+  {
+   "slug": "together",
+   "name": "Together Credit Union",
+   "tier": "regional",
+   "hq_city": "St. Louis",
+   "hq_state": "MO",
+   "members_approx": 130000,
+   "assets_b_approx": 2.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in the St. Louis metro (Missouri and Illinois sides), Anheuser-Busch employees nationwide, and family of members.",
+    "easy_path": "St. Louis metro residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "The former Anheuser-Busch employees' CU, now metro-wide with free checking and fair lending.",
+   "blurb": "Born inside Anheuser-Busch, Together Credit Union now serves the whole St. Louis metro on both riverbanks. It's a steady, fee-light primary-banking option with brewery-era loyalty in its DNA.",
+   "pros": [
+    "Both MO and IL sides of metro qualify",
+    "Free checking, low fees"
+   ],
+   "cons": [
+    "Rates rarely lead the market",
+    "Modest branch count"
+   ],
+   "website": "https://www.togethercu.org",
+   "best_for": "St. Louis metro residents",
+   "categories": []
+  },
+  {
+   "slug": "whitefish",
+   "name": "Whitefish Credit Union",
+   "tier": "regional",
+   "hq_city": "Whitefish",
+   "hq_state": "MT",
+   "members_approx": 60000,
+   "assets_b_approx": 1.9,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives in Montana, plus family of members.",
+    "easy_path": "All Montanans qualify by residency.",
+    "anyone_can_join": false,
+    "join_cost": "$25 share deposit"
+   },
+   "products_brief": "Montana's largest credit union: statewide eligibility, land-loan expertise, no-fee culture.",
+   "blurb": "Whitefish CU is Montana's biggest cooperative and one of its most distinctive lenders \u2014 it understands raw land, ranch, and rural property loans that coastal banks won't touch. Every Montanan qualifies.",
+   "pros": [
+    "Open to all Montana residents",
+    "Rare expertise in land and rural lending"
+   ],
+   "cons": [
+    "Flathead Valley branch concentration",
+    "Plain deposit menu"
+   ],
+   "website": "https://www.whitefishcu.com",
+   "best_for": "Montanans, especially rural borrowers",
+   "categories": []
+  },
+  {
+   "slug": "centris",
+   "name": "Centris Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Omaha",
+   "hq_state": "NE",
+   "members_approx": 130000,
+   "assets_b_approx": 1.2,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in the Omaha metro and qualifying eastern Nebraska counties (plus Pottawattamie County, Iowa), and family of members.",
+    "easy_path": "Omaha-area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Omaha's leading CU with free checking, solid autos, and business banking.",
+   "blurb": "Centris is greater Omaha's homegrown credit union, a practical full-service alternative to the region's banks with free checking and a growing small-business operation.",
+   "pros": [
+    "Solid Omaha branch coverage",
+    "Business banking for a mid-size CU"
+   ],
+   "cons": [
+    "Eastern Nebraska focus only",
+    "Average rates"
+   ],
+   "website": "https://www.centrisfcu.org",
+   "best_for": "Omaha metro households",
+   "categories": []
+  },
+  {
+   "slug": "greater-nevada",
+   "name": "Greater Nevada Credit Union",
+   "tier": "regional",
+   "hq_city": "Carson City",
+   "hq_state": "NV",
+   "members_approx": 90000,
+   "assets_b_approx": 1.9,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in Nevada, plus family of members.",
+    "easy_path": "All Nevadans qualify by residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Statewide Nevada CU strong in mortgages, ag lending, and northern Nevada branches.",
+   "blurb": "Greater Nevada covers the whole Silver State and is one of its largest CU mortgage lenders, with unusual agricultural-lending depth for the rural north. Any Nevadan can join.",
+   "pros": [
+    "Open to all Nevada residents",
+    "Strong mortgage and ag lending"
+   ],
+   "cons": [
+    "Branches skew northern Nevada",
+    "Deposit yields are mid-pack"
+   ],
+   "website": "https://www.gncu.org",
+   "best_for": "Nevada residents",
+   "categories": []
+  },
+  {
+   "slug": "service-fcu",
+   "name": "Service Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Portsmouth",
+   "hq_state": "NH",
+   "members_approx": 350000,
+   "assets_b_approx": 5.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Military members and veterans, DoD personnel, residents of New Hampshire and nearby counties \u2014 or anyone in the US via free membership in the American Consumer Council.",
+    "easy_path": "Anyone can join: pick the free American Consumer Council option in the application.",
+    "anyone_can_join": true,
+    "join_cost": "$5 share deposit; ACC membership free"
+   },
+   "products_brief": "Military-focused CU with branches in Germany, 10% deposit-rate match perks, open to all via ACC.",
+   "blurb": "Service CU pairs deep military focus \u2014 including branches on bases in Germany \u2014 with one of the easiest open-membership paths anywhere: a free American Consumer Council membership. Its dividend-boosting direct-deposit perks reward primary banking.",
+   "pros": [
+    "Free nationwide membership path via ACC",
+    "Direct-deposit rate boosts and early pay"
+   ],
+   "cons": [
+    "Branches limited to New England and military bases",
+    "Best perks require direct deposit relationship"
+   ],
+   "website": "https://www.servicecu.org",
+   "best_for": "Military families and open-membership seekers",
+   "categories": []
+  },
+  {
+   "slug": "st-marys-bank",
+   "name": "St. Mary's Bank",
+   "tier": "regional",
+   "hq_city": "Manchester",
+   "hq_state": "NH",
+   "members_approx": 120000,
+   "assets_b_approx": 1.7,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in New Hampshire or select border counties of Massachusetts, Vermont, and Maine, plus family of members.",
+    "easy_path": "New Hampshire residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "America's first credit union (1908), still serving New Hampshire with full-service banking.",
+   "blurb": "St. Mary's Bank is, despite the name, a credit union \u2014 the very first one chartered in the United States, founded 1908 by Manchester millworkers. Today it's a full-service New Hampshire cooperative with a museum's worth of history and a modern product shelf.",
+   "pros": [
+    "Historic institution with deep NH roots",
+    "Full-service lineup including business banking"
+   ],
+   "cons": [
+    "'Bank' name confuses shoppers",
+    "Rates are steady, not chart-topping"
+   ],
+   "website": "https://www.stmarysbank.com",
+   "best_for": "New Hampshire residents and history buffs",
+   "categories": []
+  },
+  {
+   "slug": "affinity-nj",
+   "name": "Affinity Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Basking Ridge",
+   "hq_state": "NJ",
+   "members_approx": 250000,
+   "assets_b_approx": 4,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Members of hundreds of New Jersey-area employers and associations \u2014 or anyone via the New Jersey Coalition for Financial Education (small donation) or Affinity Foundation membership during signup.",
+    "easy_path": "Anyone can join: a small one-time donation to an affiliated nonprofit in the application qualifies you nationwide.",
+    "anyone_can_join": true,
+    "join_cost": "$5 share + ~$5 one-time donation if joining via nonprofit"
+   },
+   "products_brief": "New Jersey's largest CU with open nonprofit join path, solid CDs, and full lending.",
+   "blurb": "Affinity is New Jersey's biggest credit union and quietly one of the open-membership crowd \u2014 a small nonprofit donation at signup admits anyone. Garden State members get a dense branch network; everyone else gets competitive certificates online.",
+   "pros": [
+    "Small-donation path open to all",
+    "NJ's largest CU branch network"
+   ],
+   "cons": [
+    "Best rates often require bundled relationships",
+    "Digital experience is mid-tier"
+   ],
+   "website": "https://www.affinityfcu.com",
+   "best_for": "New Jersey households and CD shoppers",
+   "categories": []
+  },
+  {
+   "slug": "nusenda",
+   "name": "Nusenda Credit Union",
+   "tier": "regional",
+   "hq_city": "Albuquerque",
+   "hq_state": "NM",
+   "members_approx": 270000,
+   "assets_b_approx": 5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in most New Mexico counties (and El Paso County, TX), UNM community, and family of members.",
+    "easy_path": "Most New Mexicans qualify by residency.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "New Mexico's largest CU: statewide reach, free checking, community-lending mission.",
+   "blurb": "Nusenda is New Mexico's flagship cooperative, open to most of the state, with free checking and a community-rewards program that funds local nonprofits based on member card swipes.",
+   "pros": [
+    "Near-statewide New Mexico eligibility",
+    "Community rewards giving program"
+   ],
+   "cons": [
+    "Rates are regional-average",
+    "Service capacity strains at peak"
+   ],
+   "website": "https://www.nusenda.org",
+   "best_for": "New Mexico residents",
+   "categories": []
+  },
+  {
+   "slug": "unfcu",
+   "name": "United Nations Federal Credit Union (UNFCU)",
+   "tier": "regional",
+   "hq_city": "Long Island City",
+   "hq_state": "NY",
+   "members_approx": 200000,
+   "assets_b_approx": 8,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "UN system employees, retirees, NGOs affiliated with the UN, and their families \u2014 a genuinely international field of membership.",
+    "easy_path": null,
+    "anyone_can_join": false,
+    "join_cost": "$25 share deposit"
+   },
+   "products_brief": "Banking for the UN community worldwide: multi-currency fluency, international wires, expat-aware service.",
+   "blurb": "UNFCU exists for the UN's global workforce \u2014 people whose financial lives span duty stations and currencies. For members it handles international realities (wires, expat credit, overseas service) that US banks fumble; for everyone else it's admire-from-afar.",
+   "pros": [
+    "Expat and international banking fluency",
+    "Serves members in 200+ countries"
+   ],
+   "cons": [
+    "Strict UN-affiliation requirement",
+    "Domestic rates are unremarkable"
+   ],
+   "website": "https://www.unfcu.org",
+   "best_for": "UN system staff and retirees",
+   "categories": []
+  },
+  {
+   "slug": "esl",
+   "name": "ESL Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Rochester",
+   "hq_state": "NY",
+   "members_approx": 400000,
+   "assets_b_approx": 9,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in the greater Rochester area, employees of partner companies, and family of members.",
+    "easy_path": "Greater Rochester residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Rochester's dominant financial institution, born at Eastman Kodak, with annual owner dividends.",
+   "blurb": "ESL \u2014 George Eastman's creation for Kodak workers \u2014 is now greater Rochester's leading financial institution of any kind, bank or credit union. Its annual Owners' Dividend has returned well over a hundred million dollars to members in good years.",
+   "pros": [
+    "Substantial annual member dividend",
+    "Dominant Rochester branch presence"
+   ],
+   "cons": [
+    "Rochester region only",
+    "Everyday rates are average \u2014 the dividend is the kicker"
+   ],
+   "website": "https://www.esl.org",
+   "best_for": "Greater Rochester households",
+   "categories": []
+  },
+  {
+   "slug": "hudson-valley",
+   "name": "Hudson Valley Credit Union",
+   "tier": "regional",
+   "hq_city": "Poughkeepsie",
+   "hq_state": "NY",
+   "members_approx": 350000,
+   "assets_b_approx": 7,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in New York's Hudson Valley counties (Dutchess, Ulster, Orange, Putnam and neighbors), plus family of members.",
+    "easy_path": "Hudson Valley residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "The Hudson Valley's leading CU with free checking, strong CDs, and broad county coverage.",
+   "blurb": "HVCU is the Hudson Valley's financial anchor between the NYC metro and the Capital District, with certificate pricing that regularly beats downstate banks and free checking across its seven-county footprint.",
+   "pros": [
+    "Competitive CD rates for New York",
+    "Broad mid-Hudson eligibility"
+   ],
+   "cons": [
+    "Regional footprint only",
+    "Branch density thins at the edges"
+   ],
+   "website": "https://www.hvcu.org",
+   "best_for": "Hudson Valley New Yorkers",
+   "categories": []
+  },
+  {
+   "slug": "coastal",
+   "name": "Coastal Credit Union",
+   "tier": "regional",
+   "hq_city": "Raleigh",
+   "hq_state": "NC",
+   "members_approx": 330000,
+   "assets_b_approx": 5.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in the Research Triangle's qualifying counties, employees of hundreds of partner companies, and family of members.",
+    "easy_path": "Triangle-area residency or employment qualifies most locals.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "The Research Triangle's tech-economy CU with high-yield checking tiers and video tellers.",
+   "blurb": "Coastal serves Raleigh-Durham's tech corridor with rate-tiered checking that rewards engagement and a pioneering video-teller branch model with extended hours. The Triangle's strongest CU alternative to SECU for private-sector workers.",
+   "pros": [
+    "High-yield checking tiers",
+    "Extended-hours video teller network"
+   ],
+   "cons": [
+    "Triangle-region eligibility",
+    "Top rates require multiple relationship boxes"
+   ],
+   "website": "https://www.coastal24.com",
+   "best_for": "Research Triangle professionals",
+   "categories": []
+  },
+  {
+   "slug": "truliant",
+   "name": "Truliant Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Winston-Salem",
+   "hq_state": "NC",
+   "members_approx": 340000,
+   "assets_b_approx": 5.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, or worships in qualifying North Carolina, Virginia, and South Carolina counties, plus partner employers and family of members.",
+    "easy_path": "Piedmont Triad and Charlotte-area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Piedmont-region CU across three states with free checking and small-business focus.",
+   "blurb": "Truliant spans the Carolinas' Piedmont into Virginia with a straightforward value proposition: free checking, fair loans, and unusually attentive small-business banking for a credit union its size.",
+   "pros": [
+    "Three-state Piedmont eligibility",
+    "Good small-business services"
+   ],
+   "cons": [
+    "Rates are steady, not leading",
+    "Branch coverage gaps between metros"
+   ],
+   "website": "https://www.truliantfcu.org",
+   "best_for": "Piedmont Carolinians",
+   "categories": []
+  },
+  {
+   "slug": "capital-cu-nd",
+   "name": "Capital Credit Union",
+   "tier": "regional",
+   "hq_city": "Bismarck",
+   "hq_state": "ND",
+   "members_approx": 50000,
+   "assets_b_approx": 0.8,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in North Dakota's qualifying central and western counties, plus family of members.",
+    "easy_path": "Bismarck-Mandan area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$25 share deposit"
+   },
+   "products_brief": "Central North Dakota cooperative with ag lending roots and community banking basics.",
+   "blurb": "Capital CU serves the Bismarck-Mandan region with the prairie essentials done right: free checking, ag-aware lending, and decision-makers who live in town.",
+   "pros": [
+    "Local ag and small-business understanding",
+    "Community-scale service"
+   ],
+   "cons": [
+    "Limited central-ND footprint",
+    "Basic digital tools"
+   ],
+   "website": "https://www.capcu.org",
+   "best_for": "Central North Dakotans",
+   "categories": []
+  },
+  {
+   "slug": "ge-credit-union",
+   "name": "General Electric Credit Union",
+   "tier": "regional",
+   "hq_city": "Cincinnati",
+   "hq_state": "OH",
+   "members_approx": 250000,
+   "assets_b_approx": 5.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in the Cincinnati tri-state region (southwest Ohio, northern Kentucky, southeast Indiana), GE Aerospace ties, and family of members.",
+    "easy_path": "Tri-state Cincinnati residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Cincinnati-region CU with nationally competitive deposit rates and a strong rewards card.",
+   "blurb": "GECU (the Cincinnati one) consistently posts certificate and money-market rates that make national comparison tables \u2014 unusual for a regional institution \u2014 plus free checking and a genuinely competitive rewards credit card.",
+   "pros": [
+    "Deposit rates that frequently chart nationally",
+    "Strong rewards credit card"
+   ],
+   "cons": [
+    "Tri-state Cincinnati eligibility only",
+    "Shares its acronym with an unrelated El Paso CU"
+   ],
+   "website": "https://www.gecreditunion.org",
+   "best_for": "Cincinnati tri-state savers",
+   "categories": []
+  },
+  {
+   "slug": "superior",
+   "name": "Superior Credit Union",
+   "tier": "regional",
+   "hq_city": "Lima",
+   "hq_state": "OH",
+   "members_approx": 120000,
+   "assets_b_approx": 1.7,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in dozens of western and central Ohio counties, plus family of members.",
+    "easy_path": "Western Ohio residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Western Ohio CU repeatedly ranked among America's healthiest, with standout mortgage pricing.",
+   "blurb": "Superior is a small-city Ohio cooperative that keeps landing on national 'best-performing credit union' lists, with mortgage and CD pricing that punches far above its Lima headquarters' weight.",
+   "pros": [
+    "Repeatedly top-ranked for financial performance",
+    "Sharp mortgage rates"
+   ],
+   "cons": [
+    "Western Ohio footprint",
+    "Modest digital polish"
+   ],
+   "website": "https://www.superiorcu.com",
+   "best_for": "Western Ohio homebuyers",
+   "categories": []
+  },
+  {
+   "slug": "tinker",
+   "name": "Tinker Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Oklahoma City",
+   "hq_state": "OK",
+   "members_approx": 480000,
+   "assets_b_approx": 7,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Tinker AFB and military personnel, employees of hundreds of partner groups, anyone who lives or works in qualifying central Oklahoma areas, and family of members.",
+    "easy_path": "Central Oklahoma residency or employer lists cover most OKC-area residents.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Oklahoma's largest credit union, Air Force-born, with statewide-scale branches and fair pricing across the board.",
+   "blurb": "Tinker Federal is Oklahoma's biggest cooperative, anchored to its namesake Air Force base but open to most of central Oklahoma. Members get the classic big-CU bundle: free checking, fair loans, and broad branch access.",
+   "pros": [
+    "Oklahoma's largest CU branch network",
+    "Military-friendly heritage and service"
+   ],
+   "cons": [
+    "Central-Oklahoma eligibility focus",
+    "Rates are fair, rarely spectacular"
+   ],
+   "website": "https://www.tinkerfcu.org",
+   "best_for": "Central Oklahomans",
+   "categories": []
+  },
+  {
+   "slug": "ttcu",
+   "name": "TTCU Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Tulsa",
+   "hq_state": "OK",
+   "members_approx": 160000,
+   "assets_b_approx": 2.8,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives or works in the Tulsa region and other qualifying Oklahoma counties, school employees statewide, and family of members.",
+    "easy_path": "Tulsa-area residency qualifies you.",
+    "anyone_can_join": false,
+    "join_cost": "$5 minimum deposit"
+   },
+   "products_brief": "Tulsa's teacher-born CU, now community-wide, with free checking and education-sector perks.",
+   "blurb": "TTCU grew from Tulsa's teachers into the city's community credit union, keeping education-sector perks while opening to the broader region. A fee-light, locally rooted alternative to Tulsa's banks.",
+   "pros": [
+    "Education-sector perks remain strong",
+    "Free checking, low fees"
+   ],
+   "cons": [
+    "Tulsa-region focus",
+    "Average deposit yields"
+   ],
+   "website": "https://www.ttcu.com",
+   "best_for": "Tulsa-area residents and Oklahoma educators",
+   "categories": []
+  },
+  {
+   "slug": "onpoint",
+   "name": "OnPoint Community Credit Union",
+   "tier": "regional",
+   "hq_city": "Portland",
+   "hq_state": "OR",
+   "members_approx": "500,000+",
+   "assets_b_approx": 9.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live or work in one of 28 Oregon counties or Clark/Skamania counties in Washington.",
+    "easy_path": "Broad geographic field covering most of Oregon's population.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Full-service checking and savings, strong HELOC and mortgage lineup, business banking, and one of the largest branch networks in Oregon.",
+   "blurb": "OnPoint is Oregon's largest credit union and a fixture in the Portland metro, known for branch density (including in-store locations) and consistent local service awards.",
+   "pros": [
+    "Largest branch network in Oregon",
+    "Competitive HELOC rates",
+    "Strong local reputation"
+   ],
+   "cons": [
+    "Membership limited to OR and two WA counties",
+    "Savings rates middle of the pack"
+   ],
+   "website": "onpointcu.com",
+   "best_for": "Oregonians who want a big-bank branch footprint with credit union pricing",
+   "categories": []
+  },
+  {
+   "slug": "oregon-community",
+   "name": "Oregon Community Credit Union",
+   "tier": "regional",
+   "hq_city": "Eugene",
+   "hq_state": "OR",
+   "members_approx": "250,000+",
+   "assets_b_approx": 3.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live or work in most Oregon counties.",
+    "easy_path": "Geographic membership covering the bulk of the state.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking with no monthly fees, auto loans (a major indirect lender in the state), credit cards, and mortgages.",
+   "blurb": "OCCU is a major auto lender in the Pacific Northwest and keeps fees low across its everyday accounts.",
+   "pros": [
+    "Very competitive auto loan rates",
+    "Free checking",
+    "Statewide eligibility"
+   ],
+   "cons": [
+    "Branches concentrated in western Oregon",
+    "Limited presence outside OR"
+   ],
+   "website": "myoccu.org",
+   "best_for": "Oregon car buyers and fee-averse checking customers",
+   "categories": [
+    "auto-loans"
+   ]
+  },
+  {
+   "slug": "psecu",
+   "name": "PSECU",
+   "tier": "regional",
+   "hq_city": "Harrisburg",
+   "hq_state": "PA",
+   "members_approx": "500,000+",
+   "assets_b_approx": 8.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Pennsylvania state employees, students/alumni of many PA colleges, employees of hundreds of partner groups, and relatives of members.",
+    "easy_path": "Affiliation with one of dozens of partner associations (some joinable for a small fee).",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Digital-first banking: free checking with ATM rebates, solid savings rates, low-rate credit cards and auto loans. Few branches by design.",
+   "blurb": "PSECU runs a nearly branchless, digital-first model and passes the savings to members through ATM fee rebates and low loan rates.",
+   "pros": [
+    "Up to $20/month ATM rebates",
+    "Low loan rates",
+    "Strong app for a regional CU"
+   ],
+   "cons": [
+    "Almost no physical branches",
+    "Eligibility mostly PA-tied"
+   ],
+   "website": "psecu.com",
+   "best_for": "Pennsylvanians comfortable with branchless digital banking",
+   "categories": []
+  },
+  {
+   "slug": "members-1st",
+   "name": "Members 1st Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Mechanicsburg",
+   "hq_state": "PA",
+   "members_approx": "500,000+",
+   "assets_b_approx": 7.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in central Pennsylvania counties, or family of a member.",
+    "easy_path": "Broad community charter across south-central PA.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Full-service retail and business banking with 60+ branches across central Pennsylvania.",
+   "blurb": "Members 1st pairs a dense central-PA branch network with full-service lending, making it the default community option in the Harrisburg region.",
+   "pros": [
+    "60+ branches in central PA",
+    "Full business banking",
+    "Family eligibility passes down"
+   ],
+   "cons": [
+    "Regional footprint only",
+    "Rates good but not market-leading"
+   ],
+   "website": "members1st.org",
+   "best_for": "Central Pennsylvania households that want in-person service",
+   "categories": [
+    "mortgages",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "citadel",
+   "name": "Citadel Credit Union",
+   "tier": "regional",
+   "hq_city": "Exton",
+   "hq_state": "PA",
+   "members_approx": "250,000+",
+   "assets_b_approx": 6.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in the greater Philadelphia region (Bucks, Chester, Delaware, Lancaster, Montgomery, Philadelphia counties).",
+    "easy_path": "Community charter across the Philly suburbs.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "High-yield savings promos, certificates that frequently top regional rate tables, mortgages, and business banking.",
+   "blurb": "Citadel regularly posts some of the most aggressive CD and savings promo rates in the Philadelphia market.",
+   "pros": [
+    "Frequently chart-topping CD specials",
+    "Growing branch network",
+    "Full product lineup"
+   ],
+   "cons": [
+    "Philly-region eligibility only",
+    "Promo rates can require new money"
+   ],
+   "website": "citadelbanking.com",
+   "best_for": "Philadelphia-area savers chasing CD specials",
+   "categories": [
+    "cd-rates"
+   ]
+  },
+  {
+   "slug": "american-heritage",
+   "name": "American Heritage Credit Union",
+   "tier": "regional",
+   "hq_city": "Philadelphia",
+   "hq_state": "PA",
+   "members_approx": "250,000+",
+   "assets_b_approx": 4.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of 800+ workplace partners, residents of certain Philadelphia-area communities \u2014 or anyone who joins the Kids-N-Hope Foundation.",
+    "easy_path": "Donate to the Kids-N-Hope Foundation (about $15, one-time) and you're eligible nationwide.",
+    "anyone_can_join": true,
+    "join_cost": "~$15 one-time foundation donation + $5 share deposit"
+   },
+   "products_brief": "Competitive money market and CD rates, free checking options, auto and home lending.",
+   "blurb": "American Heritage is one of the lesser-known anyone-can-join credit unions: a small one-time donation to its children's health foundation opens membership from anywhere in the US.",
+   "pros": [
+    "Anyone can join via foundation donation",
+    "Strong CD and money market rates",
+    "Full-service lineup"
+   ],
+   "cons": [
+    "Branches only in greater Philadelphia",
+    "App is serviceable, not standout"
+   ],
+   "website": "americanheritagecu.org",
+   "best_for": "Rate shoppers anywhere in the US looking for an easy-membership CU",
+   "categories": [
+    "savings",
+    "nationwide"
+   ]
+  },
+  {
+   "slug": "navigant",
+   "name": "Navigant Credit Union",
+   "tier": "regional",
+   "hq_city": "Smithfield",
+   "hq_state": "RI",
+   "members_approx": "100,000+",
+   "assets_b_approx": 3.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in Rhode Island or nearby Connecticut/Massachusetts counties.",
+    "easy_path": "Community charter covering essentially all of Rhode Island.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking, savings, CDs, mortgages, and business lending with the largest credit union branch footprint in Rhode Island.",
+   "blurb": "Navigant is Rhode Island's largest credit union, over a century old, with deep roots in the state's mill-town communities.",
+   "pros": [
+    "Largest CU in Rhode Island",
+    "Century-plus history",
+    "Business lending strength"
+   ],
+   "cons": [
+    "Small geographic footprint",
+    "Rates are solid, not exceptional"
+   ],
+   "website": "navigantcu.org",
+   "best_for": "Rhode Islanders who want a local full-service institution",
+   "categories": []
+  },
+  {
+   "slug": "founders",
+   "name": "Founders Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Lancaster",
+   "hq_state": "SC",
+   "members_approx": "250,000+",
+   "assets_b_approx": 4.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of hundreds of partner companies and residents of certain South Carolina counties and nearby NC areas.",
+    "easy_path": "Broad employer and community lists across upstate South Carolina.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Low-rate auto loans and credit cards, free checking, branches across upstate SC and into North Carolina.",
+   "blurb": "Founders is a Carolinas mainstay known for very low loan rates and a no-frills, member-first culture.",
+   "pros": [
+    "Consistently low loan rates",
+    "30+ branches in the Carolinas",
+    "Low fees"
+   ],
+   "cons": [
+    "Eligibility tied to SC/NC areas and employers",
+    "Digital tools are basic"
+   ],
+   "website": "foundersfcu.com",
+   "best_for": "Carolina borrowers prioritizing rate over app polish",
+   "categories": [
+    "auto-loans"
+   ]
+  },
+  {
+   "slug": "black-hills",
+   "name": "Black Hills Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Rapid City",
+   "hq_state": "SD",
+   "members_approx": "100,000+",
+   "assets_b_approx": 2.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in South Dakota.",
+    "easy_path": "Statewide South Dakota community charter.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking, savings, ag and business lending, mortgages, and auto loans across South Dakota.",
+   "blurb": "Black Hills FCU is South Dakota's largest credit union, with statewide eligibility and a lending book that reflects the state's ranching and small-business economy.",
+   "pros": [
+    "Anyone in South Dakota can join",
+    "Ag and business lending expertise",
+    "Statewide branches"
+   ],
+   "cons": [
+    "SD-only eligibility",
+    "Modest deposit rates"
+   ],
+   "website": "bhfcu.com",
+   "best_for": "South Dakotans, especially ranchers and small-business owners",
+   "categories": [
+    "small-business"
+   ]
+  },
+  {
+   "slug": "eastman",
+   "name": "Eastman Credit Union",
+   "tier": "regional",
+   "hq_city": "Kingsport",
+   "hq_state": "TN",
+   "members_approx": "250,000+",
+   "assets_b_approx": 8.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees of Eastman Chemical and hundreds of partner employers, plus residents of specific TN/VA/TX counties.",
+    "easy_path": "Broad employer list and Tri-Cities-area community eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Famous for paying large annual member dividends, plus low loan rates, free checking, and strong CDs.",
+   "blurb": "Eastman CU routinely returns extraordinary annual bonus dividends to members \u2014 frequently among the largest payouts of any US credit union \u2014 on top of already competitive rates.",
+   "pros": [
+    "Annual bonus dividend payouts",
+    "Excellent loan rates",
+    "High member satisfaction"
+   ],
+   "cons": [
+    "Eligibility concentrated in TN/VA Tri-Cities",
+    "Limited national accessibility"
+   ],
+   "website": "ecu.org",
+   "best_for": "Tri-Cities residents who want a CU that literally pays you back",
+   "categories": [
+    "cd-rates"
+   ]
+  },
+  {
+   "slug": "ornl",
+   "name": "ORNL Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Oak Ridge",
+   "hq_state": "TN",
+   "members_approx": "180,000+",
+   "assets_b_approx": 3.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in 19 East Tennessee counties.",
+    "easy_path": "Broad East Tennessee community charter.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Full-service banking born out of the Oak Ridge National Laboratory community: checking, mortgages, auto loans, and business accounts.",
+   "blurb": "Founded for Manhattan Project-era lab workers, ORNL FCU now serves a 19-county swath of East Tennessee with full-service banking.",
+   "pros": [
+    "19-county eligibility",
+    "Strong mortgage lineup",
+    "Deep community history"
+   ],
+   "cons": [
+    "East TN only",
+    "Branch hours vary by location"
+   ],
+   "website": "ornlfcu.com",
+   "best_for": "Knoxville and Oak Ridge-area households",
+   "categories": []
+  },
+  {
+   "slug": "university-fcu",
+   "name": "University Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Austin",
+   "hq_state": "TX",
+   "members_approx": "380,000+",
+   "assets_b_approx": 4.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "UT Austin students/alumni/staff, employees of hundreds of partner groups, and residents of the Austin and Galveston areas.",
+    "easy_path": "Membership in partner associations open to Austin-area residents.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Free checking, strong auto lending, mortgages tuned to the Austin market, and university-adjacent perks.",
+   "blurb": "UFCU is Austin's hometown credit union, with deep University of Texas ties and a big share of the local auto loan market.",
+   "pros": [
+    "Strong Austin branch coverage",
+    "Competitive auto rates",
+    "UT community perks"
+   ],
+   "cons": [
+    "Eligibility centered on Austin/Galveston",
+    "Deposit rates mid-tier"
+   ],
+   "website": "ufcu.org",
+   "best_for": "Austinites and the UT community",
+   "categories": []
+  },
+  {
+   "slug": "credit-human",
+   "name": "Credit Human",
+   "tier": "regional",
+   "hq_city": "San Antonio",
+   "hq_state": "TX",
+   "members_approx": "300,000+",
+   "assets_b_approx": 4.0,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in greater San Antonio, plus select partner groups nationally.",
+    "easy_path": "San Antonio community charter; some national association paths.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking and savings, CDs that often lead Texas rate tables, and a national manufactured-housing lending program.",
+   "blurb": "Credit Human (formerly SACU) pairs San Antonio retail banking with one of the country's largest manufactured-home lending operations.",
+   "pros": [
+    "Often chart-topping CD rates",
+    "Manufactured-housing lending specialist",
+    "Mission-driven brand"
+   ],
+   "cons": [
+    "Retail eligibility mostly San Antonio",
+    "Smaller branch network"
+   ],
+   "website": "credithuman.com",
+   "best_for": "San Antonio savers and manufactured-home buyers nationwide",
+   "categories": [
+    "cd-rates",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "american-airlines-cu",
+   "name": "American Airlines Credit Union",
+   "tier": "regional",
+   "hq_city": "Fort Worth",
+   "hq_state": "TX",
+   "members_approx": "300,000+",
+   "assets_b_approx": 9.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Employees and retirees of the air transportation industry and their family members.",
+    "easy_path": "Any air-transport-industry connection \u2014 airlines, airports, aviation contractors \u2014 qualifies.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Priority checking, strong CD ladder options, auto loans, and branches in dozens of US airports.",
+   "blurb": "AA Credit Union serves the whole air transportation industry, not just American Airlines, with branches inside major airports and consistently solid CD rates.",
+   "pros": [
+    "Industry-wide (not just AA) eligibility",
+    "Airport branch network",
+    "Competitive CDs"
+   ],
+   "cons": [
+    "Must have aviation connection",
+    "Branches inconvenient for non-travelers"
+   ],
+   "website": "aacreditunion.org",
+   "best_for": "Anyone working in or retired from aviation",
+   "categories": []
+  },
+  {
+   "slug": "goldenwest",
+   "name": "Goldenwest Credit Union",
+   "tier": "regional",
+   "hq_city": "Ogden",
+   "hq_state": "UT",
+   "members_approx": "180,000+",
+   "assets_b_approx": 3.0,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in most Utah counties.",
+    "easy_path": "Broad Utah community charter.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking, savings, auto and RV loans, mortgages, plus in-house insurance services.",
+   "blurb": "Goldenwest, founded by railroad workers in 1936, now serves most of Utah with full banking plus an unusual in-house insurance agency.",
+   "pros": [
+    "Near-statewide Utah eligibility",
+    "Bundled insurance services",
+    "Competitive auto/RV loans"
+   ],
+   "cons": [
+    "Utah-centric",
+    "Deposit rates trail online leaders"
+   ],
+   "website": "gwcu.org",
+   "best_for": "Utah households that want banking and insurance under one roof",
+   "categories": []
+  },
+  {
+   "slug": "new-england-fcu",
+   "name": "New England Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Williston",
+   "hq_state": "VT",
+   "members_approx": "170,000+",
+   "assets_b_approx": 3.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in Vermont or several New Hampshire counties.",
+    "easy_path": "Statewide Vermont eligibility following the VSECU merger.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Vermont's dominant mortgage lender among CUs, plus checking, savings, and auto loans.",
+   "blurb": "NEFCU, now combined with VSECU, is Vermont's largest credit union and a leading mortgage lender in the state.",
+   "pros": [
+    "Vermont's largest CU",
+    "Mortgage lending strength",
+    "Statewide eligibility"
+   ],
+   "cons": [
+    "VT/NH footprint only",
+    "Branch network is modest"
+   ],
+   "website": "nefcu.com",
+   "best_for": "Vermonters, especially homebuyers",
+   "categories": [
+    "mortgages"
+   ]
+  },
+  {
+   "slug": "langley",
+   "name": "Langley Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Newport News",
+   "hq_state": "VA",
+   "members_approx": "350,000+",
+   "assets_b_approx": 5.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Membership through hundreds of partner employers and associations in Hampton Roads, or via select association memberships.",
+    "easy_path": "Several partner associations are inexpensive to join.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "High-yield savings tiers, frequent CD specials, free checking, and Hampton Roads branch coverage.",
+   "blurb": "Born alongside NASA's Langley laboratory, Langley FCU is a Hampton Roads anchor that frequently posts strong savings and CD specials.",
+   "pros": [
+    "Frequent rate specials",
+    "Free checking",
+    "NASA-era heritage"
+   ],
+   "cons": [
+    "Eligibility mostly Hampton Roads",
+    "Out-of-area service is thin"
+   ],
+   "website": "langleyfcu.org",
+   "best_for": "Hampton Roads savers",
+   "categories": [
+    "cd-rates"
+   ]
+  },
+  {
+   "slug": "apple-fcu",
+   "name": "Apple Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Fairfax",
+   "hq_state": "VA",
+   "members_approx": "240,000+",
+   "assets_b_approx": 4.5,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in select Northern Virginia counties, plus school-community ties.",
+    "easy_path": "Broad Northern Virginia community eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Education-rooted CU with strong CD rates, free checking, and student/teacher-friendly products.",
+   "blurb": "Founded by Fairfax County educators, Apple FCU now serves much of Northern Virginia and is a regular on CD rate leaderboards.",
+   "pros": [
+    "Strong CD rates",
+    "Education-community roots",
+    "Free checking"
+   ],
+   "cons": [
+    "NoVA eligibility only",
+    "No relation to the tech company (worth saying out loud)"
+   ],
+   "website": "applefcu.org",
+   "best_for": "Northern Virginia savers and educators",
+   "categories": [
+    "cd-rates"
+   ]
+  },
+  {
+   "slug": "wsecu",
+   "name": "WSECU",
+   "tier": "regional",
+   "hq_city": "Olympia",
+   "hq_state": "WA",
+   "members_approx": "300,000+",
+   "assets_b_approx": 5.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Anyone who lives, works, worships, or attends school in Washington state.",
+    "easy_path": "Statewide Washington eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Free checking, competitive credit cards, mortgages, and branches across Washington.",
+   "blurb": "Washington State Employees Credit Union long ago opened to all Washingtonians and is now one of the state's most accessible full-service CUs.",
+   "pros": [
+    "Open to all Washington residents",
+    "Low-fee structure",
+    "Solid credit card lineup"
+   ],
+   "cons": [
+    "WA-only",
+    "BECU overshadows it in Puget Sound"
+   ],
+   "website": "wsecu.org",
+   "best_for": "Washingtonians outside BECU's orbit",
+   "categories": [
+    "checking"
+   ]
+  },
+  {
+   "slug": "stcu",
+   "name": "STCU",
+   "tier": "regional",
+   "hq_city": "Liberty Lake",
+   "hq_state": "WA",
+   "members_approx": "270,000+",
+   "assets_b_approx": 6.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in Washington or North Idaho.",
+    "easy_path": "Broad Inland Northwest eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Free checking, strong auto and home lending, and the dominant branch network in the Spokane region.",
+   "blurb": "Spokane Teachers Credit Union outgrew its name decades ago and is now the Inland Northwest's largest financial cooperative.",
+   "pros": [
+    "Dominant in Spokane/North Idaho",
+    "Free checking",
+    "Consistent service ratings"
+   ],
+   "cons": [
+    "Inland Northwest focus",
+    "Rates good, not national-leading"
+   ],
+   "website": "stcu.org",
+   "best_for": "Spokane and North Idaho residents",
+   "categories": []
+  },
+  {
+   "slug": "pioneer-wv",
+   "name": "Pioneer WV Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Charleston",
+   "hq_state": "WV",
+   "members_approx": "45,000+",
+   "assets_b_approx": 0.7,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live, work, worship, or attend school in Kanawha, Putnam, Clay, or Boone counties, West Virginia.",
+    "easy_path": "Community charter around the Charleston metro.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Checking, savings, auto loans, personal loans, and mortgages for the Charleston, WV metro.",
+   "blurb": "Pioneer WV is the Charleston area's homegrown credit union, serving state-capital-region households since 1936.",
+   "pros": [
+    "Local Charleston-metro focus",
+    "Personal service",
+    "Low fees"
+   ],
+   "cons": [
+    "Small footprint",
+    "Basic digital tools"
+   ],
+   "website": "pioneerwv.org",
+   "best_for": "Charleston, WV-area households",
+   "categories": []
+  },
+  {
+   "slug": "landmark",
+   "name": "Landmark Credit Union",
+   "tier": "regional",
+   "hq_city": "New Berlin",
+   "hq_state": "WI",
+   "members_approx": "380,000+",
+   "assets_b_approx": 6.5,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live or work in southern Wisconsin or northeastern Illinois.",
+    "easy_path": "Broad two-state regional eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Wisconsin's largest CU: premium checking with high-yield tiers, mortgages, auto loans, and 35+ branches.",
+   "blurb": "Landmark is Wisconsin's largest credit union, known for a high-yield premium checking account and a dense Milwaukee-area branch network.",
+   "pros": [
+    "High-yield checking option",
+    "Largest CU in Wisconsin",
+    "Broad regional eligibility"
+   ],
+   "cons": [
+    "Premium checking has activity requirements",
+    "Limited to WI/IL region"
+   ],
+   "website": "landmarkcu.com",
+   "best_for": "Milwaukee-area households chasing checking yield",
+   "categories": [
+    "checking"
+   ]
+  },
+  {
+   "slug": "summit",
+   "name": "Summit Credit Union",
+   "tier": "regional",
+   "hq_city": "Madison",
+   "hq_state": "WI",
+   "members_approx": "260,000+",
+   "assets_b_approx": 7.0,
+   "charter": "state",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Live or work in Wisconsin or select Minnesota counties.",
+    "easy_path": "Near-statewide Wisconsin eligibility.",
+    "anyone_can_join": false,
+    "join_cost": "$5 share deposit"
+   },
+   "products_brief": "Full-service banking with a financial-wellness bent: free checking, strong mortgage operation, and money-coaching programs.",
+   "blurb": "Summit is Madison's hometown credit union and one of Wisconsin's largest mortgage lenders, with an unusually deep financial-education program.",
+   "pros": [
+    "Major WI mortgage lender",
+    "Free financial coaching",
+    "Near-statewide eligibility"
+   ],
+   "cons": [
+    "WI/MN region only",
+    "Deposit rates mid-pack"
+   ],
+   "website": "summitcreditunion.com",
+   "best_for": "Wisconsin homebuyers and financial-wellness seekers",
+   "categories": [
+    "mortgages",
+    "small-business"
+   ]
+  },
+  {
+   "slug": "blue-fcu",
+   "name": "Blue Federal Credit Union",
+   "tier": "regional",
+   "hq_city": "Cheyenne",
+   "hq_state": "WY",
+   "members_approx": "130,000+",
+   "assets_b_approx": 2.0,
+   "charter": "federal",
+   "ncua_charter": null,
+   "fom": {
+    "summary": "Military/civilian personnel of partner organizations, residents of Wyoming and Colorado communities \u2014 or anyone who joins the Blue Foundation.",
+    "easy_path": "A one-time $5 donation to the Blue Foundation makes anyone in the US eligible.",
+    "anyone_can_join": true,
+    "join_cost": "$5 one-time foundation donation + $5 share deposit"
+   },
+   "products_brief": "High-yield accounts that frequently appear on national rate lists, plus checking, auto loans, and mortgages.",
+   "blurb": "Blue FCU, born at Warren Air Force Base, is one of the cheapest anyone-can-join credit unions in the country: a $5 foundation donation opens nationwide membership, and its CD and savings specials often rank nationally.",
+   "pros": [
+    "Anyone can join for a $5 donation",
+    "Nationally competitive rate specials",
+    "Strong digital onboarding"
+   ],
+   "cons": [
+    "Branches only in WY/CO",
+    "Top rates often promotional"
+   ],
+   "website": "bluefcu.com",
+   "best_for": "Rate shoppers anywhere wanting the cheapest open-membership path",
+   "categories": [
+    "savings",
+    "nationwide"
+   ]
+  }
+ ]
+}

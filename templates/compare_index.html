@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Credit Union Comparisons</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Head-to-head breakdowns of the credit unions people cross-shop most — who wins on rates, accessibility, and fit.</p>
+  </header>
+  <div class="compare-list">
+    {% for m in matchups %}
+    <a class="compare-row" href="../compare/{{ m.slug }}/index.html">
+      <span class="compare-names">{{ m.a_name }} <em>vs</em> {{ m.b_name }}</span>
+      <span class="compare-hint">{{ m.hint }}</span>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="next-links">Or browse <a href="../best-credit-unions/index.html">the full rankings</a> · <a href="../guides/index.html">roundups by need</a></p>
+</article>
+{% endblock %}

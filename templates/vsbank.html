@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block schema %}
+<script type="application/ld+json">{{ schema_json }}</script>
+{% endblock %}
+{% block content %}
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Credit Union vs Bank: An Honest Comparison</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
+    <p class="lede">Credit unions win on rates and fees most of the time. Banks win on convenience and technology some of the time. Here's the comparison without the cheerleading — including when a bank is genuinely the better choice.</p>
+  </header>
+
+  <h2>The structural difference (and why it matters)</h2>
+  <p>A bank is a for-profit company owned by shareholders. A credit union is a not-for-profit cooperative owned by its members — when you open an account, you become a part-owner. That's not marketing fluff; it shows up in the numbers. Profits that a bank pays out to shareholders, a credit union returns to members through higher savings rates, lower loan rates, and fewer fees. Industry data has consistently shown credit unions offering better average rates on savings, CDs, auto loans, and credit cards than banks.</p>
+
+  <h2>Side by side</h2>
+  <div class="table-scroll">
+  <table class="data-table">
+    <thead><tr><th>Factor</th><th>Credit unions</th><th>Banks</th><th>Edge</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Savings & CD rates</strong></td><td>Typically higher than bank averages</td><td>Big banks often pay near zero; online banks compete</td><td><span class="tag tag-yes">Credit unions</span> (vs traditional banks)</td></tr>
+      <tr><td><strong>Loan rates</strong></td><td>Usually lower, especially auto loans; federal CUs have an 18% rate cap on most loans</td><td>Vary widely; no rate cap</td><td><span class="tag tag-yes">Credit unions</span></td></tr>
+      <tr><td><strong>Fees</strong></td><td>Lower on average; free checking is common</td><td>Monthly maintenance fees common at big banks</td><td><span class="tag tag-yes">Credit unions</span></td></tr>
+      <tr><td><strong>Technology</strong></td><td>Improving, but apps often lag</td><td>Big banks have the best apps in the industry</td><td><span class="tag tag-no">Banks</span></td></tr>
+      <tr><td><strong>Branch/ATM access</strong></td><td>Local branches + shared branching network of thousands of locations</td><td>National footprints at the largest banks</td><td>Tie — depends on your location</td></tr>
+      <tr><td><strong>Who can use it</strong></td><td>Must qualify for membership (often easy)</td><td>Anyone</td><td><span class="tag tag-no">Banks</span></td></tr>
+      <tr><td><strong>Deposit insurance</strong></td><td>NCUA, up to $250,000</td><td>FDIC, up to $250,000</td><td>Tie — identical protection</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>When a credit union is the better choice</h2>
+  <p>You're borrowing — auto loans are the classic credit union sweet spot. You hate fees. You want a human who can exercise judgment on a loan application instead of an algorithm. You keep meaningful savings in CDs or money market accounts. You value keeping your money in your community.</p>
+
+  <h2>When a bank is honestly better</h2>
+  <p>Three real cases. First, if you need cutting-edge digital tools — Zelle integration everywhere, instant card controls, sophisticated budgeting — the biggest banks and best fintechs still lead most credit unions. Second, if you travel constantly and want a branch in every city, only national banks deliver that. Third, if you simply can't or won't deal with membership eligibility, online banks have no such step — and the best high-yield online savings accounts beat the average credit union savings rate. We say this as a credit union review site: the right online bank beats the wrong credit union.</p>
+
+  <div class="alt-block">
+    <h2>Online bank alternatives worth knowing</h2>
+    {{ cta_bank_alt }}
+  </div>
+
+  <h2>The membership "catch" is smaller than you think</h2>
+  <p>The most common reason people stick with a mediocre bank is assuming they can't join a credit union. In reality, {{ acj_count }} of the credit unions we review accept anyone in the US — usually via a one-time $5–$25 charity donation. See the full list: <a href="../anyone-can-join/index.html">credit unions anyone can join</a>.</p>
+
+  <h2>Frequently asked questions</h2>
+  {% for faq in faqs %}
+  <details class="faq"><summary>{{ faq.q }}</summary><p>{{ faq.a }}</p></details>
+  {% endfor %}
+
+  <p class="next-links">Next: <a href="../best-credit-unions/index.html">the best credit unions of 2026</a> · <a href="../ncua-insurance/index.html">NCUA vs FDIC insurance</a></p>
+</article>
+{% endblock %}

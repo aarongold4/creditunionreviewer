@@ -1,0 +1,29 @@
+{
+ "_comment": "Affiliate link layer. While meta.affiliate_mode is false, CTAs use 'url' with rel='nofollow noopener'. When true, they use 'affiliate_url' (rel='nofollow sponsored noopener'), falling back to 'url' if affiliate_url is null. Optional 'bonus' shows only while today <= 'bonus_expires' (YYYY-MM-DD); expired bonuses are auto-dropped at build without editing this file.",
+ "offers": {
+  "penfed": {
+   "url": "https://www.penfed.org",
+   "affiliate_url": null,
+   "bonus": null,
+   "bonus_expires": null
+  },
+  "alliant": {
+   "url": "https://www.alliantcreditunion.org",
+   "affiliate_url": null,
+   "bonus": null,
+   "bonus_expires": null
+  },
+  "consumers": {
+   "url": "https://www.myconsumers.org",
+   "affiliate_url": null,
+   "bonus": null,
+   "bonus_expires": null
+  },
+  "bank_alt": {
+   "url": "https://www.creditunionreviewer.com/best-credit-union-savings-accounts/",
+   "affiliate_url": null,
+   "bonus": null,
+   "bonus_expires": null
+  }
+ }
+}

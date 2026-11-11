@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mortgage Payment Calculator (2026) | Credit Union Reviewer</title>
+<meta name="description" content="Free mortgage calculator: estimate your monthly principal and interest and total interest by home price, down payment, term, and rate.">
+<link rel="canonical" href="https://creditunionreviewer.com/mortgage-calculator/">
+<meta property="og:title" content="Mortgage Payment Calculator (2026) | Credit Union Reviewer">
+<meta property="og:description" content="Free mortgage calculator: estimate your monthly principal and interest and total interest by home price, down payment, term, and rate.">
+<meta property="og:url" content="https://creditunionreviewer.com/mortgage-calculator/">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Credit Union Reviewer">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,800&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../static/style.css?v=20261111">
+
+
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Article", "headline": "Mortgage Payment Calculator", "description": "Estimate monthly mortgage payments and total interest.", "url": "https://creditunionreviewer.com/mortgage-calculator/", "dateModified": "2026-06-07", "author": {"@type": "Person", "name": "Nathan Blake"}, "publisher": {"@type": "Organization", "name": "Credit Union Reviewer", "url": "https://creditunionreviewer.com"}}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this include taxes and insurance?", "acceptedAnswer": {"@type": "Answer", "text": "No — it shows principal and interest only. Your full monthly payment also includes property taxes, homeowners insurance, PMI (if you put down less than 20%), and any HOA dues."}}, {"@type": "Question", "name": "How much does the interest rate matter?", "acceptedAnswer": {"@type": "Answer", "text": "A lot. Over 30 years, even a half-point difference in rate can change total interest by tens of thousands of dollars. It's worth comparing a credit union's rate against other lenders."}}, {"@type": "Question", "name": "Should I choose a 15- or 30-year term?", "acceptedAnswer": {"@type": "Answer", "text": "A 15-year loan has higher monthly payments but far less total interest and builds equity faster. A 30-year loan lowers the monthly payment at the cost of more interest. Try both in the calculator."}}, {"@type": "Question", "name": "Is the pre-filled rate a real quote?", "acceptedAnswer": {"@type": "Answer", "text": "No — it's the lowest representative 30-year rate among the credit unions we review, as a starting point. Get an actual Loan Estimate for your real rate."}}]}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://creditunionreviewer.com/"}, {"@type": "ListItem", "position": 2, "name": "Mortgage Calculator", "item": "https://creditunionreviewer.com/mortgage-calculator/"}]}]</script>
+
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="logo" href="../index.html"><span class="logo-mark">CU</span> Credit Union Reviewer</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav">
+      <a href="../best-credit-unions/index.html">Best Credit Unions</a>
+      <a href="../anyone-can-join/index.html">Anyone Can Join</a>
+      <a href="../guides/index.html">Guides</a>
+      <a href="../rates/index.html">Rates</a>
+      <a href="../compare/index.html">Compare</a>
+      <a href="../credit-union-vs-bank/index.html">CU vs Bank</a>
+      <a href="../how-to-join/index.html">How to Join</a>
+      <a href="../state/index.html">By State</a>
+      <a href="../credit-unions/index.html">Directory</a>
+    </nav>
+  </div>
+</header>
+
+
+<div class="wrap breadcrumbs" aria-label="Breadcrumb">
+  <a href="../index.html">Home</a> <span class="bc-sep">›</span> <span class="bc-current">Mortgage Calculator</span>
+</div>
+
+
+<main>
+
+<article class="wrap article">
+  <header class="article-header">
+    <h1>Mortgage Payment Calculator</h1>
+    <p class="byline">By <a href="../about/index.html">Nathan Blake</a> · Last verified 2026-06-07</p>
+    <p class="lede">Estimate your monthly principal-and-interest payment and total interest. Adjust the price, down payment, term, and rate — then see how a credit union's mortgage rate changes the picture.</p>
+  </header>
+
+  <div class="calc" id="mtg-calc" data-default-apr="6.35">
+  <div class="calc-grid calc-grid-4">
+    <label>Home price
+      <div class="calc-input"><span class="calc-pre">$</span><input type="number" id="mtg-price" value="400000" min="10000" step="5000"></div>
+    </label>
+    <label>Down payment
+      <div class="calc-input"><span class="calc-pre">$</span><input type="number" id="mtg-down" value="80000" min="0" step="5000"></div>
+    </label>
+    <label>Term (years)
+      <select id="mtg-term">
+        <option value="30" selected>30</option>
+        <option value="20">20</option>
+        <option value="15">15</option>
+        <option value="10">10</option>
+      </select>
+    </label>
+    <label>APR (%)
+      <div class="calc-input"><input type="number" id="mtg-apr" value="6.35" min="0" max="15" step="0.01"><span class="calc-post">%</span></div>
+    </label>
+  </div>
+  <div class="calc-out">
+    <div class="calc-result"><span class="calc-label">Monthly principal &amp; interest</span><span class="calc-big" id="mtg-monthly">$0</span></div>
+    <div class="calc-result"><span class="calc-label">Total interest</span><span class="calc-val" id="mtg-interest">$0</span></div>
+    <div class="calc-result"><span class="calc-label">Loan amount</span><span class="calc-val" id="mtg-loan">$0</span></div>
+  </div>
+  <p class="calc-note">Principal and interest only — excludes property taxes, homeowners insurance, PMI, and HOA dues, which can add meaningfully to your monthly payment. APR pre-filled with the lowest representative 30-year rate among the credit unions we review (as of 2026-06-07).</p>
+</div>
+<script>
+(function () {
+  var box = document.getElementById('mtg-calc');
+  if (!box) return;
+  var price = document.getElementById('mtg-price');
+  var down = document.getElementById('mtg-down');
+  var term = document.getElementById('mtg-term');
+  var apr = document.getElementById('mtg-apr');
+  var fmt = function (n) { return '$' + (Math.round(n)).toLocaleString('en-US'); };
+  function calc() {
+    var P = Math.max(0, (parseFloat(price.value) || 0) - (parseFloat(down.value) || 0));
+    var n = (parseInt(term.value, 10) || 1) * 12;
+    var r = (parseFloat(apr.value) || 0) / 100 / 12;
+    var m = r === 0 ? P / n : P * r * Math.pow(1 + r, n) / (Math.pow(1 + r, n) - 1);
+    document.getElementById('mtg-loan').textContent = fmt(P);
+    document.getElementById('mtg-monthly').textContent = fmt(m);
+    document.getElementById('mtg-interest').textContent = fmt(m * n - P);
+  }
+  [price, down, term, apr].forEach(function (el) { el.addEventListener('input', calc); el.addEventListener('change', calc); });
+  calc();
+})();
+</script>
+
+  <h2>What this includes (and what it doesn't)</h2>
+  <p>The result is principal and interest only — the part of your payment that pays down the loan. Your real monthly housing cost also includes property taxes, homeowners insurance, private mortgage insurance (PMI) if your down payment is under 20%, and any HOA dues. Those can add hundreds of dollars a month, so treat this figure as the loan portion, not your full payment.</p>
+
+  <h2>Why the rate is worth shopping</h2>
+  <p>Over a 30-year loan, a small rate difference compounds into tens of thousands of dollars. Credit unions often carry lower fees and competitive rates, and because they're member-owned, the savings flow back to you. Pull a credit union's 30-year rate from our tables and compare it against at least one other lender's Loan Estimate before committing.</p>
+
+  <div class="alt-block">
+    <h2>Find a credit union mortgage rate</h2>
+    <p>See which credit unions are strongest for home loans, then drop their rate into the calculator above:</p>
+    <p><a class="btn btn-primary" href="../best-credit-unions-for-mortgages/index.html">Best credit unions for mortgages →</a></p>
+  </div>
+
+  <h2>Frequently asked questions</h2>
+  
+  <details class="faq"><summary>Does this include taxes and insurance?</summary><p>No — it shows principal and interest only. Your full monthly payment also includes property taxes, homeowners insurance, PMI (if you put down less than 20%), and any HOA dues.</p></details>
+  
+  <details class="faq"><summary>How much does the interest rate matter?</summary><p>A lot. Over 30 years, even a half-point difference in rate can change total interest by tens of thousands of dollars. It's worth comparing a credit union's rate against other lenders.</p></details>
+  
+  <details class="faq"><summary>Should I choose a 15- or 30-year term?</summary><p>A 15-year loan has higher monthly payments but far less total interest and builds equity faster. A 30-year loan lowers the monthly payment at the cost of more interest. Try both in the calculator.</p></details>
+  
+  <details class="faq"><summary>Is the pre-filled rate a real quote?</summary><p>No — it's the lowest representative 30-year rate among the credit unions we review, as a starting point. Get an actual Loan Estimate for your real rate.</p></details>
+  
+
+  <p class="next-links">Next: <a href="../best-credit-unions-for-mortgages/index.html">best mortgage credit unions</a> · <a href="../auto-loan-calculator/index.html">auto loan calculator</a> · <a href="../rates/index.html">all rate tables</a></p>
+</article>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p class="footer-logo"><span class="logo-mark">CU</span> Credit Union Reviewer</p>
+      <p class="footer-tag">Plain-English credit union reviews. Written for members, not banks.</p>
+      <p class="footer-verified">Data last verified: 2026-06-07</p>
+      <p class="footer-cadence">Rates and membership details are reviewed monthly and after major rate-environment changes; the date above reflects the last full human verification.</p>
+    </div>
+    <div>
+      <h4>Guides</h4>
+      <a href="../guides/index.html">All Roundups & Guides</a>
+      <a href="../best-credit-unions/index.html">Best Credit Unions</a>
+      <a href="../anyone-can-join/index.html">Credit Unions Anyone Can Join</a>
+      <a href="../rates/index.html">Rate Tables</a>
+      <a href="../can-i-join/index.html">Can I Join? Finder</a>
+      <a href="../credit-unions/index.html">All Credit Unions (A–Z)</a>
+      <a href="../auto-loan-calculator/index.html">Auto Loan Calculator</a>
+      <a href="../mortgage-calculator/index.html">Mortgage Calculator</a>
+      <a href="../credit-union-vs-bank/index.html">Credit Union vs Bank</a>
+      <a href="../ncua-insurance/index.html">NCUA Insurance Explained</a>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <a href="../about/index.html">About</a>
+      <a href="../compare/index.html">Comparisons</a>
+      <a href="../glossary/index.html">Glossary</a>
+      <a href="../methodology/index.html">Methodology</a>
+      <a href="../how-we-make-money/index.html">How We Make Money</a>
+      <a href="../contact/index.html">Contact</a>
+      <a href="../privacy/index.html">Privacy Policy</a>
+      <a href="../cookies/index.html">Cookie Policy</a>
+      <a href="../terms/index.html">Terms of Use</a>
+      <a href="../disclaimer/index.html">Disclaimer</a>
+    </div>
+  </div>
+  <div class="wrap footer-legal">
+    <p>CreditUnionReviewer.com is an independent, reader-supported publication. We are not a credit union, bank, or financial advisor, and nothing on this site is financial advice. Rates and membership requirements change — always verify directly with the institution. Federally insured credit unions are insured by the NCUA up to $250,000 per share owner, per insured credit union, per account ownership category.</p>
+    <p>© 2026 Credit Union Reviewer. All rights reserved.</p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookie-banner" hidden>
+  <p class="cookie-text">We use cookies for basic site analytics and, where applicable, advertising. You can accept or decline non-essential cookies. See our <a href="../cookies/index.html">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button type="button" class="btn btn-ghost cookie-btn" id="cookie-decline">Decline</button>
+    <button type="button" class="btn btn-primary cookie-btn" id="cookie-accept">Accept</button>
+  </div>
+</div>
+<script>
+(function () {
+  var banner = document.getElementById('cookie-banner');
+  if (!banner) return;
+  var stored;
+  try { stored = localStorage.getItem('cu_consent'); } catch (e) { stored = null; }
+  if (!stored) { banner.hidden = false; }
+  function set(v) {
+    try { localStorage.setItem('cu_consent', v); } catch (e) {}
+    banner.hidden = true;
+    if (v === 'accepted' && window.cuLoadAnalytics) window.cuLoadAnalytics();
+  }
+  document.getElementById('cookie-accept').addEventListener('click', function () { set('accepted'); });
+  document.getElementById('cookie-decline').addEventListener('click', function () { set('declined'); });
+})();
+</script>
+<script src="../static/site.js?v=20261111"></script>
+</body>
+</html>

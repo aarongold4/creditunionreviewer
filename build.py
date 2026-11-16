@@ -28,10 +28,16 @@ GA4_ID = _META.get("ga4_id", "")
 GSC_TOKEN = _META.get("gsc_token", "")
 BING_TOKEN = _META.get("bing_token", "")
 FORM_ACTION = _META.get("form_action", "")
+ADSENSE_CLIENT = _META.get("adsense_client", "")
 BUILD_VERSION = date.today().strftime("%Y%m%d")     # cache-buster only
 TODAY = date.today().isoformat()                    # for date-expiry exclusion
 
 AFFILIATES = json.loads((ROOT / "data" / "affiliates.json").read_text())["offers"]
+# Single source of truth for every outbound "Visit / Open account" link (all 100
+# CUs + bank_alt). Swap a value for a tracking URL after affiliate approval.
+LINKS = json.loads((ROOT / "data" / "links.json").read_text())["links"]
+# Outbound product links are marked as paid placements per site policy.
+OUTBOUND_REL = "sponsored nofollow"
 
 
 def _active(expires):
@@ -61,6 +67,7 @@ TOKENS = {
     "GSC_TOKEN": GSC_TOKEN,
     "BING_TOKEN": BING_TOKEN,
     "FORM_ACTION": FORM_ACTION,
+    "ADSENSE_CLIENT": ADSENSE_CLIENT,
 }
 
 
@@ -70,12 +77,10 @@ def _cta(key, brand, tagline, points, btn, disclosure=True):
        - affiliate_mode True   -> affiliate_url, rel='nofollow sponsored noopener'
          (falls back to public url + non-sponsored rel if affiliate_url missing)
        An optional dated bonus is shown only while not expired."""
+    # Outbound URL comes from links.json (single config); swap there post-approval.
     offer = AFFILIATES.get(key, {})
-    public = offer.get("url") or "/"
-    aff = offer.get("affiliate_url")
-    sponsored = AFFILIATE_MODE and bool(aff)
-    href = aff if sponsored else public
-    rel = "nofollow sponsored noopener" if sponsored else "nofollow noopener"
+    href = LINKS.get(key) or offer.get("url") or "/"
+    rel = OUTBOUND_REL
     target = ' target="_blank"' if href.startswith("http") else ""
 
     bonus = offer.get("bonus")
@@ -732,6 +737,7 @@ def main():
                          {"name": cu["name"], "href": f"reviews/{cu['slug']}/index.html"}],
             cu=cu, state_name=STATE_NAMES[cu["hq_state"]],
             comparisons=cu_to_matchups.get(cu["slug"], []),
+            visit_url=LINKS.get(cu["slug"], cu["website"]), outbound_rel=OUTBOUND_REL,
         )
 
     # ---------- State pages (50 + index) ----------
@@ -837,11 +843,12 @@ def main():
 <h2>Information we collect</h2>
 <p><strong>Analytics data.</strong> We use Google Analytics to understand aggregate site usage: pages visited, approximate location, device type, and referral source. This data is collected via cookies and similar technologies and does not directly identify you.</p>
 <p><strong>Contact form submissions.</strong> If you contact us, we receive the name, email address, and message you provide. We use it only to respond to you.</p>
-<p><strong>Advertising data.</strong> Third-party advertising partners may use cookies to serve ads based on your prior visits to this and other websites. These partners have their own privacy policies governing their data use.</p>
+<p><strong>Advertising data.</strong> We use Google AdSense and may use other third-party advertising vendors. <strong>Google and other third-party vendors use cookies to serve ads based on a user's prior visits to this website and other websites.</strong> Google's use of advertising cookies enables it and its partners to serve ads to you based on your visits to this site and/or other sites on the internet. These partners have their own privacy policies governing their data use.</p>
 <h2>What we don't collect</h2>
 <p>We never ask for or store financial account numbers, Social Security numbers, or credit information. Any site claiming to be us and requesting such information is fraudulent. When you click through to a credit union or bank, their privacy policy governs from that point.</p>
-<h2>Cookies and choices</h2>
-<p>You can block or delete cookies through your browser settings. You can opt out of Google Analytics with Google's browser add-on, and out of personalized advertising at aboutads.info/choices.</p>
+<h2>Cookies and your choices</h2>
+<p>We use <strong>Google Analytics</strong> to measure aggregate site usage, and advertising cookies as described above. You can block or delete cookies through your browser settings, and you can opt out of Google Analytics with Google's <a href="https://tools.google.com/dlpage/gaoptout">browser add-on</a>.</p>
+<p>You may opt out of personalized advertising at <a href="https://adssettings.google.com">https://adssettings.google.com</a> (Google Ads Settings) or <a href="https://www.aboutads.info">https://www.aboutads.info</a> (Digital Advertising Alliance). Opting out does not remove ads; it makes them less tailored to you.</p>
 <h2>Third-party links</h2>
 <p>This site links to credit unions, banks, and other external sites. We're not responsible for their content or privacy practices.</p>
 <h2>Children</h2>
@@ -874,8 +881,7 @@ def main():
 <p><strong>Analytics (optional).</strong> If you accept, we use Google Analytics (GA4) to measure aggregate, de-identified usage — pages viewed, approximate region, device type, referral source — with IP anonymization enabled. These cookies do not load unless you accept.</p>
 <p><strong>Advertising (optional).</strong> Pages may display ads, and advertising partners may set cookies to limit repetition and measure performance. Where required, these load only with your consent. Affiliate links may set a cookie to attribute a referral if you open an account; this carries no extra cost to you.</p>
 <h2>Your choices</h2>
-<p>When you first visit, a banner lets you <strong>accept</strong> or <strong>decline</strong> non-essential cookies. Analytics will not run unless you accept. You can change your mind at any time by clearing this site's data in your browser, which will make the banner reappear.</p>
-<p>You can also block or delete cookies in your browser settings, opt out of Google Analytics with Google's <a href="https://tools.google.com/dlpage/gaoptout">browser add-on</a>, and manage personalized advertising at <a href="https://optout.aboutads.info">aboutads.info/choices</a> and <a href="https://www.youronlinechoices.eu">youronlinechoices.eu</a>. If you are in a region with "Do Not Sell or Share My Personal Information" rights, declining non-essential cookies covers that choice on this site.</p>
+<p>You can block or delete cookies in your browser settings. You can opt out of Google Analytics with Google's <a href="https://tools.google.com/dlpage/gaoptout">browser add-on</a>, and opt out of personalized advertising at <a href="https://adssettings.google.com">adssettings.google.com</a> (Google Ads Settings), <a href="https://www.aboutads.info">aboutads.info</a> (Digital Advertising Alliance), and <a href="https://www.youronlinechoices.eu">youronlinechoices.eu</a> (EU). Opting out does not remove ads; it makes them less tailored. See our <a href="../privacy/index.html">Privacy Policy</a> for how Google and other vendors use advertising cookies.</p>
 <h2>Changes</h2>
 <p>We may update this policy; the effective date above reflects the latest revision. Questions: use our <a href="../contact/index.html">contact form</a>.</p>
 <p class="note">This is a general, good-faith cookie notice. If you operate in a strict-consent jurisdiction (EU/UK) or your ad network requires a certified consent management platform, pair this with an IAB-TCF-compliant CMP before relying on it for legal compliance.</p>"""),
@@ -891,6 +897,16 @@ def main():
 <p>Federally insured credit unions are insured by the NCUA up to $250,000 per share owner, per insured credit union, per account ownership category. A small number of credit unions carry private (non-federal) insurance; verify any institution's status at ncua.gov before relying on coverage.</p>
 <h2>Third-party links</h2>
 <p>We link to credit unions, banks, and other external sites for your convenience. We don't control and aren't responsible for their content, products, or practices, and a link is not an endorsement.</p>"""),
+        "disclosure": ("Advertiser Disclosure", False, """
+<p><em>Last updated: June 7, 2026</em></p>
+<p>CreditUnionReviewer.com is free to read and supported by advertising and affiliate relationships. This page explains, in plain terms, how the site may earn money and how that does — and does not — affect what you read.</p>
+<h2>How we may earn money</h2>
+<p><strong>Advertising.</strong> We display ads served by third-party networks, including Google AdSense. Ad revenue depends on page views, not on what you buy, and advertisers have no say in our reviews, ratings, or rankings.</p>
+<p><strong>Affiliate and referral links.</strong> Some outbound links — the "Visit credit union," "Open account," and "Apply" buttons on our reviews and comparison pages — may be affiliate or referral links. If you open an account or take another qualifying action after clicking one, we may earn a commission or referral fee, <strong>at no additional cost to you</strong>. These links are marked with <code>rel="sponsored nofollow"</code>. Where a credit union has no affiliate program, the same button simply points to its official membership page and earns us nothing.</p>
+<h2>What compensation never changes</h2>
+<p>Payment never buys a place on this site, a higher star rating, or a better ranking. Our five-factor scores (rates, fees, membership access, digital experience, and products) are editorial assessments reached the same way for every institution, and many credit unions we rate highly pay us nothing at all. See our <a href="../methodology/index.html">methodology</a> and <a href="../how-we-make-money/index.html">how we make money</a> for the full picture.</p>
+<h2>Not financial advice</h2>
+<p>Nothing on this site is individualized financial advice, and rates and terms change — always confirm current details with the credit union before you act. See our <a href="../disclaimer/index.html">full disclaimer</a>, <a href="../privacy/index.html">privacy policy</a>, and <a href="../terms/index.html">terms of use</a>.</p>"""),
     }
 
     for slug, (h1, byline, body) in simple_pages.items():
@@ -916,6 +932,7 @@ def main():
             "terms": "Terms of use for CreditUnionReviewer.com, including our not-financial-advice and accuracy disclaimers.",
             "cookies": "Cookie Policy for CreditUnionReviewer.com: the essential, analytics, and advertising cookies we use and how to control them.",
             "disclaimer": "Disclaimer for CreditUnionReviewer.com: not financial advice, rate accuracy, advertiser disclosure, and NCUA insurance notes.",
+            "disclosure": "Advertiser disclosure for CreditUnionReviewer.com: how the site earns money through ads and affiliate links, and why that never changes our ratings or rankings.",
         }
         render(
             "simple.html", path,
@@ -1218,6 +1235,10 @@ def main():
     (DIST / "sitemap.xml").write_text("\n".join(lines))
     (DIST / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\n\nSitemap: {BASE_URL}/sitemap.xml\n")
+
+    # Google AdSense authorized-sellers file (exact line required by AdSense).
+    (DIST / "ads.txt").write_text(
+        "google.com, pub-4897434778726769, DIRECT, f08c47fec0942fa0\n")
 
     print(f"Built {len(PAGES)} pages -> {DIST}")
 

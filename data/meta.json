@@ -6,7 +6,8 @@
   "gsc_token": "",
   "bing_token": "",
   "form_action": "",
+  "adsense_client": "ca-pub-4897434778726769",
   "_comment": "verified_date drives the sitewide 'Last verified' stamp, schema dateModified, and sitemap lastmod. Bump it ONLY when the data in creditunions.json / rates.json / ratings.json has actually been re-checked against the credit unions' live disclosures. A code or design rebuild should NOT change this date. Format: YYYY-MM-DD.",
   "_affiliate_mode": "false during seasoning: CTAs link to each credit union's real public site (url field) with rel=nofollow noopener (NOT sponsored). When affiliate applications are approved, put real links in affiliate_url fields of affiliates.json, set this to true, and rebuild.",
-  "_settings": "ga4_id (G-XXXXXXX), gsc_token (Search Console HTML-tag content value), bing_token, form_action (contact-form endpoint). Leave blank to omit entirely from the built site."
+  "_settings": "ga4_id (G-XXXXXXX, enables Google Analytics on every page), gsc_token, bing_token, form_action (contact endpoint), adsense_client (ca-pub-..., enables the AdSense loader on every page). Leave any blank to omit it from the built site."
 }

@@ -10,6 +10,10 @@
     <p class="lede">{% if cu.tier == 'full' %}{{ cu.editorial[0] }}{% else %}{{ cu.blurb }}{% endif %}</p>
   </header>
 
+  <div class="disclosure-strip">Advertiser disclosure: the "Visit" links below may be paid placements. <a href="../../disclosure/index.html">How we make money</a> — it never changes our ratings.</div>
+
+  <p class="review-visit"><a class="btn btn-primary" href="{{ visit_url }}" rel="{{ outbound_rel }}" target="_blank">Visit {{ cu.name }}'s official site &rarr;</a></p>
+
   {% if cu.rating %}
   <div class="rating-box">
     <div class="rating-score">

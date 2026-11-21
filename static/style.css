@@ -133,6 +133,7 @@ li { margin-bottom: 0.35rem; }
 .data-table tbody tr:nth-child(even) { background: var(--cream); }
 .data-table tbody tr:hover { background: var(--teal-100); }
 .table-note { font-size: 0.82rem; color: var(--ink-soft); }
+.table-sub { display: block; font-size: 0.78rem; color: var(--ink-soft); white-space: nowrap; }
 
 .tag { display: inline-block; font-size: 0.72rem; font-weight: 700; padding: 0.14rem 0.55rem; border-radius: 999px; text-transform: uppercase; letter-spacing: 0.04em; }
 .tag-yes { background: #d9efdc; color: #1e6b34; }

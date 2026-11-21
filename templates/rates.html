@@ -20,7 +20,7 @@
     <thead><tr>
       <th data-sort="text">Credit Union</th>
       <th data-sort="num">Savings APY</th>
-      <th data-sort="text">3-mo trend</th>
+      <th data-sort="text">Trend</th>
       <th data-sort="num">Money Market APY</th>
       <th data-sort="text">Anyone can join?</th>
     </tr></thead>
@@ -29,7 +29,7 @@
       <tr>
         <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
         <td>{{ "%.2f"|format(cu.rates.savings_apy) }}%</td>
-        <td>{{ cu.spark.savings_apy }} {{ cu.trend.savings_apy }}</td>
+        <td>{% if cu.spark.savings_apy %}{{ cu.spark.savings_apy }} {{ cu.trend.savings_apy }}{% else %}<span class="trend trend-flat" title="Trend tracking starts with our next verified rate check">—</span>{% endif %}</td>
         <td>{{ "%.2f"|format(cu.rates.mm_apy) }}%</td>
         <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
       </tr>
@@ -45,9 +45,10 @@
     <thead><tr>
       <th data-sort="text">Credit Union</th>
       <th data-sort="num">12-month</th>
-      <th data-sort="text">12-mo trend</th>
+      <th data-sort="text">Trend</th>
       <th data-sort="num">36-month</th>
       <th data-sort="num">60-month</th>
+      <th data-sort="num">Best special</th>
       <th data-sort="text">Anyone can join?</th>
     </tr></thead>
     <tbody>
@@ -55,15 +56,17 @@
       <tr>
         <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
         <td>{{ "%.2f"|format(cu.rates.cd_12) }}%</td>
-        <td>{{ cu.spark.cd_12 }} {{ cu.trend.cd_12 }}</td>
+        <td>{% if cu.spark.cd_12 %}{{ cu.spark.cd_12 }} {{ cu.trend.cd_12 }}{% else %}<span class="trend trend-flat" title="Trend tracking starts with our next verified rate check">—</span>{% endif %}</td>
         <td>{{ "%.2f"|format(cu.rates.cd_36) }}%</td>
         <td>{{ "%.2f"|format(cu.rates.cd_60) }}%</td>
+        <td>{% if cu.rates.cd_special %}{{ "%.2f"|format(cu.rates.cd_special.apy) }}% <span class="table-sub">{{ cu.rates.cd_special.term }}</span>{% else %}—{% endif %}</td>
         <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
   </div>
+  <p class="table-note">Ranked by standard 12-month rates. "Best special" is the highest promotional certificate each credit union advertised on its own site as of {{ rates_as_of }}, shown with its term; check minimums and new-money rules on the review. A dash means we found no special or could not read one on its site.</p>
 
   <h2 id="checking">Highest checking APYs (rewards checking)</h2>
   <div class="table-scroll">

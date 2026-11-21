@@ -1,5 +1,5 @@
 {
- "_comment": "SINGLE source of truth for every outbound 'Visit / Open account / Apply' link on the site. Keys are credit-union slugs (plus 'bank_alt'). Values are the official membership URL now; after affiliate approval, replace a value with your tracking/affiliate URL and rebuild \u2014 nothing else changes. All these links render with rel=\"sponsored nofollow\" automatically.",
+ "_comment": "SINGLE source of truth for every outbound 'Visit / Open account / Apply' link on the site. Keys are credit-union slugs (plus 'bank_alt'). Values are the official membership URL now; after affiliate approval, replace a value with your tracking/affiliate URL and rebuild \u2014 nothing else changes. Links render with rel=\"nofollow noopener\" while affiliate_mode is false, and rel=\"nofollow sponsored noopener\" once it is true.",
  "links": {
   "navy-federal": "https://www.navyfederal.org",
   "secu-north-carolina": "https://www.ncsecu.org",
@@ -101,6 +101,6 @@
   "landmark": "https://landmarkcu.com",
   "summit": "https://summitcreditunion.com",
   "blue-fcu": "https://bluefcu.com",
-  "bank_alt": "https://www.creditunionreviewer.com/best-credit-union-savings-accounts/"
+  "bank_alt": "https://onlinebankreview.com/best-online-banks/"
  }
 }

@@ -18,6 +18,7 @@
       <th data-sort="text">Credit Union</th>
       <th data-sort="num">Rating</th>
       {% if cat.rate_col %}<th data-sort="num">{{ cat.rate_col_label }}</th>{% endif %}
+      {% if cat.key == "cd-rates" %}<th data-sort="num">Best special</th>{% endif %}
       <th data-sort="text">Can anyone join?</th>
       <th data-sort="text">Why it's here</th>
     </tr></thead>
@@ -27,6 +28,7 @@
         <td><strong><a href="../reviews/{{ cu.slug }}/index.html">{{ cu.name }}</a></strong></td>
         <td class="cell-rating">{% if cu.rating %}{{ cu.rating.stars }} <span class="rating-num">{{ cu.rating.overall }}</span>{% else %}—{% endif %}</td>
         {% if cat.rate_col %}<td>{% if cu.rates and cu.rates[cat.rate_col] is not none %}{{ "%.2f"|format(cu.rates[cat.rate_col]) }}%{% else %}—{% endif %}</td>{% endif %}
+        {% if cat.key == "cd-rates" %}<td>{% if cu.rates and cu.rates.cd_special %}{{ "%.2f"|format(cu.rates.cd_special.apy) }}% <span class="table-sub">{{ cu.rates.cd_special.term }}</span>{% else %}—{% endif %}</td>{% endif %}
         <td>{% if cu.fom.anyone_can_join %}<span class="tag tag-yes">Yes</span>{% else %}<span class="tag tag-no">Restricted</span>{% endif %}</td>
         <td>{{ cu.best_for }}</td>
       </tr>
@@ -34,6 +36,7 @@
     </tbody>
   </table>
   </div>
+  {% if cat.key == "cd-rates" %}<p class="table-note">Ranked by standard 12-month certificate rates. "Best special" is the highest promotional certificate each credit union advertised on its own site as of {{ rates_as_of }}; specials often have odd terms, minimums or new-money rules and can end at any time. A dash means we found no special or could not read one on its site.</p>{% endif %}
   {% if cat.rate_col %}<p class="table-note">Rates as of {{ rates_as_of }}, representative — verify before acting. <a href="../rates/index.html">Full rate tables →</a></p>{% endif %}
 
   {% for cu in picks %}

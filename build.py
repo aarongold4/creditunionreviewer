@@ -36,8 +36,9 @@ AFFILIATES = json.loads((ROOT / "data" / "affiliates.json").read_text())["offers
 # Single source of truth for every outbound "Visit / Open account" link (all 100
 # CUs + bank_alt). Swap a value for a tracking URL after affiliate approval.
 LINKS = json.loads((ROOT / "data" / "links.json").read_text())["links"]
-# Outbound product links are marked as paid placements per site policy.
-OUTBOUND_REL = "sponsored nofollow"
+# Outbound link rel follows affiliate_mode (see CLAUDE.md): while affiliate_mode is
+# false no link is paid, so "sponsored" would be inaccurate.
+OUTBOUND_REL = "nofollow sponsored noopener" if AFFILIATE_MODE else "nofollow noopener"
 
 
 def _active(expires):
@@ -130,7 +131,7 @@ CTAS = {
         "Can't join a credit union, or want to compare? Top online banks pay competitive rates with no membership step.",
         ["No membership or eligibility requirements", "High-yield savings that rivals the best CUs",
          "FDIC insured up to $250,000"],
-        "Compare online bank offers &rarr;"),
+        "Compare online bank offers &rarr;", disclosure=False),
 }
 
 CATEGORIES = [
@@ -902,7 +903,7 @@ def main():
 <p>CreditUnionReviewer.com is free to read and supported by advertising and affiliate relationships. This page explains, in plain terms, how the site may earn money and how that does — and does not — affect what you read.</p>
 <h2>How we may earn money</h2>
 <p><strong>Advertising.</strong> We display ads served by third-party networks, including Google AdSense. Ad revenue depends on page views, not on what you buy, and advertisers have no say in our reviews, ratings, or rankings.</p>
-<p><strong>Affiliate and referral links.</strong> Some outbound links — the "Visit credit union," "Open account," and "Apply" buttons on our reviews and comparison pages — may be affiliate or referral links. If you open an account or take another qualifying action after clicking one, we may earn a commission or referral fee, <strong>at no additional cost to you</strong>. These links are marked with <code>rel="sponsored nofollow"</code>. Where a credit union has no affiliate program, the same button simply points to its official membership page and earns us nothing.</p>
+<p><strong>Affiliate and referral links.</strong> Some outbound links — the "Visit credit union," "Open account," and "Apply" buttons on our reviews and comparison pages — may be affiliate or referral links. If you open an account or take another qualifying action after clicking one, we may earn a commission or referral fee, <strong>at no additional cost to you</strong>. When a link is an affiliate link, it is marked with <code>rel="sponsored"</code>. Where a credit union has no affiliate program, the same button simply points to its official membership page and earns us nothing.</p>
 <h2>What compensation never changes</h2>
 <p>Payment never buys a place on this site, a higher star rating, or a better ranking. Our five-factor scores (rates, fees, membership access, digital experience, and products) are editorial assessments reached the same way for every institution, and many credit unions we rate highly pay us nothing at all. See our <a href="../methodology/index.html">methodology</a> and <a href="../how-we-make-money/index.html">how we make money</a> for the full picture.</p>
 <h2>Not financial advice</h2>

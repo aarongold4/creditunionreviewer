@@ -57,6 +57,7 @@
       <tr><td><strong>12-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_12) }}% {% if cu.spark %}<span class="spark-wrap">{{ cu.spark.cd_12 }} {{ cu.trend.cd_12 }}</span>{% endif %}</td></tr>
       <tr><td><strong>36-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_36) }}%</td></tr>
       <tr><td><strong>60-month CD APY</strong></td><td>{{ "%.2f"|format(cu.rates.cd_60) }}%</td></tr>
+      {% if cu.rates.cd_special %}<tr><td><strong>Best certificate special</strong></td><td>{{ "%.2f"|format(cu.rates.cd_special.apy) }}% APY, {{ cu.rates.cd_special.term }}{% if cu.rates.cd_special.min_deposit %}, {{ cu.rates.cd_special.min_deposit }} minimum{% endif %}{% if cu.rates.cd_special.condition %} ({{ cu.rates.cd_special.condition }}){% endif %}</td></tr>{% endif %}
       <tr><td><strong>New auto loan APR (from)</strong></td><td>{{ "%.2f"|format(cu.rates.auto_new_apr) }}%</td></tr>
       <tr><td><strong>Credit card APR (from)</strong></td><td>{{ "%.2f"|format(cu.rates.card_apr_low) }}%</td></tr>
       <tr><td><strong>30-yr fixed mortgage APR (sample)</strong></td><td>{{ "%.2f"|format(cu.rates.mortgage_30_apr) }}%</td></tr>

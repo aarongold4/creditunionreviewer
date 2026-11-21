@@ -11,7 +11,8 @@
    "cd_60": "60-month certificate APY %",
    "auto_new_apr": "new-auto APR % (from)",
    "card_apr_low": "credit card APR % (from)",
-   "mortgage_30_apr": "30-yr fixed APR % (sample)"
+   "mortgage_30_apr": "30-yr fixed APR % (sample)",
+   "cd_special": "best promotional certificate the credit union advertises on its own site (APY %, term, minimum, main condition); null when none was found or the site could not be read. Shown beside, never in place of, standard rates."
   }
  },
  "rates": {
@@ -26,7 +27,15 @@
    "card_apr_low": 10.49,
    "mortgage_30_apr": 6.923,
    "checking_note": "Flagship Checking pays a small tiered APY based on your balance.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": {
+    "apy": 4.35,
+    "term": "12-month",
+    "min_deposit": "$50",
+    "condition": "needs Navy Federal checking and direct deposit; $3,000 max",
+    "source_url": "https://www.navyfederal.org/checking-savings/savings/certificates.html",
+    "as_of": "2026-11-21"
+   }
   },
   "secu-north-carolina": {
    "savings_apy": 0.25,
@@ -41,7 +50,8 @@
    "checking_note": "Low, flat APY; SECU's edge is rock-bottom fees, not checking yield.",
    "unverified_fields": [
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "penfed": {
    "savings_apy": 3.0,
@@ -64,7 +74,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "schoolsfirst": {
    "savings_apy": 0.1,
@@ -77,7 +88,15 @@
    "card_apr_low": 10.25,
    "mortgage_30_apr": 7.32,
    "checking_note": "Tiered-rate checking; higher balances earn more.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": {
+    "apy": 4.3,
+    "term": "19-month",
+    "min_deposit": "$500",
+    "condition": "limited-time promo; promo rate for the first term only",
+    "source_url": "https://www.schoolsfirstfcu.org/rates/dividend/",
+    "as_of": "2026-11-21"
+   }
   },
   "becu": {
    "savings_apy": 0.25,
@@ -93,7 +112,8 @@
    "unverified_fields": [
     "cd_60",
     "auto_new_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "golden-1": {
    "savings_apy": 0.2,
@@ -109,7 +129,15 @@
    "unverified_fields": [
     "checking_apy",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": {
+    "apy": 4.3,
+    "term": "9-month",
+    "min_deposit": "$500",
+    "condition": "new money only; open in a branch or by phone",
+    "source_url": "https://www.golden1.com/manage-accounts/all-rates",
+    "as_of": "2026-11-21"
+   }
   },
   "america-first": {
    "savings_apy": 0.05,
@@ -122,7 +150,8 @@
    "card_apr_low": 11.49,
    "mortgage_30_apr": 7.122,
    "checking_note": "Premium checking tiers available.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": null
   },
   "alliant": {
    "savings_apy": 3.01,
@@ -139,7 +168,8 @@
     "mm_apy",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "mountain-america": {
    "savings_apy": 0.4,
@@ -162,7 +192,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "rbfcu": {
    "savings_apy": 0.3,
@@ -175,7 +206,8 @@
    "card_apr_low": 11.2,
    "mortgage_30_apr": 7.482,
    "checking_note": "Checking pays a token APY; no activity-based higher tier is listed.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": null
   },
   "suncoast": {
    "savings_apy": 0.5,
@@ -197,7 +229,8 @@
     "cd_60",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "first-tech": {
    "savings_apy": 0.01,
@@ -215,7 +248,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "vystar": {
    "savings_apy": 0.05,
@@ -228,7 +262,15 @@
    "card_apr_low": 13.2,
    "mortgage_30_apr": 7.044,
    "checking_note": "Free checking, minimal APY.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": {
+    "apy": 4.35,
+    "term": "30-month",
+    "min_deposit": "$50,000",
+    "condition": "limited-time special",
+    "source_url": "https://vystarcu.org/who-we-are/promotions/cd-promo-0626",
+    "as_of": "2026-11-21"
+   }
   },
   "security-service": {
    "savings_apy": 0.05,
@@ -249,7 +291,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "dcu": {
    "savings_apy": 5.0,
@@ -262,7 +305,8 @@
    "card_apr_low": 12.25,
    "mortgage_30_apr": 7.622,
    "checking_note": "FREE Checking; Primary Savings pays a high APY on the first ~$1,000 only.",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": null
   },
   "sdccu": {
    "savings_apy": 0.05,
@@ -274,8 +318,16 @@
    "auto_new_apr": 4.89,
    "card_apr_low": 14.49,
    "mortgage_30_apr": 7.312,
-   "checking_note": "FREE Checking with eStatements \u2014 no monthly fee, no minimums; pays no interest.",
-   "unverified_fields": []
+   "checking_note": "FREE Checking with eStatements — no monthly fee, no minimums; pays no interest.",
+   "unverified_fields": [],
+   "cd_special": {
+    "apy": 3.25,
+    "term": "15-month",
+    "min_deposit": "$2,000",
+    "condition": "promo; renews into a regular 12-month certificate",
+    "source_url": "https://www.sdccu.com/rates/consumer-deposit-rates",
+    "as_of": "2026-11-21"
+   }
   },
   "bethpage": {
    "savings_apy": 0.1,
@@ -291,7 +343,15 @@
    "unverified_fields": [
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": {
+    "apy": 4.15,
+    "term": "60-month",
+    "min_deposit": "$50",
+    "condition": "featured rate",
+    "source_url": "https://www.fourleaffcu.com/personal/certificate-of-deposit/",
+    "as_of": "2026-11-21"
+   }
   },
   "greenstate": {
    "savings_apy": 0.45,
@@ -314,7 +374,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "lake-michigan": {
    "savings_apy": 0.25,
@@ -336,7 +397,15 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": {
+    "apy": 3.9,
+    "term": "9-month",
+    "min_deposit": "$500",
+    "condition": "includes a 0.25% VIP relationship bonus",
+    "source_url": "https://www.lmcu.org",
+    "as_of": "2026-11-21"
+   }
   },
   "idaho-central": {
    "savings_apy": 0.15,
@@ -353,7 +422,15 @@
     "checking_apy",
     "auto_new_apr",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": {
+    "apy": 4.3,
+    "term": "60-month",
+    "min_deposit": "$500",
+    "condition": "promo certificate",
+    "source_url": "https://www.iccu.com/rates/accounts/",
+    "as_of": "2026-11-21"
+   }
   },
   "delta-community": {
    "savings_apy": 0.25,
@@ -368,7 +445,8 @@
    "checking_note": "Free checking, minimal APY.",
    "unverified_fields": [
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "wright-patt": {
    "savings_apy": 0.25,
@@ -383,7 +461,8 @@
    "checking_note": "Free checking; member dividends paid in strong years.",
    "unverified_fields": [
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "patelco": {
    "savings_apy": 0.05,
@@ -400,7 +479,15 @@
     "checking_apy",
     "mm_apy",
     "auto_new_apr"
-   ]
+   ],
+   "cd_special": {
+    "apy": 4.25,
+    "term": "7-month",
+    "min_deposit": "$250",
+    "condition": "new money only; limited time",
+    "source_url": "https://www.patelco.org/checking-and-savings/savings-accounts/share-certificates",
+    "as_of": "2026-11-21"
+   }
   },
   "redstone": {
    "savings_apy": 0.25,
@@ -422,7 +509,8 @@
     "auto_new_apr",
     "card_apr_low",
     "mortgage_30_apr"
-   ]
+   ],
+   "cd_special": null
   },
   "connexus": {
    "savings_apy": 0.01,
@@ -437,7 +525,15 @@
    "checking_note": "Xtraordinary Checking pays 4.50% APY on balances up to $25,000 when monthly requirements are met.",
    "unverified_fields": [
     "card_apr_low"
-   ]
+   ],
+   "cd_special": {
+    "apy": 4.6,
+    "term": "15-month",
+    "min_deposit": "$5,000",
+    "condition": "limited-time special",
+    "source_url": "https://www.connexuscu.org/special-certificate",
+    "as_of": "2026-11-21"
+   }
   },
   "consumers": {
    "savings_apy": 0.03,
@@ -450,7 +546,15 @@
    "card_apr_low": 15.24,
    "mortgage_30_apr": 7.529,
    "checking_note": "Rewards Checking pays 3.00% APY on up to $10,000 when monthly requirements are met (higher tiers with card spending).",
-   "unverified_fields": []
+   "unverified_fields": [],
+   "cd_special": {
+    "apy": 4.35,
+    "term": "7-month",
+    "min_deposit": "$250",
+    "condition": "limited-time promo term",
+    "source_url": "https://www.myconsumers.org/rates",
+    "as_of": "2026-11-21"
+   }
   }
  }
 }

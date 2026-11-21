@@ -42,6 +42,10 @@ human/data re-verification, never for a code or design rebuild.
   CUs; monitor config; dated history for trends. **Representative placeholders until
   the first verification pass** — treat as unverified until confirmed and `verified_date`
   reflects it.
+  Each full CU also has `cd_special` (best promo certificate from its own site: apy, term,
+  min_deposit, condition, source_url, as_of; null if none found or unreadable). Re-check it
+  every audit; it is shown beside the standard CD rates and never used for ranking.
+  `rate_history.json` was reset on 2026-11-21 (earlier snapshots were placeholders).
 - `ratings.json` — five-factor editorial scores + weights.
 - `affiliates.json` — per-CU `url` (public) and `affiliate_url`; seasoning controlled
   by `affiliate_mode` in meta.json (false → rel="nofollow noopener" on public url;

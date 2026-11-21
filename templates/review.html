@@ -47,6 +47,7 @@
   {% if cu.rates %}
   <h2>{{ cu.name }} rates at a glance</h2>
   <p class="rate-asof">Representative rates as of {{ rates_as_of }} — verify current rates at {{ cu.website }} before acting.</p>
+  {% if cu.rates.unverified_fields %}<p class="table-note">We could not re-confirm {% for f in cu.rates.unverified_fields %}{{ {"savings_apy":"savings APY","checking_apy":"checking APY","mm_apy":"money market APY","cd_12":"12-month CD","cd_36":"36-month CD","cd_60":"60-month CD","auto_new_apr":"new-auto APR","card_apr_low":"credit card APR","mortgage_30_apr":"30-year mortgage APR"}[f] }}{% if not loop.last %}, {% endif %}{% endfor %} on {{ cu.name }}'s own site this cycle; {% if cu.rates.unverified_fields|length == 1 %}that figure is{% else %}those figures are{% endif %} shown at our prior values.</p>{% endif %}
   <div class="table-scroll">
   <table class="data-table rates-mini">
     <tbody>

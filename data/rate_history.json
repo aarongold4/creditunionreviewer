@@ -491,6 +491,167 @@
      "auto_new_apr": 5.39
     }
    }
+  },
+  {
+   "date": "2026-06-07",
+   "rates": {
+    "navy-federal": {
+     "savings_apy": 0.25,
+     "cd_12": 4.05,
+     "checking_apy": 0.45,
+     "auto_new_apr": 5.19
+    },
+    "secu-north-carolina": {
+     "savings_apy": 0.25,
+     "cd_12": 3.75,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.25
+    },
+    "penfed": {
+     "savings_apy": 3.0,
+     "cd_12": 4.0,
+     "checking_apy": 0.5,
+     "auto_new_apr": 5.49
+    },
+    "schoolsfirst": {
+     "savings_apy": 0.3,
+     "cd_12": 4.1,
+     "checking_apy": 0.25,
+     "auto_new_apr": 5.39
+    },
+    "becu": {
+     "savings_apy": 0.5,
+     "cd_12": 3.95,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.34
+    },
+    "golden-1": {
+     "savings_apy": 0.3,
+     "cd_12": 3.85,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.29
+    },
+    "america-first": {
+     "savings_apy": 0.35,
+     "cd_12": 4.15,
+     "checking_apy": 0.15,
+     "auto_new_apr": 5.24
+    },
+    "alliant": {
+     "savings_apy": 3.1,
+     "cd_12": 4.05,
+     "checking_apy": 0.25,
+     "auto_new_apr": 5.39
+    },
+    "mountain-america": {
+     "savings_apy": 0.4,
+     "cd_12": 4.0,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.29
+    },
+    "rbfcu": {
+     "savings_apy": 0.4,
+     "cd_12": 3.85,
+     "checking_apy": 1.25,
+     "auto_new_apr": 5.44
+    },
+    "suncoast": {
+     "savings_apy": 0.5,
+     "cd_12": 4.0,
+     "checking_apy": 0.2,
+     "auto_new_apr": 5.19
+    },
+    "first-tech": {
+     "savings_apy": 0.55,
+     "cd_12": 4.1,
+     "checking_apy": 2.02,
+     "auto_new_apr": 5.34
+    },
+    "vystar": {
+     "savings_apy": 0.4,
+     "cd_12": 3.9,
+     "checking_apy": 0.15,
+     "auto_new_apr": 5.29
+    },
+    "security-service": {
+     "savings_apy": 0.3,
+     "cd_12": 3.95,
+     "checking_apy": 0.1,
+     "auto_new_apr": 4.99
+    },
+    "dcu": {
+     "savings_apy": 6.17,
+     "cd_12": 3.85,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.24
+    },
+    "sdccu": {
+     "savings_apy": 0.4,
+     "cd_12": 3.95,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.29
+    },
+    "bethpage": {
+     "savings_apy": 0.4,
+     "cd_12": 4.25,
+     "checking_apy": 0.4,
+     "auto_new_apr": 5.34
+    },
+    "greenstate": {
+     "savings_apy": 0.45,
+     "cd_12": 4.0,
+     "checking_apy": 0.15,
+     "auto_new_apr": 5.24
+    },
+    "lake-michigan": {
+     "savings_apy": 0.4,
+     "cd_12": 4.0,
+     "checking_apy": 3.0,
+     "auto_new_apr": 5.39
+    },
+    "idaho-central": {
+     "savings_apy": 0.4,
+     "cd_12": 4.05,
+     "checking_apy": 0.25,
+     "auto_new_apr": 5.14
+    },
+    "delta-community": {
+     "savings_apy": 0.45,
+     "cd_12": 4.0,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.29
+    },
+    "wright-patt": {
+     "savings_apy": 0.4,
+     "cd_12": 3.95,
+     "checking_apy": 0.15,
+     "auto_new_apr": 5.24
+    },
+    "patelco": {
+     "savings_apy": 0.5,
+     "cd_12": 4.1,
+     "checking_apy": 0.1,
+     "auto_new_apr": 5.34
+    },
+    "redstone": {
+     "savings_apy": 0.4,
+     "cd_12": 3.9,
+     "checking_apy": 2.0,
+     "auto_new_apr": 5.19
+    },
+    "connexus": {
+     "savings_apy": 0.5,
+     "cd_12": 4.15,
+     "checking_apy": 1.75,
+     "auto_new_apr": 5.29
+    },
+    "consumers": {
+     "savings_apy": 0.4,
+     "cd_12": 4.05,
+     "checking_apy": 4.09,
+     "auto_new_apr": 5.34
+    }
+   }
   }
  ]
 }

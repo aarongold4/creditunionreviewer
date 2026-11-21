@@ -117,7 +117,7 @@ CTAS = {
         "alliant", "Alliant Credit Union",
         "A digital-first credit union with a high everyday savings rate and no monthly fees.",
         ["High-rate savings, fully online", "No monthly maintenance fees",
-         "Anyone can join via a $5 foundation donation"],
+         "Anyone can join via the Alliant Credit Union Foundation, which pays the $5 fee"],
         "Open an Alliant account &rarr;"),
     "cta_consumers": _cta(
         "consumers", "Consumers Credit Union",
@@ -207,7 +207,7 @@ MATCHUPS = [
      "pick_b": "you bank entirely online and want a clean digital experience with a consistently high savings rate and no monthly fees. Alliant is built digital-first.",
      "bottom_line": "Both are excellent and both are open to everyone, so you can't go wrong. PenFed leans full-service and rate-competitive across CDs and mortgages; Alliant is the slicker digital-only choice for savers. Many people who chase rates simply join both.",
      "faqs": [
-        {"q": "Is Alliant or PenFed easier to join?", "a": "Both are easy and open to anyone in the US. Alliant offers a simple path through a one-time $5 donation to its associated charity; PenFed lets you join by opening a savings account. Neither requires an employer or location tie."},
+        {"q": "Is Alliant or PenFed easier to join?", "a": "Both are easy and open to anyone in the US. Alliant lets you join through the Alliant Credit Union Foundation, which pays the one-time $5 membership fee for you; PenFed lets you join by opening a savings account. Neither requires an employer or location tie."},
         {"q": "Which has better rates, PenFed or Alliant?", "a": "It varies by product and changes often. Alliant is known for a strong everyday savings rate; PenFed frequently leads on certificates and mortgages. Compare current rates before deciding."}]},
     {"a": "alliant", "b": "first-tech", "hint": "Two digital-first lenders open to anyone",
      "intro": "Alliant and First Tech are both modern, largely digital credit unions that anyone in the US can join. They appeal to the same tech-comfortable saver.",
@@ -227,7 +227,7 @@ MATCHUPS = [
         {"q": "How does rewards checking work at Consumers?", "a": "You earn a high APY on balances up to a cap if you meet monthly conditions like a set number of debit transactions, direct deposit, and e-statements. Miss them and the rate drops for that cycle."},
         {"q": "Can anyone join Consumers Credit Union?", "a": "Yes — anyone in the US can join, typically via a small one-time membership/association step handled at account opening."}]},
     {"a": "penfed", "b": "dcu", "hint": "Open-membership all-rounders for everyday banking",
-     "intro": "PenFed and DCU (Digital Federal Credit Union) are both open to anyone in the US and both make solid everyday banking homes. They're commonly cross-shopped by people starting fresh.",
+     "intro": "PenFed and DCU (Digital Federal Credit Union, a division of First Tech since their January 2026 merger) are both open to anyone in the US and both make solid everyday banking homes. They're commonly cross-shopped by people starting fresh.",
      "pick_a": "you want stronger certificate and mortgage rates and a somewhat larger footprint. PenFed leans rate-competitive on big-ticket products.",
      "pick_b": "you're building a savings habit or financing a car and want a beginner-friendly setup. DCU is known for accessible products and a starter-friendly savings account.",
      "bottom_line": "PenFed is the better pick if certificates or a mortgage are on your radar; DCU shines for everyday banking and first-time savers. Both are genuinely open to everyone, so join whichever fits your near-term goal — or both.",
@@ -235,13 +235,13 @@ MATCHUPS = [
         {"q": "Can anyone join DCU?", "a": "Yes. DCU offers membership to anyone in the US through participating organizations you can join at account opening, so no specific employer is required."},
         {"q": "Which is better for a car loan?", "a": "Both are competitive; DCU is a popular auto lender and PenFed also prices well. Get pre-approved at both and compare the APR."}]},
     {"a": "bethpage", "b": "alliant", "hint": "Nationwide rate shoppers' favorites",
-     "intro": "Bethpage and Alliant both attract nationwide rate shoppers. Bethpage is a large New York-based credit union with broad membership; Alliant is digital-first and open to all.",
+     "intro": "FourLeaf (formerly Bethpage Federal Credit Union) and Alliant both attract nationwide rate shoppers. FourLeaf is a large New York-based credit union with broad membership; Alliant is digital-first and open to all.",
      "pick_a": "you want frequently competitive CD specials and a credit union that still maintains a meaningful branch presence (on Long Island) alongside nationwide membership.",
      "pick_b": "you prefer a fully digital experience centered on a strong savings rate and no fees.",
-     "bottom_line": "Bethpage tends to win for CD shoppers and those who like having branches somewhere; Alliant wins for digital-only savers. Both accept members nationwide, so it comes down to product fit.",
+     "bottom_line": "FourLeaf tends to win for CD shoppers and those who like having branches somewhere; Alliant wins for digital-only savers. Both accept members nationwide, so it comes down to product fit.",
      "faqs": [
-        {"q": "Can anyone join Bethpage?", "a": "Yes — Bethpage offers membership to anyone in the US by opening a savings account, with no New York residency requirement."},
-        {"q": "Which has better CD rates?", "a": "Bethpage is known for aggressive CD specials, but rates change frequently — check both before locking in."}]},
+        {"q": "Can anyone join FourLeaf (Bethpage)?", "a": "Yes — FourLeaf offers membership to anyone in the US by opening a $5 savings account, with no New York residency requirement."},
+        {"q": "Which has better CD rates?", "a": "FourLeaf is known for aggressive CD specials, but rates change frequently — check both before locking in."}]},
     {"a": "connexus", "b": "alliant", "hint": "Nationwide rate maximizers with larger balances",
      "intro": "Connexus and Alliant are both open-to-anyone credit unions popular with people optimizing for yield. Connexus is known for high-balance rewards checking and CDs.",
      "pick_a": "you carry a larger checking balance and will meet rewards-checking requirements — Connexus rewards that with a high rate on a sizable balance cap.",
@@ -794,7 +794,7 @@ def main():
 <p><strong>3. Fees.</strong> Monthly maintenance fees, overdraft charges, ATM policies, and the sneaky stuff — inactivity fees, paper statement charges. Free checking with no minimums earns points; fee-riddled accounts lose them.</p>
 <p><strong>4. Membership accessibility.</strong> How easy is it to actually join? Statewide community charters and anyone-can-join paths score high. We verify every eligibility claim against the credit union's own membership page and record the date.</p>
 <p><strong>5. Digital experience.</strong> App store ratings, online account opening, remote deposit, and digital wallet support. Credit unions are co-ops, not tech companies — but in 2026 a usable app is table stakes.</p>
-<h2>The five factors</h2>
+<h2>How we score</h2>
 <p>Every credit union we review in full gets a score from 1 to 5 on each of five factors. The overall rating is a weighted average, shown as stars and a number on the review and in our comparison tables:</p>
 <p><strong>Rates (30%).</strong> Deposit APYs (savings, money market, certificates) and loan APRs versus national averages. The single heaviest factor, because rates are where the member-owned model shows up in your pocket.</p>
 <p><strong>Fees (20%).</strong> Monthly maintenance, overdraft, ATM, and the sneaky stuff. Free checking with no minimums scores high.</p>

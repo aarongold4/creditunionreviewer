@@ -787,6 +787,31 @@ def main():
 
     # ---------- Simple pages ----------
     simple_pages = {
+        "credit-union-mergers": ("Credit Union Mergers and Name Changes: What They Mean for Your Account (2026)", True, """<p class="lede">Credit unions merge and rename more often than most members realize. If a letter just told you your credit union is becoming part of another one, or your app suddenly shows a new logo, here is what typically changes, what doesn't, and what to check.</p>
+<h2>Recent mergers and renames among the credit unions we cover</h2>
+<p>We re-check every credit union on this site against its own website and the NCUA's records. Our November 2026 review turned up these changes:</p>
+<ul>
+<li><strong>First Tech and DCU merged</strong> on January 1, 2026. The combined credit union is First Technology Federal Credit Union, with its headquarters of record in San Jose, California. DCU still operates as a division with its own website, accounts and rates during the integration. See our <a href="../reviews/first-tech/index.html">First Tech</a> and <a href="../reviews/dcu/index.html">DCU</a> reviews.</li>
+<li><strong>Ent and Wings merged</strong> on January 1, 2026. The combined credit union operates as Wings Credit Union, a state-chartered credit union headquartered in Colorado Springs per NCUA records, and does business as Ent in Colorado. See <a href="../reviews/ent/index.html">Ent</a> and <a href="../reviews/wings-financial/index.html">Wings</a>.</li>
+<li><strong>Meritrust combined with Premier Members</strong>, extending its eligibility from Kansas into Colorado. NCUA now lists its headquarters in Broomfield, Colorado. See <a href="../reviews/meritrust/index.html">Meritrust</a>.</li>
+<li><strong>Renames, same credit union:</strong> Bethpage Federal Credit Union is now <a href="../reviews/bethpage/index.html">FourLeaf Federal Credit Union</a>; New England Federal Credit Union is now <a href="../reviews/new-england-fcu/index.html">EastRise</a>; Teachers Credit Union in Indiana is now <a href="../reviews/teachers-indiana/index.html">Everwise</a>; APCO Employees Credit Union is now <a href="../reviews/apco/index.html">Southern Energy Credit Union</a>; Wescom now goes by <a href="../reviews/wescom/index.html">Wescom Financial</a>; and Pioneer WV is now <a href="../reviews/pioneer-wv/index.html">Pioneer Appalachia</a>.</li>
+<li><strong>Charter conversion:</strong> <a href="../reviews/citadel/index.html">Citadel</a> converted to a federal charter in March 2026, which changed who can join.</li>
+</ul>
+<h2>Merger vs. rename: why the difference matters</h2>
+<p>A <strong>rename</strong> is cosmetic. The legal entity, charter, insurance and your accounts stay the same; you mostly see a new logo, website address and card design.</p>
+<p>A <strong>merger</strong> combines two credit unions into one legal institution with one NCUA charter. Even when both brands keep running for a while, they are a single insured credit union underneath.</p>
+<h2>What a merger can mean for your deposit insurance</h2>
+<p>NCUA share insurance covers up to $250,000 per share owner, per insured credit union, per ownership category. After a merger, the two former credit unions count as one insured institution, so balances you hold at both are added together. If your combined balance in any ownership category is near the limit, check your coverage with the credit union or at <a href="https://ncua.gov" rel="noopener">ncua.gov</a>, and ask how any transition period applies to your accounts.</p>
+<h2>A checklist when your credit union merges or renames</h2>
+<ul>
+<li><strong>Account and routing numbers.</strong> Ask whether either will change and when. That determines whether you need to update direct deposits and automatic payments.</li>
+<li><strong>Cards and apps.</strong> New debit cards, a new app or new online-banking credentials are common during conversions. Watch for official notices, and never give login details to anyone who contacts you about "updating" your account.</li>
+<li><strong>Rates and fees.</strong> The combined credit union may move to one rate sheet and fee schedule. Existing certificates usually keep their rate until maturity, but confirm it.</li>
+<li><strong>Membership.</strong> Current members normally stay members. Eligibility for new members can widen after a merger, as it did for Meritrust and Wings.</li>
+<li><strong>Bookmarks.</strong> Use the credit union's new official site, and type it yourself rather than following links in unexpected emails or texts.</li>
+</ul>
+<h2>The bottom line</h2>
+<p>A rename changes little beyond the branding. A merger can change your account details, your rates and how much of your money is insured, so read the member notices and confirm the specifics with the credit union. For the current status of any credit union, check our <a href="../credit-unions/index.html">directory</a> or the NCUA's credit union locator.</p>"""),
         "methodology": ("How We Review Credit Unions", True, """
 <p>Every credit union on this site is evaluated against the same checklist, by the same reviewer, with no input from the institutions themselves. Here's exactly what we look at.</p>
 <h2>The five factors</h2>
@@ -933,6 +958,7 @@ def main():
             "terms": "Terms of use for CreditUnionReviewer.com, including our not-financial-advice and accuracy disclaimers.",
             "cookies": "Cookie Policy for CreditUnionReviewer.com: the essential, analytics, and advertising cookies we use and how to control them.",
             "disclaimer": "Disclaimer for CreditUnionReviewer.com: not financial advice, rate accuracy, advertiser disclosure, and NCUA insurance notes.",
+            "credit-union-mergers": "First Tech + DCU, Ent + Wings, Bethpage to FourLeaf and more: the 2026 credit union mergers and renames, and what they mean for your accounts and NCUA coverage.",
             "disclosure": "Advertiser disclosure for CreditUnionReviewer.com: how the site earns money through ads and affiliate links, and why that never changes our ratings or rankings.",
         }
         render(

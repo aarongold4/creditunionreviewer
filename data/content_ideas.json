@@ -1,1 +1,40 @@
-{"ideas": []}
+{
+ "ideas": [
+  {
+   "id": "credit-union-mergers",
+   "title": "Credit Union Mergers and Name Changes: What They Mean for Your Account (2026)",
+   "why_now": "This audit found two big 2026 mergers (First Tech + DCU, Ent + Wings), Meritrust + Premier Members, and six renames among the 100 CUs we cover; members searching their CU's new name land on stale pages elsewhere.",
+   "status": "drafted",
+   "draft_pr": "https://github.com/aarongold4/creditunionreviewer/pull/1",
+   "added": "2026-11-21"
+  },
+  {
+   "id": "standard-vs-promo-certificates",
+   "title": "Standard vs. Promotional Certificates: Why Your Credit Union's 'Regular' CD Pays 1%",
+   "why_now": "Verified rate sheets show standard 12-month certificates as low as ~0.70-1.95% at ICCU, Consumers, SDCCU, BECU and FourLeaf while their specials pay 3-4%+; readers need to know to ask for the special.",
+   "status": "idea",
+   "added": "2026-11-21"
+  },
+  {
+   "id": "new-anyone-can-join-2026",
+   "title": "Credit Unions That Opened Membership to Everyone in 2026",
+   "why_now": "This audit confirmed new open paths at Patelco, SDCCU, Truliant, Langley, Summit, St. Mary's Bank, Navigant, Coastal, EastRise and others; the anyone-can-join list grew from 17 to 30+.",
+   "status": "idea",
+   "added": "2026-11-21"
+  },
+  {
+   "id": "rewards-checking-2026",
+   "title": "Best Credit Union Rewards Checking Right Now (Connexus 4.50%, Consumers up to 5.00%)",
+   "why_now": "Verified rate pages show rewards checking still paying 3-5% with conditions while regular savings sits near 0.05-0.25%; a requirements-by-requirements comparison is high-intent search content.",
+   "status": "idea",
+   "added": "2026-11-21"
+  },
+  {
+   "id": "mortgage-rates-cu-vs-bank",
+   "title": "Are Credit Union Mortgage Rates Actually Lower? What 10 Rate Sheets Show",
+   "why_now": "We now hold same-week verified 30-year APRs from ten large CUs (6.92%-7.62%), enough for an honest, data-backed comparison piece.",
+   "status": "idea",
+   "added": "2026-11-21"
+  }
+ ]
+}

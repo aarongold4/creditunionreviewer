@@ -311,7 +311,7 @@
    "auto_new_apr": 4.89,
    "card_apr_low": 14.49,
    "mortgage_30_apr": 7.312,
-   "checking_note": "FREE Checking with eStatements \u2014 no monthly fee, no minimums; pays no interest.",
+   "checking_note": "FREE Checking with eStatements — no monthly fee, no minimums; pays no interest.",
    "unverified_fields": [],
    "cd_special": {
     "apy": 3.25,
@@ -502,7 +502,8 @@
    "mortgage_30_apr": 7.037,
    "checking_note": "Xtraordinary Checking pays 4.50% APY on balances up to $25,000 when monthly requirements are met.",
    "unverified_fields": [
-    "card_apr_low"
+    "card_apr_low",
+    "cd_12"
    ],
    "cd_special": {
     "apy": 4.6,

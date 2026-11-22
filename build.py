@@ -786,7 +786,44 @@ def main():
         )
 
     # ---------- Simple pages ----------
+    # ---------- Data-driven table for the standard-vs-promo certificates guide ----------
+    _promo_rows = []
+    for _c in sorted((c for c in RATED if c["rates"].get("cd_special")), key=lambda c: c["name"]):
+        _r = _c["rates"]; _sp = _r["cd_special"]
+        _std = f'{_r["cd_12"]:.2f}%' + (" (unconfirmed)" if "cd_12" in (_r.get("unverified_fields") or []) else "")
+        _promo_rows.append(
+            f'<tr><td><a href="../reviews/{_c["slug"]}/index.html">{_c["name"]}</a></td>'
+            f'<td>{_std}</td><td><strong>{_sp["apy"]:.2f}%</strong> ({_sp["term"]})</td>'
+            f'<td>{_sp.get("min_deposit") or "n/a"}</td><td>{_sp.get("condition") or ""}</td></tr>')
+    _low_std = sorted((c for c in RATED if c["rates"]["cd_12"] < 2.5
+                       and "cd_12" not in (c["rates"].get("unverified_fields") or [])),
+                      key=lambda c: c["rates"]["cd_12"])
+    _low_list = ", ".join(f'{c["name"]} ({c["rates"]["cd_12"]:.2f}%)' for c in _low_std) or "none this month"
+    PROMO_TABLE = ('<div class="table-wrap"><table><thead><tr><th>Credit union</th><th>Standard 12-month</th>'
+                   '<th>Best special</th><th>Minimum</th><th>Main condition</th></tr></thead><tbody>'
+                   + "".join(_promo_rows) + "</tbody></table></div>")
+
     simple_pages = {
+        "standard-vs-promo-certificates": ("Standard vs. Promotional Certificates: Why Your Credit Union's 'Regular' CD Can Pay So Little", True, f"""<p class="lede">Many credit unions run two certificate menus side by side: a standard rate sheet that rarely changes and a short list of specials that pay far more. If you open a certificate without asking for the special, you can lock in a rate well below what the same credit union advertises on its home page.</p>
+<h2>What we found on the rate sheets</h2>
+<p>We read the certificate rates on each fully reviewed credit union's own website (rates as of {RATES_AS_OF}). Among the 26 we track, the standard 12-month certificate pays under 2.50% APY at: {_low_list}. Several of those same credit unions advertise specials well above that.</p>
+<p>Here is every promotional certificate we found on the credit unions' own sites, next to their standard 12-month rate:</p>
+{PROMO_TABLE}
+<p class="note">Specials change often and some end without notice. We show them beside the standard rates and never use them to rank credit unions. Confirm the current rate with the credit union before you open an account.</p>
+<h2>Why credit unions price certificates this way</h2>
+<p>A special lets a credit union raise deposits for a particular term, often an odd one such as 7, 9, 15 or 19 months, without repricing every certificate it already holds. The standard sheet covers the terms it is not actively trying to fund, and those rates can sit well below the market. It is a pricing choice, not a sign the credit union is in trouble.</p>
+<h2>The conditions to check before you open a special</h2>
+<ul>
+<li><strong>Odd terms.</strong> Specials often use non-standard terms. Make sure the maturity date suits you, because early withdrawal penalties usually apply.</li>
+<li><strong>Relationship requirements.</strong> Some specials need a checking account, direct deposit or a balance elsewhere at the credit union.</li>
+<li><strong>Minimums and maximums.</strong> A special may need a higher opening deposit or cap how much you can put in.</li>
+<li><strong>New money only.</strong> Some specials apply only to funds not already on deposit at the credit union.</li>
+<li><strong>What happens at maturity.</strong> Many certificates renew automatically into a standard term at the standard rate. Set a reminder to move the money or pick a new term when it matures.</li>
+</ul>
+<h2>How to avoid the low standard rate</h2>
+<p>Look for a "specials" or "featured" section on the credit union's certificate page before choosing a term, and ask for the promotional rate if you apply at a branch. Compare against our <a href="../best-credit-union-cd-rates/index.html">best credit union CD rates</a> and the <a href="../rates/index.html">rates hub</a>. Share certificates at federally insured credit unions are covered by the NCUA up to $250,000 per share owner, per insured credit union, per ownership category; see our <a href="../ncua-insurance/index.html">NCUA insurance guide</a>.</p>
+<h2>The bottom line</h2>
+<p>At many credit unions the advertised certificate rate and the standard one are very different numbers. Check the specials, read the conditions, and plan for maturity so your money does not roll into a low standard rate.</p>"""),
         "credit-union-mergers": ("Credit Union Mergers and Name Changes: What They Mean for Your Account (2026)", True, """<p class="lede">Credit unions merge and rename more often than most members realize. If a letter just told you your credit union is becoming part of another one, or your app suddenly shows a new logo, here is what typically changes, what doesn't, and what to check.</p>
 <h2>Recent mergers and renames among the credit unions we cover</h2>
 <p>We re-check every credit union on this site against its own website and the NCUA's records. As of November 2026, these are the mergers, renames and charter changes among the credit unions we cover, each confirmed on the credit union's own announcements:</p>
@@ -960,6 +997,7 @@ def main():
             "terms": "Terms of use for CreditUnionReviewer.com, including our not-financial-advice and accuracy disclaimers.",
             "cookies": "Cookie Policy for CreditUnionReviewer.com: the essential, analytics, and advertising cookies we use and how to control them.",
             "disclaimer": "Disclaimer for CreditUnionReviewer.com: not financial advice, rate accuracy, advertiser disclosure, and NCUA insurance notes.",
+            "standard-vs-promo-certificates": "Why the standard certificate at many credit unions pays a fraction of the advertised special, which credit unions we found doing it, and the conditions to check first.",
             "credit-union-mergers": "First Tech + DCU, Ent + Wings, Greater Nevada + America First, Bethpage to FourLeaf and more: recent credit union mergers and renames, and what they mean for your accounts and NCUA coverage.",
             "disclosure": "Advertiser disclosure for CreditUnionReviewer.com: how the site earns money through ads and affiliate links, and why that never changes our ratings or rankings.",
         }

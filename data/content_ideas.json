@@ -14,8 +14,10 @@
    "id": "standard-vs-promo-certificates",
    "title": "Standard vs. Promotional Certificates: Why Your Credit Union's 'Regular' CD Pays 1%",
    "why_now": "Verified rate sheets show standard 12-month certificates as low as ~0.70-1.95% at ICCU, Consumers, SDCCU, BECU and FourLeaf while their specials pay 3-4%+; readers need to know to ask for the special.",
-   "status": "idea",
-   "added": "2026-11-21"
+   "status": "drafted",
+   "added": "2026-11-21",
+   "draft_branch": "draft/standard-vs-promo-certificates",
+   "drafted": "2026-11-22"
   },
   {
    "id": "new-anyone-can-join-2026",
@@ -37,6 +39,27 @@
    "why_now": "We now hold same-week verified 30-year APRs from 11 large CUs (6.92%-7.62%), enough for an honest, data-backed comparison piece.",
    "status": "idea",
    "added": "2026-11-21"
+  },
+  {
+   "id": "donation-join-paths",
+   "title": "Join a Credit Union With a Small Donation: Every $5-$25 Path We've Verified",
+   "why_now": "This audit confirmed exact donation amounts on the credit unions' own pages (TTCU Cares $12+, Affinity Foundation $5, Bellco Foundation $5 paid by Bellco, Lake Michigan ALS $5, Wings foundation $5+); a single verified table is a strong how-to-join resource.",
+   "status": "idea",
+   "added": "2026-11-22"
+  },
+  {
+   "id": "money-market-zero-tier",
+   "title": "The $0 Tier: Credit Union Money Markets That Pay Nothing Below $1,000-$2,500",
+   "why_now": "Verified rate sheets show 0.00% at the lowest money market tier at Navy Federal (under $2,500), Connexus (under $1,000) and Idaho Central (under $2,500); readers comparing headline APYs miss the minimum.",
+   "status": "idea",
+   "added": "2026-11-22"
+  },
+  {
+   "id": "cu-auto-loan-rates-now",
+   "title": "Credit Union New-Car Loan Rates Right Now: 4.99% to 5.89% at the Big Names",
+   "why_now": "This audit re-verified new-auto APRs on 26 rate sheets: First Tech and Wright-Patt now start at 4.99%, while BECU rose to 5.89% and Idaho Central to 5.69%; car-buying season (year-end) is high-intent.",
+   "status": "idea",
+   "added": "2026-11-22"
   }
  ]
 }

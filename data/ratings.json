@@ -47,7 +47,7 @@
    "products": 4.3
   },
   "becu": {
-   "rates": 4.1,
+   "rates": 4.0,
    "fees": 4.6,
    "access": 3.6,
    "digital": 4.2,
@@ -89,14 +89,14 @@
    "products": 4.2
   },
   "suncoast": {
-   "rates": 4.2,
+   "rates": 4.0,
    "fees": 4.5,
    "access": 3.3,
    "digital": 3.8,
    "products": 4.2
   },
   "first-tech": {
-   "rates": 4.2,
+   "rates": 4.3,
    "fees": 4.2,
    "access": 4.8,
    "digital": 4.6,
@@ -145,14 +145,14 @@
    "products": 4.2
   },
   "lake-michigan": {
-   "rates": 4.5,
+   "rates": 4.6,
    "fees": 4.0,
    "access": 4.7,
    "digital": 4.2,
    "products": 4.3
   },
   "idaho-central": {
-   "rates": 3.6,
+   "rates": 3.5,
    "fees": 4.2,
    "access": 3.0,
    "digital": 4.3,
@@ -166,7 +166,7 @@
    "products": 4.2
   },
   "wright-patt": {
-   "rates": 4.5,
+   "rates": 4.6,
    "fees": 4.3,
    "access": 3.2,
    "digital": 3.9,
@@ -180,7 +180,7 @@
    "products": 4.2
   },
   "redstone": {
-   "rates": 4.2,
+   "rates": 4.3,
    "fees": 4.2,
    "access": 3.3,
    "digital": 3.8,

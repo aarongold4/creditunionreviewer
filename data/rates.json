@@ -1,6 +1,6 @@
 {
  "meta": {
-  "as_of": "2026-11-21",
+  "as_of": "2026-11-22",
   "disclaimer": "Rates checked against each credit union's own rate pages on the as-of date (fields we could not re-confirm are flagged on each review). Rates are APY for deposits, APR for loans, and change frequently. Verify current rates directly with each credit union before opening an account or applying.",
   "fields": {
    "savings_apy": "APY %",
@@ -99,19 +99,18 @@
    }
   },
   "becu": {
-   "savings_apy": 0.25,
+   "savings_apy": 0.2,
    "checking_apy": 0.05,
-   "mm_apy": 0.85,
-   "cd_12": 1.95,
+   "mm_apy": 0.25,
+   "cd_12": 2.25,
    "cd_36": 1.45,
    "cd_60": 3.45,
-   "auto_new_apr": 5.34,
+   "auto_new_apr": 5.89,
    "card_apr_low": 12.74,
    "mortgage_30_apr": 7.319,
    "checking_note": "Free checking with no monthly fee; minimal APY.",
    "unverified_fields": [
-    "cd_60",
-    "auto_new_apr"
+    "cd_60"
    ],
    "cd_special": null
   },
@@ -124,11 +123,10 @@
    "cd_60": 3.55,
    "auto_new_apr": 5.24,
    "card_apr_low": 11.49,
-   "mortgage_30_apr": 6.55,
+   "mortgage_30_apr": 6.762,
    "checking_note": "Free checking, minimal APY.",
    "unverified_fields": [
-    "checking_apy",
-    "mortgage_30_apr"
+    "checking_apy"
    ],
    "cd_special": {
     "apy": 4.3,
@@ -176,7 +174,7 @@
    "checking_apy": 0.1,
    "mm_apy": 1.5,
    "cd_12": 4.0,
-   "cd_36": 3.7,
+   "cd_36": 4.4,
    "cd_60": 3.65,
    "auto_new_apr": 5.29,
    "card_apr_low": 12.49,
@@ -187,7 +185,6 @@
     "checking_apy",
     "mm_apy",
     "cd_12",
-    "cd_36",
     "cd_60",
     "auto_new_apr",
     "card_apr_low",
@@ -217,7 +214,7 @@
    "cd_36": 3.75,
    "cd_60": 3.7,
    "auto_new_apr": 5.09,
-   "card_apr_low": 11.9,
+   "card_apr_low": 15.75,
    "mortgage_30_apr": 6.45,
    "checking_note": "Free checking, minimal APY.",
    "unverified_fields": [
@@ -227,7 +224,6 @@
     "cd_12",
     "cd_36",
     "cd_60",
-    "card_apr_low",
     "mortgage_30_apr"
    ],
    "cd_special": null
@@ -239,15 +235,12 @@
    "cd_12": 3.5,
    "cd_36": 3.25,
    "cd_60": 3.25,
-   "auto_new_apr": 5.34,
-   "card_apr_low": 13.24,
-   "mortgage_30_apr": 6.5,
+   "auto_new_apr": 4.99,
+   "card_apr_low": 10.49,
+   "mortgage_30_apr": 7.685,
    "checking_note": "Rewards Checking pays a token APY; the old ~2% Dividend Rewards Checking is closed to new members.",
    "unverified_fields": [
-    "mm_apy",
-    "auto_new_apr",
-    "card_apr_low",
-    "mortgage_30_apr"
+    "mm_apy"
    ],
    "cd_special": null
   },
@@ -318,7 +311,7 @@
    "auto_new_apr": 4.89,
    "card_apr_low": 14.49,
    "mortgage_30_apr": 7.312,
-   "checking_note": "FREE Checking with eStatements — no monthly fee, no minimums; pays no interest.",
+   "checking_note": "FREE Checking with eStatements \u2014 no monthly fee, no minimums; pays no interest.",
    "unverified_fields": [],
    "cd_special": {
     "apy": 3.25,
@@ -363,7 +356,7 @@
    "auto_new_apr": 5.24,
    "card_apr_low": 12.24,
    "mortgage_30_apr": 6.35,
-   "checking_note": "Free checking, minimal APY.",
+   "checking_note": "Free checking pays a minimal APY; GreenState Rewards Checking pays more (1.50%-2.00% APY on capped balances) if you meet its requirements.",
    "unverified_fields": [
     "savings_apy",
     "checking_apy",
@@ -379,23 +372,19 @@
   },
   "lake-michigan": {
    "savings_apy": 0.25,
-   "checking_apy": 3.0,
-   "mm_apy": 1.75,
+   "checking_apy": 4.0,
+   "mm_apy": 1.0,
    "cd_12": 4.0,
    "cd_36": 3.7,
    "cd_60": 3.65,
-   "auto_new_apr": 5.39,
-   "card_apr_low": 13.15,
+   "auto_new_apr": 5.74,
+   "card_apr_low": 9.75,
    "mortgage_30_apr": 6.5,
-   "checking_note": "Max Checking pays ~3% on balances to a cap when you meet monthly requirements.",
+   "checking_note": "Max Checking pays 4.00% APY on balances up to $15,000 when you meet monthly requirements; nothing above the cap.",
    "unverified_fields": [
-    "checking_apy",
-    "mm_apy",
     "cd_12",
     "cd_36",
     "cd_60",
-    "auto_new_apr",
-    "card_apr_low",
     "mortgage_30_apr"
    ],
    "cd_special": {
@@ -414,13 +403,12 @@
    "cd_12": 0.7,
    "cd_36": 0.95,
    "cd_60": 1.1,
-   "auto_new_apr": 5.14,
+   "auto_new_apr": 5.69,
    "card_apr_low": 11.49,
    "mortgage_30_apr": 6.45,
    "checking_note": "Tiered rewards checking available.",
    "unverified_fields": [
     "checking_apy",
-    "auto_new_apr",
     "mortgage_30_apr"
    ],
    "cd_special": {
@@ -455,8 +443,8 @@
    "cd_12": 4.25,
    "cd_36": 4.5,
    "cd_60": 4.6,
-   "auto_new_apr": 5.49,
-   "card_apr_low": 10.0,
+   "auto_new_apr": 4.99,
+   "card_apr_low": 9.75,
    "mortgage_30_apr": 6.5,
    "checking_note": "Free checking; member dividends paid in strong years.",
    "unverified_fields": [
@@ -466,20 +454,16 @@
   },
   "patelco": {
    "savings_apy": 0.05,
-   "checking_apy": 0.1,
+   "checking_apy": 0.05,
    "mm_apy": 2.0,
    "cd_12": 3.0,
    "cd_36": 3.0,
    "cd_60": 3.5,
-   "auto_new_apr": 5.34,
+   "auto_new_apr": 5.19,
    "card_apr_low": 10.0,
    "mortgage_30_apr": 7.217,
-   "checking_note": "Free checking, minimal APY.",
-   "unverified_fields": [
-    "checking_apy",
-    "mm_apy",
-    "auto_new_apr"
-   ],
+   "checking_note": "Free Checking has no monthly fee; Interest Checking pays 0.05% APY and has a $5 monthly fee waived with a $500 minimum daily balance.",
+   "unverified_fields": [],
    "cd_special": {
     "apy": 4.25,
     "term": "7-month",
@@ -492,22 +476,16 @@
   "redstone": {
    "savings_apy": 0.25,
    "checking_apy": 2.0,
-   "mm_apy": 1.5,
-   "cd_12": 3.9,
-   "cd_36": 3.6,
-   "cd_60": 3.55,
-   "auto_new_apr": 5.19,
-   "card_apr_low": 12.49,
+   "mm_apy": 1.11,
+   "cd_12": 3.91,
+   "cd_36": 3.91,
+   "cd_60": 4.01,
+   "auto_new_apr": 5.1,
+   "card_apr_low": 10.75,
    "mortgage_30_apr": 6.5,
-   "checking_note": "Premium rewards checking pays ~2% to a cap with requirements.",
+   "checking_note": "Rewards checking carries an $8 monthly fee waivable with direct deposit or 4+ debit purchases; we could not confirm a current checking APY on redfcu.org.",
    "unverified_fields": [
     "checking_apy",
-    "mm_apy",
-    "cd_12",
-    "cd_36",
-    "cd_60",
-    "auto_new_apr",
-    "card_apr_low",
     "mortgage_30_apr"
    ],
    "cd_special": null

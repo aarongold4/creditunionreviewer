@@ -585,7 +585,7 @@ def main():
     # ---------- Best credit unions ----------
     best_faqs = [
         {"q": "What is the #1 credit union in America?",
-         "a": "By size, Navy Federal Credit Union is by far the largest US credit union, with over 13 million members. 'Best' depends on what you need: PenFed and Alliant lead for nationwide accessibility, while regional standouts like SECU North Carolina or BECU may be stronger if you qualify."},
+         "a": "By size, Navy Federal Credit Union is by far the largest US credit union, with over 15 million members. 'Best' depends on what you need: PenFed and Alliant lead for nationwide accessibility, while regional standouts like SECU North Carolina or BECU may be stronger if you qualify."},
         {"q": "Are credit unions safer than banks?",
          "a": "They're equally safe. Federally insured credit unions are covered by the NCUA up to $250,000 per share owner, per institution, per ownership category — the same protection FDIC insurance gives bank deposits, backed by the US government."},
         {"q": "Can I join a credit union if I don't qualify through work or location?",
@@ -792,10 +792,11 @@ def main():
 <p>We re-check every credit union on this site against its own website and the NCUA's records. As of November 2026, these are the mergers, renames and charter changes among the credit unions we cover, each confirmed on the credit union's own announcements:</p>
 <ul>
 <li><strong>First Tech and DCU merged</strong> effective January 1, 2026. The combined credit union is First Technology Federal Credit Union, headquartered in San Jose, California. First Tech and DCU still operate as two divisions, with their own websites and routing numbers, until they fully combine operations. See our <a href="../reviews/first-tech/index.html">First Tech</a> and <a href="../reviews/dcu/index.html">DCU</a> reviews.</li>
-<li><strong>Ent and Wings merged</strong> effective January 1, 2026. The combined credit union is Wings Credit Union, doing business as Ent Credit Union, and keeps headquarters in both Colorado Springs, Colorado, and Apple Valley, Minnesota. See <a href="../reviews/ent/index.html">Ent</a> and <a href="../reviews/wings-financial/index.html">Wings</a>.</li>
+<li><strong>Ent and Wings merged</strong> effective January 1, 2026. The combined credit union is Wings Credit Union, doing business as Ent Credit Union, and keeps headquarters in both Colorado Springs, Colorado, and Apple Valley, Minnesota. Ent's own website now presents it as "Wings Credit Union, previously Ent" as the Ent name is phased out. See <a href="../reviews/ent/index.html">Ent</a> and <a href="../reviews/wings-financial/index.html">Wings</a>.</li>
+<li><strong>Greater Nevada merged into America First</strong> effective October 1, 2026, according to Greater Nevada's own announcement. It keeps the Greater Nevada Credit Union name as a division of America First Credit Union, headquartered in Riverdale, Utah. See <a href="../reviews/greater-nevada/index.html">Greater Nevada</a> and <a href="../reviews/america-first/index.html">America First</a>.</li>
 <li><strong>Premier Members merged into Meritrust</strong>, with August 1, 2025 as the legal first day of the combined credit union, which now serves members in Kansas and Colorado. See <a href="../reviews/meritrust/index.html">Meritrust</a>.</li>
 <li><strong>EastRise</strong> began as a merger: New England Federal Credit Union and Vermont State Employees Credit Union legally merged on January 1, 2023, then adopted the EastRise Credit Union name in 2024. See <a href="../reviews/new-england-fcu/index.html">EastRise</a>.</li>
-<li><strong>Renames, same credit union:</strong> Bethpage Federal Credit Union became <a href="../reviews/bethpage/index.html">FourLeaf Federal Credit Union</a> (March 2025); APCO Employees Credit Union rebranded as <a href="../reviews/apco/index.html">Southern Energy Credit Union</a> (February 2025); Wescom Credit Union rebranded as <a href="../reviews/wescom/index.html">Wescom Financial</a> (April 2025); and Teachers Credit Union in Indiana is now <a href="../reviews/teachers-indiana/index.html">Everwise Credit Union</a>.</li>
+<li><strong>Renames, same credit union:</strong> Bethpage Federal Credit Union became <a href="../reviews/bethpage/index.html">FourLeaf Federal Credit Union</a> (March 2025); APCO Employees Credit Union rebranded as <a href="../reviews/apco/index.html">Southern Energy Credit Union</a> (February 2025); Wescom Credit Union rebranded as <a href="../reviews/wescom/index.html">Wescom Financial</a> (April 2025); Teachers Credit Union in Indiana is now <a href="../reviews/teachers-indiana/index.html">Everwise Credit Union</a>; and Pelican State Credit Union in Louisiana dropped "State" to become <a href="../reviews/pelican-state/index.html">Pelican Credit Union</a>.</li>
 <li><strong>Charter conversion:</strong> <a href="../reviews/citadel/index.html">Citadel</a> announced on March 2, 2026 that it had converted from a community charter to a federal multiple common bond charter, to broaden who can join.</li>
 </ul>
 <h2>Merger vs. rename: why the difference matters</h2>
@@ -959,7 +960,7 @@ def main():
             "terms": "Terms of use for CreditUnionReviewer.com, including our not-financial-advice and accuracy disclaimers.",
             "cookies": "Cookie Policy for CreditUnionReviewer.com: the essential, analytics, and advertising cookies we use and how to control them.",
             "disclaimer": "Disclaimer for CreditUnionReviewer.com: not financial advice, rate accuracy, advertiser disclosure, and NCUA insurance notes.",
-            "credit-union-mergers": "First Tech + DCU, Ent + Wings, Bethpage to FourLeaf and more: recent credit union mergers and renames, and what they mean for your accounts and NCUA coverage.",
+            "credit-union-mergers": "First Tech + DCU, Ent + Wings, Greater Nevada + America First, Bethpage to FourLeaf and more: recent credit union mergers and renames, and what they mean for your accounts and NCUA coverage.",
             "disclosure": "Advertiser disclosure for CreditUnionReviewer.com: how the site earns money through ads and affiliate links, and why that never changes our ratings or rankings.",
         }
         render(

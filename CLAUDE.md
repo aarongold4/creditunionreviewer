@@ -61,7 +61,7 @@ rebuilds (so date-expired items drop and labels roll over), writes `reports/`. I
 Aaron approves draft guides on his shared **Site Approvals** page in Claude, not on
 GitHub. When a run opens a draft PR: add a row with ArtifactData (collection "drafts",
 doc_id "creditunionreviewer-<idea id>"; fields site "creditunionreviewer.com", idea_id,
-title, why_now, doc_url, pr_url, trigger_id "trig_01HBQiSrESXYjFRmujND1GVp", created, updated,
+title, why_now, doc_url, pr_url, trigger_id "trig_01NmADNWUFo2jhBYbJrWQfcE", created, updated,
 status "pending", result_url null, result_note null), send a PushNotification
 "New creditunionreviewer.com draft ready: <title>. Open Site Approvals in Claude to
 publish or discard.", and never tell Aaron to merge a PR, open GitHub, or press Run now.

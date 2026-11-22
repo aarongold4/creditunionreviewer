@@ -4,9 +4,11 @@
    "id": "credit-union-mergers",
    "title": "Credit Union Mergers and Name Changes: What They Mean for Your Account (2026)",
    "why_now": "This audit found two big 2026 mergers (First Tech + DCU, Ent + Wings), Meritrust + Premier Members, and six renames among the 100 CUs we cover; members searching their CU's new name land on stale pages elsewhere.",
-   "status": "drafted",
+   "status": "published",
    "draft_pr": "https://github.com/aarongold4/creditunionreviewer/pull/1",
-   "added": "2026-11-21"
+   "added": "2026-11-21",
+   "published_url": "https://creditunionreviewer.com/credit-union-mergers/",
+   "published": "2026-11-22"
   },
   {
    "id": "standard-vs-promo-certificates",

@@ -817,11 +817,11 @@ def main():
 <h2>The three pieces of a join cost</h2>
 <ul>
 <li><strong>Share deposit.</strong> Every credit union member owns at least one share, usually by keeping a small minimum in a savings account. It is your money: it stays in your account, and you get it back if you close the account.</li>
-<li><strong>Membership fee.</strong> Some credit unions also charge a one-time, non-refundable fee to open your membership. It is usually small, and some waive it if you join online or through a partner employer.</li>
+<li><strong>Membership fee.</strong> Some credit unions also charge a one-time, non-refundable fee to open your membership. Where we found one, it is small.</li>
 <li><strong>Eligibility donation or association dues.</strong> Credit unions with an anyone-can-join path often ask you to join a partner association or give to a partner foundation. That one-time payment is what puts you inside the field of membership. Several credit unions pay it for you.</li>
 </ul>
 <h2>What the anyone-can-join credit unions charge</h2>
-<p>We read the join page on each credit union's own website for the {_join_count} credit unions on this site that anyone in the US can join (data last verified {VERIFIED_DATE}). Here is the up-front cost each one states:</p>
+<p>These are the {_join_count} credit unions on this site that anyone in the US can join, with the up-front cost each one lists on its own website, as recorded on our review pages (data last verified {VERIFIED_DATE}). We re-check join costs every week, but a few sites block automated checks, so treat the table as a starting point:</p>
 {JOIN_TABLE}
 <p class="note">Join costs and partner organizations change. Confirm the amount on the credit union's membership page when you apply, and check whether a donation is only needed if you don't already qualify another way.</p>
 <h2>How to keep the cost down</h2>
@@ -833,7 +833,7 @@ def main():
 <h2>Is your share deposit insured?</h2>
 <p>Yes, at a federally insured credit union. Share accounts are covered by the NCUA's National Credit Union Share Insurance Fund up to $250,000 per share owner, per insured credit union, per ownership category. Fees and donations are payments, not deposits, so they are not insured. See our <a href="../ncua-insurance/index.html">NCUA insurance guide</a>.</p>
 <h2>The bottom line</h2>
-<p>At every open-membership credit union in the table above, the stated up-front cost is under $50, and much of it is a deposit you keep. Read the join page for which piece is a fee, which is a donation, and which is your own money. For the full list of open-membership options, see <a href="../anyone-can-join/index.html">credit unions anyone can join</a>.</p>"""),
+<p>Wherever the table above gives the full amount, the up-front cost is under $50, and much of it is a deposit you keep. A few credit unions don't state every piece (some leave out the share deposit or the membership cost), so check their join pages before you apply. Read the join page for which piece is a fee, which is a donation, and which is your own money. For the full list of open-membership options, see <a href="../anyone-can-join/index.html">credit unions anyone can join</a>.</p>"""),
         "standard-vs-promo-certificates": ("Standard vs. Promotional Certificates: Why Your Credit Union's 'Regular' CD Can Pay So Little", True, f"""<p class="lede">Many credit unions run two certificate menus side by side: a standard rate sheet that rarely changes and a short list of specials that pay far more. If you open a certificate without asking for the special, you can lock in a rate well below what the same credit union advertises on its home page.</p>
 <h2>What we found on the rate sheets</h2>
 <p>We read the certificate rates on each fully reviewed credit union's own website (rates as of {RATES_AS_OF}). Among the 26 we track, the standard 12-month certificate pays under 2.50% APY at: {_low_list}. Several of those same credit unions advertise specials well above that.</p>

@@ -786,6 +786,15 @@ def main():
         )
 
     # ---------- Simple pages ----------
+    # ---------- Data-driven table for the cost-to-join guide ----------
+    _join_rows = "".join(
+        f'<tr><td><a href="../reviews/{_c["slug"]}/index.html">{_c["name"]}</a></td>'
+        f'<td>{_c["hq_state"]}</td><td>{_c["fom"].get("join_cost") or "not stated"}</td></tr>'
+        for _c in sorted((c for c in ACJ if c.get("status") not in ("merged", "closed")), key=lambda c: c["name"]))
+    JOIN_TABLE = ('<div class="table-wrap"><table><thead><tr><th>Credit union</th><th>HQ</th>'
+                  '<th>Up-front cost to join</th></tr></thead><tbody>' + _join_rows + "</tbody></table></div>")
+    _join_count = sum(1 for c in ACJ if c.get("status") not in ("merged", "closed"))
+
     # ---------- Data-driven table for the standard-vs-promo certificates guide ----------
     _promo_rows = []
     for _c in sorted((c for c in RATED if c["rates"].get("cd_special")), key=lambda c: c["name"]):
@@ -804,6 +813,27 @@ def main():
                    + "".join(_promo_rows) + "</tbody></table></div>")
 
     simple_pages = {
+        "cost-to-join-credit-union": ("What It Costs to Join a Credit Union: Share Deposits, Fees and Donations", True, f"""<p class="lede">Joining a credit union usually costs a few dollars, not a few hundred. But the up-front amount is made of different pieces depending on the credit union: a share deposit you keep, a one-time membership fee you don't, or a small donation to a partner charity or association that makes you eligible in the first place.</p>
+<h2>The three pieces of a join cost</h2>
+<ul>
+<li><strong>Share deposit.</strong> Every credit union member owns at least one share, usually by keeping a small minimum in a savings account. It is your money: it stays in your account, and you get it back if you close the account.</li>
+<li><strong>Membership fee.</strong> Some credit unions also charge a one-time, non-refundable fee to open your membership. It is usually small, and some waive it if you join online or through a partner employer.</li>
+<li><strong>Eligibility donation or association dues.</strong> Credit unions with an anyone-can-join path often ask you to join a partner association or give to a partner foundation. That one-time payment is what puts you inside the field of membership. Several credit unions pay it for you.</li>
+</ul>
+<h2>What the anyone-can-join credit unions charge</h2>
+<p>We read the join page on each credit union's own website for the {_join_count} credit unions on this site that anyone in the US can join (data last verified {VERIFIED_DATE}). Here is the up-front cost each one states:</p>
+{JOIN_TABLE}
+<p class="note">Join costs and partner organizations change. Confirm the amount on the credit union's membership page when you apply, and check whether a donation is only needed if you don't already qualify another way.</p>
+<h2>How to keep the cost down</h2>
+<ul>
+<li><strong>Check whether you already qualify.</strong> If you live, work, worship or study in a credit union's area, or a family member is a member, you may not need the donation or association route at all. Our <a href="../can-i-join/index.html">Can I Join? finder</a> helps.</li>
+<li><strong>Look for credit unions that cover the fee.</strong> Some credit unions pay the association dues or foundation gift on your behalf. The table above shows where we found that.</li>
+<li><strong>Separate the refundable from the non-refundable.</strong> A $25 share deposit is still your money; a $10 fee is not. Compare the part you actually spend.</li>
+</ul>
+<h2>Is your share deposit insured?</h2>
+<p>Yes, at a federally insured credit union. Share accounts are covered by the NCUA's National Credit Union Share Insurance Fund up to $250,000 per share owner, per insured credit union, per ownership category. Fees and donations are payments, not deposits, so they are not insured. See our <a href="../ncua-insurance/index.html">NCUA insurance guide</a>.</p>
+<h2>The bottom line</h2>
+<p>At every open-membership credit union in the table above, the stated up-front cost is under $50, and much of it is a deposit you keep. Read the join page for which piece is a fee, which is a donation, and which is your own money. For the full list of open-membership options, see <a href="../anyone-can-join/index.html">credit unions anyone can join</a>.</p>"""),
         "standard-vs-promo-certificates": ("Standard vs. Promotional Certificates: Why Your Credit Union's 'Regular' CD Can Pay So Little", True, f"""<p class="lede">Many credit unions run two certificate menus side by side: a standard rate sheet that rarely changes and a short list of specials that pay far more. If you open a certificate without asking for the special, you can lock in a rate well below what the same credit union advertises on its home page.</p>
 <h2>What we found on the rate sheets</h2>
 <p>We read the certificate rates on each fully reviewed credit union's own website (rates as of {RATES_AS_OF}). Among the 26 we track, the standard 12-month certificate pays under 2.50% APY at: {_low_list}. Several of those same credit unions advertise specials well above that.</p>
@@ -997,6 +1027,7 @@ def main():
             "terms": "Terms of use for CreditUnionReviewer.com, including our not-financial-advice and accuracy disclaimers.",
             "cookies": "Cookie Policy for CreditUnionReviewer.com: the essential, analytics, and advertising cookies we use and how to control them.",
             "disclaimer": "Disclaimer for CreditUnionReviewer.com: not financial advice, rate accuracy, advertiser disclosure, and NCUA insurance notes.",
+            "cost-to-join-credit-union": "What it actually costs to join a credit union: share deposits, one-time membership fees, and the donations or association dues behind anyone-can-join paths, with a table for every open-membership credit union we cover.",
             "standard-vs-promo-certificates": "Why the standard certificate at many credit unions pays a fraction of the advertised special, which credit unions we found doing it, and the conditions to check first.",
             "credit-union-mergers": "First Tech + DCU, Ent + Wings, Greater Nevada + America First, Bethpage to FourLeaf and more: recent credit union mergers and renames, and what they mean for your accounts and NCUA coverage.",
             "disclosure": "Advertiser disclosure for CreditUnionReviewer.com: how the site earns money through ads and affiliate links, and why that never changes our ratings or rankings.",

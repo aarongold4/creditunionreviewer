@@ -18,7 +18,7 @@
  "rates": {
   "navy-federal": {
    "savings_apy": 0.25,
-   "checking_apy": 0.45,
+   "checking_apy": 0.35,
    "mm_apy": 1.0,
    "cd_12": 4.05,
    "cd_36": 3.75,
@@ -26,7 +26,7 @@
    "auto_new_apr": 4.19,
    "card_apr_low": 10.49,
    "mortgage_30_apr": 6.923,
-   "checking_note": "Flagship Checking pays a small tiered APY based on your balance.",
+   "checking_note": "Flagship Checking pays 0.35% APY from $1,500, rising with balance.",
    "unverified_fields": [],
    "cd_special": {
     "apy": 4.35,
@@ -116,7 +116,7 @@
   },
   "golden-1": {
    "savings_apy": 0.2,
-   "checking_apy": 0.1,
+   "checking_apy": 0.05,
    "mm_apy": 0.05,
    "cd_12": 3.2,
    "cd_36": 3.35,
@@ -124,10 +124,8 @@
    "auto_new_apr": 5.24,
    "card_apr_low": 11.49,
    "mortgage_30_apr": 6.762,
-   "checking_note": "Free checking, minimal APY.",
-   "unverified_fields": [
-    "checking_apy"
-   ],
+   "checking_note": "Premium Checking pays 0.05% APY at its lowest tier, rising with balance.",
+   "unverified_fields": [],
    "cd_special": {
     "apy": 4.3,
     "term": "9-month",
@@ -272,7 +270,7 @@
    "auto_new_apr": 6.15,
    "card_apr_low": 11.24,
    "mortgage_30_apr": 7.176,
-   "checking_note": "Free checking; auto-loan pricing is the standout.",
+   "checking_note": "Free checking.",
    "unverified_fields": [],
    "cd_special": null
   },

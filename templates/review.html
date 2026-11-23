@@ -8,6 +8,7 @@
     <h1>{{ cu.name }} Review{% if cu.tier != 'full' %} & Profile{% endif %} (2026)</h1>
     <p class="byline">By <a href="../../about/index.html">Nathan Blake</a> · Last verified {{ last_verified }}</p>
     <p class="lede">{% if cu.tier == 'full' %}{{ cu.editorial[0] }}{% else %}{{ cu.blurb }}{% endif %}</p>
+    {% if cu.see_also %}<p class="note"><a href="../{{ cu.see_also.slug }}/index.html">{{ cu.see_also.text }} &rarr;</a></p>{% endif %}
   </header>
 
   <div class="disclosure-strip">Advertiser disclosure: the "Visit" links below may be paid placements. <a href="../../disclosure/index.html">How we make money</a> — it never changes our ratings.</div>

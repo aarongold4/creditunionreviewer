@@ -65,3 +65,23 @@ title, why_now, doc_url, pr_url, trigger_id "trig_01NmADNWUFo2jhBYbJrWQfcE", cre
 status "pending", result_url null, result_note null), send a PushNotification
 "New creditunionreviewer.com draft ready: <title>. Open Site Approvals in Claude to
 publish or discard.", and never tell Aaron to merge a PR, open GitHub, or press Run now.
+
+## Aaron's decisions (2026-11-23) — apply on every run
+- **Rate tiers:** every deposit field (checking, savings, money market, certificates) shows the
+  **lowest balance tier that pays a rate**, not the headline or top tier. Put the higher tiers in the
+  note field ("rising with balance"). Apply this to every credit union as you re-verify it.
+  Applied so far: Golden 1 checking 0.05%, Navy Federal checking 0.35%. Still to apply:
+  Mountain America money market (0.50% under $2,500 per the 11/5 PDF, which was bot-blocked on
+  2026-11-23; re-read it before changing).
+- **Ent and Wings:** keep both pages (same charter, 68671) while ent.com still runs its own site and
+  Colorado sign-up. The Ent review links to Wings via `see_also`. Switch to a redirect only once
+  ent.com itself redirects to wingscu.com, and report it.
+- **First Tech join cost:** state no dollar figure for the museum/association membership unless
+  First Tech's own pages state one. The $5 minimum balance is confirmed.
+- **Security Service odd-term certificates:** once a run reads the 7-, 15- and 30-month rates on
+  ssfcu.org (ZIP-priced; use 78249 and say so), set `cd_special` to the best of them, labelled as an
+  odd-term certificate in `condition`. Do not set it from a previous report's figure.
+- **UFCU + MSUFCU:** announced 2026-10-13 on ufcu.org (closing expected summer 2027). Notes are on
+  both profiles and the mergers guide. When it closes, update both and report. UFCU's free American
+  Consumer Council path: ufcu.org does not say whether it is open nationwide, so `anyone_can_join`
+  stays false until UFCU's own page says so.

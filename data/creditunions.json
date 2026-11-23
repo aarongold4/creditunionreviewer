@@ -541,9 +541,9 @@
    "ncua_charter": 23521,
    "fom": {
     "summary": "Employees and family of 1,700+ partner companies (Microsoft, Amazon, HP, Intel and many more), residents of Lane County, Oregon \u2014 or anyone in the US via membership in the Computer History Museum or the Financial Fitness Association.",
-    "easy_path": "Anyone can join: add Computer History Museum membership (about $15, one-time, handled in the application) if you lack a tech-employer connection.",
+    "easy_path": "Anyone can join: add a Computer History Museum or Financial Fitness Association membership within the online application if you lack a tech-employer connection.",
     "anyone_can_join": true,
-    "join_cost": "$5 association/museum route makes it effectively open (small one-time fee)"
+    "join_cost": "$5 minimum balance, plus a Computer History Museum or Financial Fitness Association membership if you lack an employer link (First Tech does not state that membership's cost)"
    },
    "products": {
     "checking": "Rewards Checking (token APY); legacy Dividend Rewards Checking is closed to new members",
@@ -553,7 +553,7 @@
    },
    "rates_note": "Underwriting that understands equity compensation is the quiet differentiator; verify rates at firsttechfed.com.",
    "pros": [
-    "Open to anyone via a small one-time museum/association membership",
+    "Open to anyone via a museum or association membership added in the application",
     "Mortgage underwriting that actually understands RSUs and tech compensation",
     "Rewards Savings tiers for engaged members",
     "Branches inside major tech campuses in the Northwest"
@@ -647,7 +647,7 @@
     "cds": "Certificates with jumbo tiers and decent specials",
     "loans": "Auto lending is the franchise \u2014 SSFCU is one of the largest CU auto lenders in the country"
    },
-   "rates_note": "Auto pricing, especially through dealer partnerships, is the standout; verify at ssfcu.org.",
+   "rates_note": "Auto lending, much of it through dealer partnerships, is its core business, but its current new-auto rate is not a standout, so compare offers; verify at ssfcu.org.",
    "pros": [
     "One of the biggest credit union auto lenders in America",
     "Three-state footprint across growing metros",
@@ -1428,7 +1428,11 @@
    ],
    "website": "https://www.ent.com",
    "best_for": "Front Range Coloradans",
-   "categories": []
+   "categories": [],
+   "see_also": {
+    "slug": "wings-financial",
+    "text": "Ent is now Wings Credit Union. See our Wings Credit Union review"
+   }
   },
   {
    "slug": "bellco",
@@ -2017,7 +2021,7 @@
     "join_cost": "$5 minimum deposit"
    },
    "products_brief": "The largest university-based credit union in the world; award-winning app and student-friendly products.",
-   "blurb": "MSUFCU is the world's largest university credit union, with a top-rated mobile app and a product set built for students through alumni. Spartan ties anywhere in the country qualify you.",
+   "blurb": "MSUFCU is the world's largest university credit union, with a top-rated mobile app and a product set built for students through alumni. Spartan ties anywhere in the country qualify you. On October 13, 2026, UFCU announced an agreement to combine with MSUFCU, expected in summer 2027 pending regulatory approval; the combined credit union would use MSUFCU's charter and the corporate name University Federal Credit Union, while keeping the MSUFCU brand in Michigan and Illinois.",
    "pros": [
     "Best-in-class mobile banking for a CU",
     "Strong student and first-account products"
@@ -2028,7 +2032,11 @@
    ],
    "website": "https://www.msufcu.org",
    "best_for": "Spartans and mid-Michigan residents",
-   "categories": []
+   "categories": [],
+   "see_also": {
+    "slug": "university-fcu",
+    "text": "Merging with UFCU in 2027. See our UFCU profile"
+   }
   },
   {
    "slug": "dfcu-financial",
@@ -3096,7 +3104,7 @@
     "join_cost": "$1 minimum deposit to the basic savings account"
    },
    "products_brief": "Free checking, strong auto lending, mortgages tuned to the Austin market, and university-adjacent perks.",
-   "blurb": "UFCU is Austin's hometown credit union, with deep University of Texas ties and a big share of the local auto loan market.",
+   "blurb": "UFCU is Austin's hometown credit union, with deep University of Texas ties and a big share of the local auto loan market. On October 13, 2026, UFCU announced an agreement to combine with MSU Federal Credit Union (MSUFCU), expected in summer 2027 pending regulatory and member approval; UFCU says members see no immediate changes.",
    "pros": [
     "Strong Austin branch coverage",
     "Competitive auto rates",
@@ -3108,7 +3116,11 @@
    ],
    "website": "ufcu.org",
    "best_for": "Austinites and the UT community",
-   "categories": []
+   "categories": [],
+   "see_also": {
+    "slug": "msufcu",
+    "text": "Merging with MSUFCU in 2027. See our MSUFCU profile"
+   }
   },
   {
    "slug": "credit-human",

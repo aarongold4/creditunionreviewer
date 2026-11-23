@@ -58,10 +58,41 @@
   },
   {
    "id": "cu-auto-loan-rates-now",
-   "title": "Credit Union New-Car Loan Rates Right Now: 4.99% to 5.89% at the Big Names",
-   "why_now": "This audit re-verified new-auto APRs on 26 rate sheets: First Tech and Wright-Patt now start at 4.99%, while BECU rose to 5.89% and Idaho Central to 5.69%; car-buying season (year-end) is high-intent.",
+   "title": "Credit Union New-Car Loan Rates Right Now: What the Big Names Charge",
+   "why_now": "The 2026-11-23 audit re-read new-auto APRs on the credit unions' own rate sheets: Wright-Patt now starts at 5.49% (2023-or-newer, up to 63 months) and Security Service at 6.15% (2026 models, San Antonio pricing), while First Tech stays at 4.99%; year-end car-buying is high-intent. Build the table from rates.json so it never goes stale.",
    "status": "idea",
-   "added": "2026-11-22"
+   "added": "2026-11-22",
+   "updated": "2026-11-23"
+  },
+  {
+   "id": "cost-to-join-credit-union",
+   "title": "What It Costs to Join a Credit Union: Share Deposits, Fees and Donations",
+   "why_now": "This audit re-read join pages for every credit union we cover and found Pelican Credit Union now charges a $10 membership fee plus a $5 minimum balance ($15 total, up from $10). Readers comparing anyone-can-join paths want one table of the real up-front cost.",
+   "status": "drafted",
+   "added": "2026-11-23",
+   "draft_branch": "draft/cost-to-join-credit-union",
+   "drafted": "2026-11-23"
+  },
+  {
+   "id": "zip-code-rate-pricing",
+   "title": "Why Some Credit Unions Quote Different Rates by ZIP Code",
+   "why_now": "Security Service FCU's certificate, money market and auto-loan rate pages vary by ZIP code; our re-check used San Antonio (78249) pricing. Readers in Colorado or Utah may see different numbers, which is worth explaining.",
+   "status": "idea",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "cu-merger-watch-2027",
+   "title": "Credit Union Mergers to Watch in 2027: UFCU + MSUFCU and More",
+   "why_now": "University Federal Credit Union (Austin) and MSU Federal Credit Union announced in mid-October 2026 an agreement to combine, expected to close in 2027 pending approval; Ent's rename to Wings and Greater Nevada's move into America First are already live. Re-confirm the UFCU/MSUFCU status before drafting.",
+   "status": "idea",
+   "added": "2026-11-23"
+  },
+  {
+   "id": "promo-money-market",
+   "title": "Promotional Money Market Rates: When a 6-Month Teaser Beats a Certificate",
+   "why_now": "GreenState's money market page advertises a 6-month promotional rate on all tiers well above its standard rate; a guide on teaser money markets vs certificates fits our standard-vs-promo series. Confirm the current promo on greenstate.org before drafting.",
+   "status": "idea",
+   "added": "2026-11-23"
   }
  ]
 }

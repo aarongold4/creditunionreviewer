@@ -1,6 +1,6 @@
 {
  "meta": {
-  "as_of": "2026-11-22",
+  "as_of": "2026-11-23",
   "disclaimer": "Rates checked against each credit union's own rate pages on the as-of date (fields we could not re-confirm are flagged on each review). Rates are APY for deposits, APR for loans, and change frequently. Verify current rates directly with each credit union before opening an account or applying.",
   "fields": {
    "savings_apy": "APY %",
@@ -160,18 +160,17 @@
    "cd_60": 3.65,
    "auto_new_apr": 5.39,
    "card_apr_low": 13.49,
-   "mortgage_30_apr": 6.45,
+   "mortgage_30_apr": 7.28,
    "checking_note": "High-Rate Checking pays a small APY with e-statements + one monthly deposit.",
    "unverified_fields": [
     "mm_apy",
-    "card_apr_low",
-    "mortgage_30_apr"
+    "card_apr_low"
    ],
    "cd_special": null
   },
   "mountain-america": {
-   "savings_apy": 0.4,
-   "checking_apy": 0.1,
+   "savings_apy": 0.05,
+   "checking_apy": 0.0,
    "mm_apy": 1.5,
    "cd_12": 4.0,
    "cd_36": 4.4,
@@ -181,8 +180,6 @@
    "mortgage_30_apr": 6.5,
    "checking_note": "Free checking, minimal APY.",
    "unverified_fields": [
-    "savings_apy",
-    "checking_apy",
     "mm_apy",
     "cd_12",
     "cd_60",
@@ -236,7 +233,7 @@
    "cd_36": 3.25,
    "cd_60": 3.25,
    "auto_new_apr": 4.99,
-   "card_apr_low": 10.49,
+   "card_apr_low": 10.74,
    "mortgage_30_apr": 7.685,
    "checking_note": "Rewards Checking pays a token APY; the old ~2% Dividend Rewards Checking is closed to new members.",
    "unverified_fields": [
@@ -268,23 +265,15 @@
   "security-service": {
    "savings_apy": 0.05,
    "checking_apy": 0.05,
-   "mm_apy": 1.25,
-   "cd_12": 3.95,
-   "cd_36": 3.85,
-   "cd_60": 3.9,
-   "auto_new_apr": 4.99,
-   "card_apr_low": 12.99,
-   "mortgage_30_apr": 6.49,
+   "mm_apy": 1.5,
+   "cd_12": 2.15,
+   "cd_36": 2.9,
+   "cd_60": 3.65,
+   "auto_new_apr": 6.15,
+   "card_apr_low": 11.24,
+   "mortgage_30_apr": 7.176,
    "checking_note": "Free checking; auto-loan pricing is the standout.",
-   "unverified_fields": [
-    "mm_apy",
-    "cd_12",
-    "cd_36",
-    "cd_60",
-    "auto_new_apr",
-    "card_apr_low",
-    "mortgage_30_apr"
-   ],
+   "unverified_fields": [],
    "cd_special": null
   },
   "dcu": {
@@ -443,8 +432,8 @@
    "cd_12": 4.25,
    "cd_36": 4.5,
    "cd_60": 4.6,
-   "auto_new_apr": 4.99,
-   "card_apr_low": 9.75,
+   "auto_new_apr": 5.49,
+   "card_apr_low": 10.0,
    "mortgage_30_apr": 6.5,
    "checking_note": "Free checking; member dividends paid in strong years.",
    "unverified_fields": [

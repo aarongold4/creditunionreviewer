@@ -1,6 +1,6 @@
 {
  "meta": {
-  "last_verified": "2026-11-22",
+  "last_verified": "2026-11-23",
   "schema_version": "1.1",
   "count": 100,
   "sources": "Credit union websites (membership and rate pages) and NCUA Credit Union Locator records (charter, HQ, status, members, assets); ncua_charter holds each NCUA charter number.",
@@ -1864,7 +1864,7 @@
     "summary": "Anyone who lives in 25 qualifying south and central Louisiana parishes (including East Baton Rouge, Lafayette, Calcasieu, St. Tammany), employees/retirees of partner organizations, and Pelican CU employees and their family.",
     "easy_path": "Residency in 25 south/central Louisiana parishes, including Baton Rouge, Lafayette and Lake Charles areas.",
     "anyone_can_join": false,
-    "join_cost": "$10 to open ($5 membership fee + $5 minimum balance)"
+    "join_cost": "$15 to open, including a $10 membership fee and a $5 minimum balance"
    },
    "products_brief": "Louisiana's broadest CU with credit-building products and in-house financial counselors.",
    "blurb": "Pelican State covers most Louisiana parishes and distinguishes itself with certified financial counselors on staff and genuine credit-rebuilder products \u2014 a consumer-advocate institution in a state that needs them.",
